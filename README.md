@@ -25,8 +25,10 @@ leetcode
 
 [832. Flipping an Image-Array,Two Pointers,Matrix,1+](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0832-flipping-an-image)
 
-905. Sort Array By Parity-Array,Two Pointers,Sorting
-922. Sort Array By Parity II-Array,Two Pointers,Sorting
+[905. Sort Array By Parity-Array,Two Pointers,Sorting](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0905-sort-array-by-parity)
+
+[922. Sort Array By Parity II-Array,Two Pointers,Sorting](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0922-sort-array-by-parity-ii)
+
 942. DI String Match-Array,Two Pointers,String,1+
 977. Squares of a Sorted Array-Array,Two Pointers,Sorting
 1089. Duplicate Zeros-Array,Two Pointers
