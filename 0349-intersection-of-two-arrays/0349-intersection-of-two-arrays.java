@@ -14,8 +14,7 @@ class Solution {
             else if (nums1[i] < nums2[j])
                 i++;
             else {
-                set.add(nums1[i]); // Insert common element into the set
-                i++;
+                set.add(nums1[i++]); // Insert common element into the set
                 j++;
             }
         }
