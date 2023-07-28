@@ -21,7 +21,8 @@ leetcode
 
 [455. Assign Cookies-Array,Two Pointers,Greedy,1+](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0455-assign-cookies)
 
-821. Shortest Distance to a Character-Array,Two Pointers,String
+[821. Shortest Distance to a Character-Array,Two Pointers,String](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0821-shortest-distance-to-a-character)
+
 832. Flipping an Image-Array,Two Pointers,Matrix,1+
 905. Sort Array By Parity-Array,Two Pointers,Sorting
 922. Sort Array By Parity II-Array,Two Pointers,Sorting
