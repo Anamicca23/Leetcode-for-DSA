@@ -12,10 +12,11 @@ leetcode
 [88. Merge Sorted Array-Array,Two Pointers,Sorting](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0088-merge-sorted-array)
 
 170. Two Sum III - Data structure design-Array,Hash Table,Two Pointers,2+
-283. Move Zeroes-Array,Two Pointers
-349. Intersection of Two Arrays-Array,Hash Table,Two Pointers,2+
-350. Intersection of Two Arrays II-Array,Hash Table,Two Pointers,2+
-455. Assign Cookies-Array,Two Pointers,Greedy,1+
+[283. Move Zeroes-Array,Two Pointers](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0283-move-zeroes)
+[349. Intersection of Two Arrays-Array,Hash Table,Two Pointers,2+](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0349-intersection-of-two-arrays)
+[350. Intersection of Two Arrays II-Array,Hash Table,Two Pointers,2+](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0350-intersection-of-two-arrays-ii)
+[455. Assign Cookies-Array,Two Pointers,Greedy,1+](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0455-assign-cookies)
+
 821. Shortest Distance to a Character-Array,Two Pointers,String
 832. Flipping an Image-Array,Two Pointers,Matrix,1+
 905. Sort Array By Parity-Array,Two Pointers,Sorting
