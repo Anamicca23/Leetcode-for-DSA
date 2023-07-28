@@ -9,7 +9,7 @@ leetcode
 
 [28. Remove Element-Array,Two Pointers](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0027-remove-element)
 
-88. Merge Sorted Array-Array,Two Pointers,Sorting
+[88. Merge Sorted Array-Array,Two Pointers,Sorting](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0088-merge-sorted-array)
 170. Two Sum III - Data structure design-Array,Hash Table,Two Pointers,2+
 283. Move Zeroes-Array,Two Pointers
 349. Intersection of Two Arrays-Array,Hash Table,Two Pointers,2+
