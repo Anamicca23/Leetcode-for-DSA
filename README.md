@@ -5,8 +5,7 @@ leetcode
 1.Array- Easy level
 (Two Pointer)
 
-26. Remove Duplicates from Sorted Array-Array,Two Pointers
-    https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0026-remove-duplicates-from-sorted-array
+0026-remove-duplicates-from-sorted-array-Array,Two Pointers
 28. Remove Element-Array,Two Pointers
 88. Merge Sorted Array-Array,Two Pointers,Sorting
 170. Two Sum III - Data structure design-Array,Hash Table,Two Pointers,2+
