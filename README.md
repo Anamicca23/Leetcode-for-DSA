@@ -29,8 +29,10 @@ leetcode
 
 [922. Sort Array By Parity II-Array,Two Pointers,Sorting](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0922-sort-array-by-parity-ii)
 
-942. DI String Match-Array,Two Pointers,String,1+
-977. Squares of a Sorted Array-Array,Two Pointers,Sorting
+[942. DI String Match-Array,Two Pointers,String,1+](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0979-di-string-match)
+
+[977. Squares of a Sorted Array-Array,Two Pointers,Sorting](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1019-squares-of-a-sorted-array)
+
 1089. Duplicate Zeros-Array,Two Pointers
 1099. Two Sum Less Than K-Array,Two Pointers,Binary Search,1+
 1346. Check If N and Its Double Exist-Array,Hash Table,Two Pointers,2+
