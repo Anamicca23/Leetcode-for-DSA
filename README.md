@@ -33,10 +33,14 @@ leetcode
 
 [977. Squares of a Sorted Array-Array,Two Pointers,Sorting](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1019-squares-of-a-sorted-array)
 
-1089. Duplicate Zeros-Array,Two Pointers
-1099. Two Sum Less Than K-Array,Two Pointers,Binary Search,1+
-1346. Check If N and Its Double Exist-Array,Hash Table,Two Pointers,2+
-1385. Find the Distance Value Between Two Arrays-Array,Two Pointers,Binary Search,1+
+[1089. Duplicate Zeros-Array,Two Pointers](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1168-duplicate-zeros)
+
+[1099. Two Sum Less Than K-Array,Two Pointers,Binary Search,1+]()
+
+[1346. Check If N and Its Double Exist-Array,Hash Table,Two Pointers,2+](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1468-check-if-n-and-its-double-exist)
+
+[1385. Find the Distance Value Between Two Arrays-Array,Two Pointers,Binary Search,1+](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1486-find-the-distance-value-between-two-arrays)
+
 1826. Faulty Sensor-Array,Two Pointers
 2108. Find First Palindromic String in the Array-Array,Two Pointers,String
 2367. Number of Arithmetic Triplets-Array,Hash Table,Two Pointers,1+
