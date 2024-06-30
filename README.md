@@ -42,7 +42,9 @@ leetcode
 [1385. Find the Distance Value Between Two Arrays-Array,Two Pointers,Binary Search,1+](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1486-find-the-distance-value-between-two-arrays)
 
 1826. Faulty Sensor-Array,Two Pointers
-2108. Find First Palindromic String in the Array-Array,Two Pointers,String
+      
+[2108. Find First Palindromic String in the Array-Array,Two Pointers,String](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2231-find-first-palindromic-string-in-the-array)
+
 2367. Number of Arithmetic Triplets-Array,Hash Table,Two Pointers,1+
 2441. Largest Positive Integer That Exists With Its Negative-Array,Hash Table,Two Pointers,1+
 2465. Number of Distinct Averages-Array,Hash Table,Two Pointers,1+
