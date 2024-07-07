@@ -47,8 +47,10 @@ leetcode
 
 [2367. Number of Arithmetic Triplets-Array,Hash Table,Two Pointers,1+](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2367-number-of-arithmetic-triplets)
 
-2441. Largest Positive Integer That Exists With Its Negative-Array,Hash Table,Two Pointers,1+
-2465. Number of Distinct Averages-Array,Hash Table,Two Pointers,1+
+[2441. Largest Positive Integer That Exists With Its Negative-Array,Hash Table,Two Pointers,1+](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2441-largest-positive-integer-that-exists-with-its-negative)
+
+[2465. Number of Distinct Averages-Array,Hash Table,Two Pointers,1+](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2465-number-of-distinct-averages)
+
 2511. Maximum Enemy Forts That Can Be Captured-Array,Two Pointers
 2540. Minimum Common Value-Array,Hash Table,Two Pointers,1+
 2562. Find the Array Concatenation Value-Array,Two Pointers,Simulation
