@@ -1,60 +1,39 @@
 # Leetcode-for-DSA
 Collection of LeetCode questions to ace the coding interview! - Created using [LeetHub](https://github.com/QasimWani/LeetHub)
+
 leetcode 
 
-1.Array- Easy level
-(Two Pointer)
+1. Array- Easy level (Two Pointer)
 
-[26. Remove duplicates from sorted array-Array,Two Pointers](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0026-remove-duplicates-from-sorted-array)
+| Sr. No. | Problem                                                        | Topic                             |
+|---------|----------------------------------------------------------------|-----------------------------------|
+| 26      | [Remove duplicates from sorted array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0026-remove-duplicates-from-sorted-array) | Array, Two Pointers               |
+| 28      | [Remove Element](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0027-remove-element) | Array, Two Pointers               |
+| 88      | [Merge Sorted Array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0088-merge-sorted-array) | Array, Two Pointers, Sorting      |
+| 170     | Two Sum III - Data structure design                             | Array, Hash Table, Two Pointers   |
+| 283     | [Move Zeroes](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0283-move-zeroes) | Array, Two Pointers               |
+| 349     | [Intersection of Two Arrays](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0349-intersection-of-two-arrays) | Array, Hash Table, Two Pointers   |
+| 350     | [Intersection of Two Arrays II](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0350-intersection-of-two-arrays-ii) | Array, Hash Table, Two Pointers   |
+| 455     | [Assign Cookies](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0455-assign-cookies) | Array, Two Pointers, Greedy       |
+| 821     | [Shortest Distance to a Character](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0821-shortest-distance-to-a-character) | Array, Two Pointers, String       |
+| 832     | [Flipping an Image](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0832-flipping-an-image) | Array, Two Pointers, Matrix       |
+| 905     | [Sort Array By Parity](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0905-sort-array-by-parity) | Array, Two Pointers, Sorting      |
+| 922     | [Sort Array By Parity II](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0922-sort-array-by-parity-ii) | Array, Two Pointers, Sorting      |
+| 942     | [DI String Match](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0979-di-string-match) | Array, Two Pointers, String       |
+| 977     | [Squares of a Sorted Array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1019-squares-of-a-sorted-array) | Array, Two Pointers, Sorting      |
+| 1089    | [Duplicate Zeros](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1168-duplicate-zeros) | Array, Two Pointers               |
+| 1346    | [Check If N and Its Double Exist](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1468-check-if-n-and-its-double-exist) | Array, Hash Table, Two Pointers   |
+| 1385    | [Find the Distance Value Between Two Arrays](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1486-find-the-distance-value-between-two-arrays) | Array, Two Pointers, Binary Search|
+| 1826    | Faulty Sensor                                                  | Array, Two Pointers               |
+| 2108    | [Find First Palindromic String in the Array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2231-find-first-palindromic-string-in-the-array) | Array, Two Pointers, String       |
+| 2367    | [Number of Arithmetic Triplets](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2367-number-of-arithmetic-triplets) | Array, Hash Table, Two Pointers   |
+| 2441    | [Largest Positive Integer That Exists With Its Negative](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2441-largest-positive-integer-that-exists-with-its-negative) | Array, Hash Table, Two Pointers   |
+| 2465    | [Number of Distinct Averages](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2465-number-of-distinct-averages) | Array, Hash Table, Two Pointers   |
+| 2511    | Maximum Enemy Forts That Can Be Captured                        | Array, Two Pointers               |
+| 2540    | Minimum Common Value                                           | Array, Hash Table, Two Pointers   |
+| 2562    | Find the Array Concatenation Value                             | Array, Two Pointers, Simulation   |
+| 2570    | Merge Two 2D Arrays by Summing Values                          | Array, Hash Table, Two Pointers   |
 
-[28. Remove Element-Array,Two Pointers](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0027-remove-element)
-
-[88. Merge Sorted Array-Array,Two Pointers,Sorting](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0088-merge-sorted-array)
-
-170. Two Sum III - Data structure design-Array,Hash Table,Two Pointers,2+
-
-[283. Move Zeroes-Array,Two Pointers](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0283-move-zeroes)
-
-[349. Intersection of Two Arrays-Array,Hash Table,Two Pointers,2+](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0349-intersection-of-two-arrays)
-
-[350. Intersection of Two Arrays II-Array,Hash Table,Two Pointers,2+](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0350-intersection-of-two-arrays-ii)
-
-[455. Assign Cookies-Array,Two Pointers,Greedy,1+](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0455-assign-cookies)
-
-[821. Shortest Distance to a Character-Array,Two Pointers,String](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0821-shortest-distance-to-a-character)
-
-[832. Flipping an Image-Array,Two Pointers,Matrix,1+](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0832-flipping-an-image)
-
-[905. Sort Array By Parity-Array,Two Pointers,Sorting](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0905-sort-array-by-parity)
-
-[922. Sort Array By Parity II-Array,Two Pointers,Sorting](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0922-sort-array-by-parity-ii)
-
-[942. DI String Match-Array,Two Pointers,String,1+](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0979-di-string-match)
-
-[977. Squares of a Sorted Array-Array,Two Pointers,Sorting](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1019-squares-of-a-sorted-array)
-
-[1089. Duplicate Zeros-Array,Two Pointers](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1168-duplicate-zeros)
-
-[1099. Two Sum Less Than K-Array,Two Pointers,Binary Search,1+]()
-
-[1346. Check If N and Its Double Exist-Array,Hash Table,Two Pointers,2+](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1468-check-if-n-and-its-double-exist)
-
-[1385. Find the Distance Value Between Two Arrays-Array,Two Pointers,Binary Search,1+](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1486-find-the-distance-value-between-two-arrays)
-
-1826. Faulty Sensor-Array,Two Pointers
-      
-[2108. Find First Palindromic String in the Array-Array,Two Pointers,String](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2231-find-first-palindromic-string-in-the-array)
-
-[2367. Number of Arithmetic Triplets-Array,Hash Table,Two Pointers,1+](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2367-number-of-arithmetic-triplets)
-
-[2441. Largest Positive Integer That Exists With Its Negative-Array,Hash Table,Two Pointers,1+](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2441-largest-positive-integer-that-exists-with-its-negative)
-
-[2465. Number of Distinct Averages-Array,Hash Table,Two Pointers,1+](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2465-number-of-distinct-averages)
-
-2511. Maximum Enemy Forts That Can Be Captured-Array,Two Pointers
-2540. Minimum Common Value-Array,Hash Table,Two Pointers,1+
-2562. Find the Array Concatenation Value-Array,Two Pointers,Simulation
-2570. Merge Two 2D Arrays by Summing Values-Array,Hash Table,Two Pointers
 
 (Sliding Window)
 
