@@ -6,7 +6,7 @@ public:
             if(maxv<x){
                 maxv=x;
                 cnt=0;
-                //res=0;
+                res=0;
             }
             if(maxv==x){
                 cnt++;
