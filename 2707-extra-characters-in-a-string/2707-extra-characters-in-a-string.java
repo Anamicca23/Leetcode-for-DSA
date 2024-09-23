@@ -1,5 +1,5 @@
 class Solution {
-    public int minExtraChar(String s, List<String> dictionary) {
+    public int minExtraChar(String s, String[] dictionary) {
         int n = s.length();
         int[] dp = new int[n + 1];
 
