@@ -14,7 +14,7 @@ public:
     }
 
 private:
-    vector<int> calculateCommonPrefixLengths(const vector<>& words, const vector<int>& sortedIndices) {
+    vector<int> calculateCommonPrefixLengths(const vector<string>& words, const vector<int>& sortedIndices) {
         vector<int> lengths(words.size(), 0);
         for (int i = 1; i < words.size(); i++) {
             const auto& prev = words[sortedIndices[i - 1]], &curr = words[sortedIndices[i]];
