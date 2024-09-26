@@ -1,24 +1,13 @@
-class Node:
-    def __init__(self, start, end):
-        self.start = start
-        self.end = end
-
-    def __lt__(self, other):
-        return self.end <= other.start
-
 class MyCalendar:
 
     def __init__(self):
-        self.bookings = set()
+        self.bookings = [ (-1,-1), (float('inf'), float('inf')) ]
 
     def book(self, start: int, end: int) -> bool:
-        node = Node(start, end)
-        for booked in self.bookings:
-            if not (booked.end <= start or end <= booked.start):
-                return False
-        self.bookings.add(node)
+        index = bisect_left(self.bookings, (start, end))
+        if start < self.bookings[index - 1][1]:
+            return False
+        if end > self.bookings[index][0]:
+            return False
+        self.bookings.insert(index, (start, end))
         return True
-
-# Example usage:
-# obj = MyCalendar()
-# param_1 = obj.book(start, end)
