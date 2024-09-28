@@ -1,126 +1,100 @@
 class MyCircularDeque {
+private:
+    ListNode *head;
+    ListNode *tail;
+    int size, maxSize;
 public:
-int size;
-int front;
-int rear;
-int *arr;
     MyCircularDeque(int k) {
-        size = k;
-        arr = new int [k];
-        front = rear =-1;
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+        cout.tie(NULL);
+        this->head= new ListNode();
+        this->tail=this->head;
+        this->maxSize=k;
+        this->size=0;
     }
     
     bool insertFront(int value) {
-        if (isFull() )
-        {
-            return false;
+        if(this->size>=this->maxSize) return false;
+        this->size++;
+        ListNode *temp = new ListNode(value);if(this->size==1){
+            head=temp;
+            tail=head;
+            return true;
         }
-        else if (front==-1)
-        {
-            front = rear =0;
-        }
-        else if (front==0 && rear!=size-1)
-        {
-            front = size-1;
-        }
-        else 
-        {
-            front--;
-        }
-        arr[front] = value;
+        temp->next = this->head;
+        head=temp;
+        if(this->size==1) tail=head;
         return true;
     }
     
     bool insertLast(int value) {
-        if (isFull() )
-        {
-            return false;
-        }
-        else if (front==-1)
-        {
-            front=rear=0;
-        }
-        else if((rear==size-1) && (front!=0))
-        {
-            rear=0;
-        }
-        else 
-        {
-            rear++;
-        }
-        arr[rear] = value;
+        if(this->size>=this->maxSize) return false;
+        this->size++;
+        ListNode *temp = new ListNode(value);
+        if(this->size==1){
+            head=temp;
+            tail=head;
+            return true;
+        } 
+        this->tail->next=temp;
+        tail=temp;
+        
         return true;
     }
     
     bool deleteFront() {
-        if (front==-1)
-        {
-            return false;
-        }
-        else if (front==rear)
-        {
-            front=rear=-1;
-        }
-        else if (front==size-1)
-        {
-            front=0;
-        }
-        else 
-        {
-            front++;
-        }
+        if(!this->size) return false;
+        this->size--;
+        if(!this->size){
+            this->head=nullptr;
+            tail=head;
+            return true;
+        } 
+        ListNode *temp= head;
+        this->head=this->head->next;
+        temp->next=nullptr;
+        if(!this->size) tail=head;
         return true;
     }
     
     bool deleteLast() {
-        if (front==-1)
-        {
-            return false;
-        }
-        else if (front==rear)
-        {
-            front=rear=-1;
-        }
-        else if (rear==0)
-        {
-            rear = size-1;
-        }
-        else 
-        {
-            rear--;
-        }
+        if(!this->size) return false;
+        this->size--;
+        if(!this->size){
+            this->head=nullptr;
+            tail=head;
+            return true;
+        } 
+        ListNode *temp= head;
+        while(temp){
+            if(temp->next==this->tail)
+                break;
+            temp=temp->next;
+        }   
+        temp->next=nullptr;
+        this->tail=temp;
         return true;
     }
     
     int getFront() {
-        if (isEmpty())
-        {
-            return -1;
-        }
-        return arr[front];
+        if(this->size)
+            return this->head->val;
+        return -1;
     }
     
     int getRear() {
-        if (isEmpty())
-        {
-            return -1;
-        }
-        return arr[rear];
+        if(this->size)
+            return this->tail->val;
+        return -1;
     }
     
     bool isEmpty() {
-        if (front==-1)
-        {
-            return true;
-        }
-        else 
-        {
-            return false;
-        }
+        return this->size==0;
     }
     
     bool isFull() {
-        return (front == 0 && rear == size - 1) || (rear == (front - 1 + size) % size);
+        return this->size==this->maxSize;
     }
 };
 
