@@ -1,115 +1,126 @@
-#pragma GCC optimize ("Ofast")
-#pragma GCC target ("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx")
-#pragma GCC optimize ("-ffloat-store")
-#pragma GCC optimize ("O3", "unroll-loops")
-auto _=[]()noexcept{ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);return 0;}();
-
-class Node{
-public:
-    int data;
-    Node* prev;
-    Node* next;
-
-    Node(){
-        this->data = 0;
-        this->prev = NULL;
-        this->next = NULL;
-    }
-
-
-    Node(int x){
-        this->data = x;
-        this->prev = NULL;
-        this->next = NULL;
-    }
-
-};
-
 class MyCircularDeque {
-    Node* left = new Node(-1);
-    Node* right = new Node(-1);
-    int size = 0, capacity = 0;
 public:
-    
-    void remove(Node* temp){
-
-        // Remove the node from between
-        temp->prev->next = temp->next;
-        temp->next->prev = temp->prev;
-        temp->next = NULL;
-        temp->prev = NULL;
-
-
-    }
-
-    void add(Node* dummy, Node* temp){
-
-        dummy->prev->next = temp;
-        temp->prev = dummy->prev;
-        temp->next = dummy;
-        dummy->prev = temp;
-
-    }
-
+int size;
+int front;
+int rear;
+int *arr;
     MyCircularDeque(int k) {
-        left->next = right;
-        right->prev = left;
-        capacity = k;
+        size = k;
+        arr = new int [k];
+        front = rear =-1;
     }
     
     bool insertFront(int value) {
-        
-        if(isFull()) return false;
-
-        Node* element = new Node(value);
-        add(left->next, element);
-        size++;
+        if (isFull() )
+        {
+            return false;
+        }
+        else if (front==-1)
+        {
+            front = rear =0;
+        }
+        else if (front==0 && rear!=size-1)
+        {
+            front = size-1;
+        }
+        else 
+        {
+            front--;
+        }
+        arr[front] = value;
         return true;
     }
     
     bool insertLast(int value) {
-        if(isFull()) return false;
-
-        Node* element = new Node(value);
-        add(right, element);
-        size++;
+        if (isFull() )
+        {
+            return false;
+        }
+        else if (front==-1)
+        {
+            front=rear=0;
+        }
+        else if((rear==size-1) && (front!=0))
+        {
+            rear=0;
+        }
+        else 
+        {
+            rear++;
+        }
+        arr[rear] = value;
         return true;
     }
     
     bool deleteFront() {
-        if(isEmpty()) return false;
-        
-        remove(left->next);
-        size--;
+        if (front==-1)
+        {
+            return false;
+        }
+        else if (front==rear)
+        {
+            front=rear=-1;
+        }
+        else if (front==size-1)
+        {
+            front=0;
+        }
+        else 
+        {
+            front++;
+        }
         return true;
     }
     
     bool deleteLast() {
-        if(isEmpty()) return false;
-
-        remove(right->prev);
-        size--;
+        if (front==-1)
+        {
+            return false;
+        }
+        else if (front==rear)
+        {
+            front=rear=-1;
+        }
+        else if (rear==0)
+        {
+            rear = size-1;
+        }
+        else 
+        {
+            rear--;
+        }
         return true;
     }
     
     int getFront() {
-        if(isEmpty()) return -1;
-
-        return left->next->data;
+        if (isEmpty())
+        {
+            return -1;
+        }
+        return arr[front];
     }
     
     int getRear() {
-        if(isEmpty()) return -1;
-
-        return right->prev->data;
+        if (isEmpty())
+        {
+            return -1;
+        }
+        return arr[rear];
     }
     
     bool isEmpty() {
-        return size == 0;
+        if (front==-1)
+        {
+            return true;
+        }
+        else 
+        {
+            return false;
+        }
     }
     
     bool isFull() {
-        return size == capacity;
+        return (front == 0 && rear == size - 1) || (rear == (front - 1 + size) % size);
     }
 };
 
