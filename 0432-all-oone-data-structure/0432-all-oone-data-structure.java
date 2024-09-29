@@ -1,86 +1,106 @@
-import java.util.*;
+public class Node {
+    String key;
+    int count;
+    Node next;
+    Node prev;
 
-class AllOne {
-
-    // Map to store the count of each key
-    private Map<String, Integer> count;
-
-    // TreeSet to maintain the keys sorted by their counts (first by count, then by key lexicographically)
-    private TreeSet<Pair> set;
-
-    // Constructor
-    public AllOne() {
-        count = new HashMap<>();
-        set = new TreeSet<>((a, b) -> {
-            if (a.count == b.count) {
-                return a.key.compareTo(b.key); // If counts are equal, compare by key lexicographically
-            }
-            return Integer.compare(a.count, b.count); // Otherwise, compare by count
-        });
-    }
-
-    // Increment the count of the key
-    public void inc(String key) {
-        int n = count.getOrDefault(key, 0); // Get current count, or default to 0
-        if (n > 0) {
-            set.remove(new Pair(n, key));   // Remove the old pair if it exists
-        }
-        count.put(key, n + 1);              // Increment the count
-        set.add(new Pair(n + 1, key));      // Insert the new pair with the updated count
-    }
-
-    // Decrement the count of the key
-    public void dec(String key) {
-        int n = count.getOrDefault(key, 0); // Get current count
-        if (n == 0) return;                 // If no such key, nothing to do
-
-        set.remove(new Pair(n, key));       // Remove the old pair
-        if (n == 1) {
-            count.remove(key);              // If count is 1, remove the key from the map
-        } else {
-            count.put(key, n - 1);          // Decrement the count
-            set.add(new Pair(n - 1, key));  // Insert the updated pair with the decremented count
-        }
-    }
-
-    // Get the key with the maximum count
-    public String getMaxKey() {
-        if (!set.isEmpty()) {
-            return set.last().key;  // The last element in TreeSet has the max count
-        }
-        return "";  // If no elements, return an empty string
-    }
-
-    // Get the key with the minimum count
-    public String getMinKey() {
-        if (!set.isEmpty()) {
-            return set.first().key;  // The first element in TreeSet has the min count
-        }
-        return "";  // If no elements, return an empty string
-    }
-
-    // Helper class to represent pairs of (count, key)
-    private static class Pair {
-        int count;
-        String key;
-
-        Pair(int count, String key) {
-            this.count = count;
-            this.key = key;
-        }
-
-        // Must implement equals and hashCode to properly remove elements from the set
-        @Override
-        public boolean equals(Object obj) {
-            if (this == obj) return true;
-            if (obj == null || getClass() != obj.getClass()) return false;
-            Pair other = (Pair) obj;
-            return count == other.count && Objects.equals(key, other.key);
-        }
-
-        @Override
-        public int hashCode() {
-            return Objects.hash(count, key);
-        }
+    public Node(String s, int n) {
+        count = n;
+        key = s;
+        next = null;
+        prev = null;
     }
 }
+class AllOne {
+    private HashMap<String, Node> nodes = new HashMap();
+    Node head;
+    Node tail;
+
+    public AllOne() {
+        head = new Node("", -1);
+        tail = new Node("", Integer.MAX_VALUE);
+        head.next = tail;
+        tail.prev = head;
+    }
+
+    //b is directly after a
+    private void swap(Node a, Node b) {
+        Node t = b.next;
+        a.next = t;
+        t.prev = a;
+        b.next = a;
+        t = a.prev;
+        t.next = b;
+        a.prev = b;
+        b.prev = t;
+    }
+
+    private void delete(Node node) {
+        node.prev.next = node.next;
+        node.next.prev = node.prev;
+        node.next = null;
+        node.prev = null;
+    }
+
+    private void updateInc(Node n) {
+        while (n.next != tail && n.count > n.next.count) {
+            swap(n, n.next);
+        }
+    }
+
+    private void updateDec(Node n) {
+        while (n.prev != head && n.count < n.prev.count) {
+            swap(n.prev, n);
+        }
+    }
+    
+    public void inc(String key) {
+        Node n = nodes.getOrDefault(key, new Node(key, 0));
+        int c = ++n.count;
+        //if not new key
+        if(c != 1){
+            if(c > tail.prev.count){
+                delete(n);
+                n.next = tail;
+                n.prev = tail.prev;
+                tail.prev.next = n;
+                tail.prev = n;
+            }else{
+                updateInc(n);
+            }
+        }else { //new key
+            nodes.put(key,n);
+            n.prev = head;
+            n.next = head.next;
+            head.next.prev = n;
+            head.next = n;
+        }
+    }
+    
+    public void dec(String key) {
+        Node n = nodes.get(key);
+        if (--n.count == 0) {
+            nodes.remove(key);
+            delete(n);
+        } else {
+            updateDec(n);
+        }
+    }
+    
+    public String getMaxKey() {
+        return head.next == tail ? "" : tail.prev.key;
+    }
+    
+    public String getMinKey() {
+        return head.next == tail ? "" : head.next.key;
+    }
+}
+
+/**
+ * Your AllOne object will be instantiated and called as such:
+ * AllOne obj = new AllOne();
+ * obj.inc(key);
+ * obj.dec(key);
+ * String param_3 = obj.getMaxKey();
+ * String param_4 = obj.getMinKey();
+ */
