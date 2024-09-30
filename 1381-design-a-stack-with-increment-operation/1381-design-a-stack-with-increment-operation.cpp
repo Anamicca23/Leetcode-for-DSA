@@ -3,7 +3,6 @@ int stk[2000];
 
 class CustomStack {
     int sz, smax, d;
-
 public:
     CustomStack(int maxSize) : sz{0}, smax{2*maxSize}, d{0} {}
     void push(int x) {
