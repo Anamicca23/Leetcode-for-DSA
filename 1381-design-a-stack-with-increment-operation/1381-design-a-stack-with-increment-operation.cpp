@@ -1,33 +1,30 @@
 class CustomStack {
+  vector<int> incremental;
+  vector<int> container;
+  int cap;
 public:
-    int *arr;
-    int size,top;
-    CustomStack(int maxSize) {
-        size=maxSize;
-        arr=new int[size];
-        top=-1;
-    }
-    
-    void push(int x) {
-        if(size-top>1){
-            top++;
-            arr[top]=x;
-        }
-    }
-    
-    int pop() {
-        if(top==-1)
-            return -1;
-        return arr[top--];
-    }
-    
-    void increment(int k, int val) {
-        int limit = min(k, top + 1);  
-        for (int i = 0; i < limit; i++) {
-            arr[i] += val;
-        }
-    }
-    
+  CustomStack(int maxSize): cap(maxSize) {}
+  
+  void push(int x) {
+    if(container.size() == cap) return;
+    container.push_back(x);
+    incremental.push_back(0);
+  }
+  
+  int pop() {
+    if(container.empty()) return -1;
+    int result = container.back() + incremental.back();
+    container.pop_back();
+    if(incremental.size() > 1) incremental[incremental.size() - 2] += incremental.back();
+    incremental.pop_back();
+    return result;
+  }
+  
+  void increment(int k, int val) {
+    if(container.empty()) return;
+    k = min<int>(k - 1, container.size() - 1);
+    incremental[k] += val;
+  }
 };
 
 /**
