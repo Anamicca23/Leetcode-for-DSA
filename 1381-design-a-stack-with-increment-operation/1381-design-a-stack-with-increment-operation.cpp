@@ -1,23 +1,33 @@
-static const int speedup = []{ios::sync_with_stdio(0); cin.tie(0); return 0;}();
-int stk[2000];
-
 class CustomStack {
-    int sz, smax, d;
 public:
-    CustomStack(int maxSize) : sz{0}, smax{2*maxSize}, d{0} {}
+    int *arr;
+    int size,top;
+    CustomStack(int maxSize) {
+        size=maxSize;
+        arr=new int[size];
+        top=-1;
+    }
+    
     void push(int x) {
-        if (sz != smax) stk[sz++] = x-d, stk[sz++] = 0;
+        if(size-top>1){
+            top++;
+            arr[top]=x;
+        }
     }
     
     int pop() {
-        if (!sz) return -1;
-        d += stk[--sz];
-        return d + stk[--sz];
+        if(top==-1)
+            return -1;
+        return arr[top--];
     }
     
     void increment(int k, int val) {
-        if (sz) stk[min(sz, 2*k) - 1] += val;
+        int limit = min(k, top + 1);  
+        for (int i = 0; i < limit; i++) {
+            arr[i] += val;
+        }
     }
+    
 };
 
 /**
