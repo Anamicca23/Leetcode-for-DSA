@@ -1,41 +1,35 @@
-import java.util.*;
-
-public class Solution {
-    public boolean areSentencesSimilar(String sentence1, String sentence2) {
-        Deque<String> deque1 = new LinkedList<>();
-        Deque<String> deque2 = new LinkedList<>();
-
-        // Split sentence1 into deque1
-        for (String word : sentence1.split(" ")) {
-            deque1.addLast(word);
+class Solution {
+    public boolean areSentencesSimilar(String sent1, String sent2) {
+        String first = sent1;
+        String sec = sent2;
+        if(first.length()==sec.length()){
+            return first.equals(sec);
         }
-
-        // Split sentence2 into deque2
-        for (String word : sentence2.split(" ")) {
-            deque2.addLast(word);
+        if(sent2.length()<first.length()){
+            first = sent2;
+            sec = sent1;
         }
+        int i = -1;
+      while(i+1<first.length() && first.charAt(i+1)==sec.charAt(i+1)){
+        i++;
+      }
+        int j = first.length();
+        int last = sec.length();
+      while(j-1>=0 && first.charAt(j-1)==sec.charAt(last-1)){
+        j--;
+        last--;
+      }
 
-        // Always compare the smaller sentence with the larger one
-        if (deque1.size() > deque2.size()) {
-            Deque<String> temp = deque1;
-            deque1 = deque2;
-            deque2 = temp;
-        }
-
-        // Compare from the front and back
-        while (!deque1.isEmpty()) {
-            if (deque1.peekFirst().equals(deque2.peekFirst())) {
-                deque1.pollFirst();
-                deque2.pollFirst();
-            } else if (deque1.peekLast().equals(deque2.peekLast())) {
-                deque1.pollLast();
-                deque2.pollLast();
-            } else {
-                break;
-            }
-        }
-
-        // If deque1 is empty, it means sentence1 can be transformed into sentence2
-        return deque1.isEmpty();
+      if(i==first.length()-1 && sec.charAt(i+1)==' '){
+        return true;
+      } 
+      if(j==0 && sec.charAt(last-1)==' '){
+        return true;
+      }
+       if(i+1>=j && sec.charAt(i)==' ' && sec.charAt(last)==' '){
+            return true;
+       }
+       
+      return false;
     }
 }
