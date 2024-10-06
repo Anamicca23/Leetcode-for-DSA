@@ -1,24 +1,20 @@
-from collections import deque
-
 class Solution:
     def areSentencesSimilar(self, sentence1: str, sentence2: str) -> bool:
-        deque1 = deque(sentence1.split())
-        deque2 = deque(sentence2.split())
-
-        # Always compare the smaller sentence with the larger one
-        if len(deque1) > len(deque2):
-            deque1, deque2 = deque2, deque1
-
-        # Compare from the front and back
-        while deque1:
-            if deque1[0] == deque2[0]:
-                deque1.popleft()
-                deque2.popleft()
-            elif deque1[-1] == deque2[-1]:
-                deque1.pop()
-                deque2.pop()
-            else:
-                break
-
-        # If deque1 is empty, it means sentence1 can be transformed into sentence2
-        return not deque1
+        # Split the sentences into words
+        words1 = sentence1.split()
+        words2 = sentence2.split()
+        
+        # Two pointers from the start and end
+        i, j = 0, 0
+        n, m = len(words1), len(words2)
+        
+        # Move pointers from the start while the words are the same
+        while i < n and i < m and words1[i] == words2[i]:
+            i += 1
+        
+        # Move pointers from the end while the words are the same
+        while j < (n - i) and j < (m - i) and words1[n - j - 1] == words2[m - j - 1]:
+            j += 1
+        
+        # If the total matched words cover both sentences, they are similar
+        return i + j == n or i + j == m
