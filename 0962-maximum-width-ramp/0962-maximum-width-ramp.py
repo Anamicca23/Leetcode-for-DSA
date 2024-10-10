@@ -1,20 +1,35 @@
 class Solution:
-    def maxWidthRamp(self, nums: list[int]) -> int:
-        n = len(nums)
-        mwramp = 0
-        rmax = [0] * n
-        rmax[n - 1] = nums[n - 1]
-
-        # Fill the rmax array with the maximum values from the right
-        for i in range(n - 2, -1, -1):
-            rmax[i] = max(rmax[i + 1], nums[i])
-
-        i, j = 0, 0
-        while j < n:
-            # Increment i until the condition is satisfied
-            while i < j and nums[i] > rmax[j]:
-                i += 1
-            mwramp = max(mwramp, j - i)  # Update the maximum width ramp
-            j += 1
+    def maxWidthRamp(self, nums: List[int]) -> int:
+        stack = []
+        res = 0
         
-        return mwramp
+        for i, num in enumerate(nums):
+            if not stack or nums[stack[-1]] > num:
+                stack.append(i)
+        
+        for j in range(len(nums) - 1, -1, -1):
+            while stack and nums[j] >= nums[stack[-1]]:
+                res = max(res, j - stack.pop())
+        
+        return res
+
+def kdsmain():
+    input_data = sys.stdin.read().strip()
+    lines = input_data.splitlines()
+    
+    num_test_cases = len(lines)
+    results = []
+
+    for i in range(num_test_cases):
+        nums = json.loads(lines[i])
+        
+        result = Solution().maxWidthRamp(nums)
+        results.append(str(result))
+
+    with open('user.out', 'w') as f:
+        for result in results:
+            f.write(f"{result}\n")
+
+if __name__ == "__main__":
+    kdsmain()
+    exit(0)
