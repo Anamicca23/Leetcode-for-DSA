@@ -1,25 +1,32 @@
 class Solution {
+
     public int minGroups(int[][] intervals) {
-        // Sort intervals based on start time
-        Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
-
-        // Priority queue (min-heap) to track the end times
-        PriorityQueue<Integer> pq = new PriorityQueue<>();
-
+        // Find the minimum and maximum value in the intervals
+        int rangeStart = Integer.MAX_VALUE;
+        int rangeEnd = Integer.MIN_VALUE;
         for (int[] interval : intervals) {
-            int start = interval[0];
-            int end = interval[1];
-
-            // If the current interval can fit in an existing group (smallest end time <= start time)
-            if (!pq.isEmpty() && start > pq.peek()) {
-                pq.poll();  // Reuse the group
-            }
-
-            // Push the current end time to the heap
-            pq.offer(end);
+            rangeStart = Math.min(rangeStart, interval[0]);
+            rangeEnd = Math.max(rangeEnd, interval[1]);
         }
 
-        // The size of the priority queue represents the number of groups needed
-        return pq.size();
+        // Initialize the array with all zeroes
+        int[] pointToCount = new int[rangeEnd + 2];
+        for (int[] interval : intervals) {
+            pointToCount[interval[0]]++; // Increment at the start of the interval
+            pointToCount[interval[1] + 1]--; // Decrement right after the end of the interval
+        }
+
+        int concurrentIntervals = 0;
+        int maxConcurrentIntervals = 0;
+        for (int i = rangeStart; i <= rangeEnd; i++) {
+            // Update currently active intervals
+            concurrentIntervals += pointToCount[i];
+            maxConcurrentIntervals = Math.max(
+                maxConcurrentIntervals,
+                concurrentIntervals
+            );
+        }
+
+        return maxConcurrentIntervals;
     }
 }
