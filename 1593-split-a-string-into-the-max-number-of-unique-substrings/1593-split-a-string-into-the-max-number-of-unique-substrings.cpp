@@ -2,22 +2,36 @@ class Solution {
 public:
     int maxUniqueSplit(string s) {
         unordered_set<string> seen;
-        return backtrack(0, s, seen);
+        int maxCount = 0;
+        backtrack(s, 0, seen, 0, maxCount);
+        return maxCount;
     }
+
 private:
-    int backtrack(int start, const string& s, unordered_set<string>& seen) {
+    void backtrack(const string& s, int start, unordered_set<string>& seen,
+                   int count, int& maxCount) {
+        // Prune: If the current count plus remaining characters can't exceed
+        // maxCount, return
+        if (count + (s.size() - start) <= maxCount) return;
+
+        // Base case: If we reach the end of the string, update maxCount
         if (start == s.size()) {
-            return 0;
+            maxCount = max(maxCount, count);
+            return;
         }
-        int maxSplits = 0;
+
+        // Try every possible substring starting from 'start'
         for (int end = start + 1; end <= s.size(); ++end) {
             string substring = s.substr(start, end - start);
+            // If the substring is unique
             if (seen.find(substring) == seen.end()) {
+                // Add the substring to the seen set
                 seen.insert(substring);
-                maxSplits = max(maxSplits, 1 + backtrack(end, s, seen));
+                // Recursively count unique substrings from the next position
+                backtrack(s, end, seen, count + 1, maxCount);
+                // Backtrack: remove the substring from the seen set
                 seen.erase(substring);
             }
         }
-        return maxSplits;
     }
 };
