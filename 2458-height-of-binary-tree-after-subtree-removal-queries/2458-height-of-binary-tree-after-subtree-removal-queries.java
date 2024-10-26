@@ -1,20 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode() {}
-    TreeNode(int val) { this.val = val; }
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}
-
 class Solution {
     static final int N = 100005;
     int[] height = new int[N];
@@ -38,17 +21,16 @@ class Solution {
         return h;
     }
 
-    public List<Integer> treeQueries(TreeNode root, List<Integer> queries) {
+    public int[] treeQueries(TreeNode root, int[] queries) {
         calculateHeight(root, 0);
-        List<Integer> results = new ArrayList<>();
-        for (int q : queries) {
+        int[] results = new int[queries.length];
+        
+        for (int i = 0; i < queries.length; i++) {
+            int q = queries[i];
             int lvl = level[q];
-            if (height[q] == maxHeight[lvl]) {
-                results.add(secMaxHeight[lvl] + lvl - 1);
-            } else {
-                results.add(maxHeight[lvl] + lvl - 1);
-            }
+            results[i] = (height[q] == maxHeight[lvl] ? secMaxHeight[lvl] : maxHeight[lvl]) + lvl - 1;
         }
+        
         return results;
     }
 }
