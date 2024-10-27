@@ -1,34 +1,30 @@
 class Solution {
 public:
-    int n, m;
-    vector<vector<int>> memo;
-
-    int solve(int i, int j, vector<vector<int>>& matrix) {
-        if (i >= n || j >= m) return 0;    
-        if (matrix[i][j] == 0) return 0;   
-        if (memo[i][j] != -1) return memo[i][j];
-
-        int right = solve(i, j + 1, matrix);
-        int diag = solve(i + 1, j + 1, matrix);
-        int down = solve(i + 1, j, matrix);
-
-
-        return memo[i][j] = 1 + min({right, diag, down});
-    }
-
     int countSquares(vector<vector<int>>& matrix) {
-        n = matrix.size();
-        m = matrix[0].size();
-        memo.assign(n, vector<int>(m, -1));
+        int n = matrix.size();
+        int m = matrix[0].size();
+        
+        // Memo table to store square sizes ending at each cell
+        vector<vector<int>> memo(n, vector<int>(m, 0));
         int res = 0;
-
+        
+        // Iterate over each cell in the matrix
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
+                // If the cell is non-zero, calculate the largest square ending at this cell
                 if (matrix[i][j] == 1) {
-                    res += solve(i, j, matrix);
+                    if (i == 0 || j == 0) {
+                        // Cells in the first row or column can only form 1x1 squares if they are 1
+                        memo[i][j] = 1;
+                    } else {
+                        // Take the minimum of the three neighboring squares plus 1
+                        memo[i][j] = 1 + min({memo[i-1][j], memo[i][j-1], memo[i-1][j-1]});
+                    }
+                    res += memo[i][j];
                 }
             }
         }
+        
         return res;
     }
 };
