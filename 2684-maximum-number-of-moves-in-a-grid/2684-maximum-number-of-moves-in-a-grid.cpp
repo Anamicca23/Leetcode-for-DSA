@@ -1,23 +1,22 @@
 class Solution {
 public:
-//dfs with memoization
-    int n, m;
+//with using dp
     int maxMoves(vector<vector<int>>& grid) {
-        n = grid.size(), m = grid[0].size();
-        vector<vector<int>> mem(n, vector<int>(m, -1));
-        vector<int> direc = {-1, 0, 1};
-        function<int(int, int)> dfs = [&](int row, int col) {
-            if (mem[row][col] != -1) return mem[row][col];
-            int moves = 0;
-            for (int d : direc) {
-                int nr = row + d, nc = col + 1;
-                if (nr >= 0 && nr < n && nc < m && grid[nr][nc] > grid[row][col])
-                    moves = max(moves, 1 + dfs(nr, nc));
+        int m = grid.size(), n = grid[0].size(), res = 0;
+        vector<int> dp(m);
+        for (int j = 1; j < n; ++j) {
+            int leftTop = 0;
+            bool found = false;
+            for (int i = 0; i < m; ++i) {
+                int cur = -1, nxtLeftTop = dp[i];
+                if (i > 0 && leftTop != -1 && grid[i][j] > grid[i - 1][j - 1]) cur = max(cur, leftTop + 1);
+                if (dp[i] != -1 && grid[i][j] > grid[i][j - 1]) cur = max(cur, dp[i] + 1);
+                if (i + 1 < m && dp[i + 1] != -1 && grid[i][j] > grid[i + 1][j - 1]) cur = max(cur, dp[i + 1] + 1);
+                dp[i] = cur, found = found || (dp[i] != -1), leftTop = nxtLeftTop;
             }
-            return mem[row][col] = moves;
-        };
-        int res = 0;
-        for (int i = 0; i < n; i++) res = max(res, dfs(i, 0));
+            if (!found) break;
+            res = j;
+        }
         return res;
     }
 };
