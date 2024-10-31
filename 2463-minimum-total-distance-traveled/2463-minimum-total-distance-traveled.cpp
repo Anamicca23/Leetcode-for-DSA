@@ -1,8 +1,7 @@
 class Solution {
 public:
     long long minimumTotalDistance(vector<int>& robot, vector<vector<int>>& factory) {
-        int n = robot.size();
-        int m = factory.size();
+        int n = robot.size(), m = factory.size();
         vector<long long> dp(n + 1, 10e12);
         dp[0] = 0;
         sort(robot.begin(), robot.end());
