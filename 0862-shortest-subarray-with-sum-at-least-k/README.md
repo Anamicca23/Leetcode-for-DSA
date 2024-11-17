@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/?envType=daily-question&envId=2024-11-17">862. Shortest Subarray with Sum at Least K</a></h2><h3>Hard</h3><hr><p>Given an integer array <code>nums</code> and an integer <code>k</code>, return <em>the length of the shortest non-empty <strong>subarray</strong> of </em><code>nums</code><em> with a sum of at least </em><code>k</code>. If there is no such <strong>subarray</strong>, return <code>-1</code>.</p>
+<h2><a href="https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k">862. Shortest Subarray with Sum at Least K</a></h2><h3>Hard</h3><hr><p>Given an integer array <code>nums</code> and an integer <code>k</code>, return <em>the length of the shortest non-empty <strong>subarray</strong> of </em><code>nums</code><em> with a sum of at least </em><code>k</code>. If there is no such <strong>subarray</strong>, return <code>-1</code>.</p>
 
 <p>A <strong>subarray</strong> is a <strong>contiguous</strong> part of an array.</p>
 
