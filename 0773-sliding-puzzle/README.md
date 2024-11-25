@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/sliding-puzzle/?envType=daily-question&envId=2024-11-25">773. Sliding Puzzle</a></h2><h3>Hard</h3><hr><p>On an <code>2 x 3</code> board, there are five tiles labeled from <code>1</code> to <code>5</code>, and an empty square represented by <code>0</code>. A <strong>move</strong> consists of choosing <code>0</code> and a 4-directionally adjacent number and swapping it.</p>
+<h2><a href="https://leetcode.com/problems/sliding-puzzle">773. Sliding Puzzle</a></h2><h3>Hard</h3><hr><p>On an <code>2 x 3</code> board, there are five tiles labeled from <code>1</code> to <code>5</code>, and an empty square represented by <code>0</code>. A <strong>move</strong> consists of choosing <code>0</code> and a 4-directionally adjacent number and swapping it.</p>
 
 <p>The state of the board is solved if and only if the board is <code>[[1,2,3],[4,5,0]]</code>.</p>
 
