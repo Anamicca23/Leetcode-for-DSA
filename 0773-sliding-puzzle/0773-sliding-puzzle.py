@@ -1,36 +1,46 @@
-from collections import deque
-
-adj = [[1, 3], [0, 2, 4], [1, 5], [0, 4], [1, 3, 5], [2, 4]]
-shift = [15, 12, 9, 6, 3, 0]
-
 class Solution:
-    def slidingPuzzle(self, board):
-        target, start, pos0 = 0o123450, 0, -1
-        for i in range(2):
-            for j in range(3):
-                idx = i * 3 + j
-                start += (board[i][j] << shift[idx])
-                if board[i][j] == 0:
-                    pos0 = idx
+    def slidingPuzzle(self, board: List[List[int]]) -> int:
+        m, n = 2, 3
+        seq = []
+        start, end = '', '123450'
+        for i in range(m):
+            for j in range(n):
+                if board[i][j] != 0:
+                    seq.append(board[i][j])
+                start += str(board[i][j])
 
-        if start == target:
-            return 0
+        def check(seq):
+            n = len(seq)
+            cnt = sum(seq[i] > seq[j] for i in range(n) for j in range(i, n))
+            return cnt % 2 == 0
 
-        N = 0o543211
-        viz = [False] * N
-        q = deque([(start, pos0)])
+        def f(s):
+            ans = 0
+            for i in range(m * n):
+                if s[i] != '0':
+                    num = ord(s[i]) - ord('1')
+                    ans += abs(i // n - num // n) + abs(i % n - num % n)
+            return ans
 
-        for moves in range(N):
-            for _ in range(len(q)):
-                state, p0 = q.popleft()
-                if state == target:
-                    return moves
-                for p in adj[p0]:
-                    s, B = state, shift[p]
-                    x = (s >> B) & 7
-                    s += -(x << B) + (x << shift[p0])
-                    if viz[s]:
-                        continue
-                    q.append((s, p))
-                    viz[s] = True
+        if not check(seq):
+            return -1
+        q = [(f(start), start)]
+        dist = {start: 0}
+        while q:
+            _, state = heappop(q)
+            if state == end:
+                return dist[state]
+            p1 = state.index('0')
+            i, j = p1 // n, p1 % n
+            s = list(state)
+            for a, b in [[0, -1], [0, 1], [1, 0], [-1, 0]]:
+                x, y = i + a, j + b
+                if 0 <= x < m and 0 <= y < n:
+                    p2 = x * n + y
+                    s[p1], s[p2] = s[p2], s[p1]
+                    next = ''.join(s)
+                    s[p1], s[p2] = s[p2], s[p1]
+                    if next not in dist or dist[next] > dist[state] + 1:
+                        dist[next] = dist[state] + 1
+                        heappush(q, (dist[next] + f(next), next))
         return -1
