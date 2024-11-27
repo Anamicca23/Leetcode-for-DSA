@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i">3243. Shortest Distance After Road Addition Queries I</a></h2><h3>Medium</h3><hr><p>You are given an integer <code>n</code> and a 2D integer array <code>queries</code>.</p>
+<h2><a href="https://leetcode.com/problems/shortest-distance-after-road-addition-queries-i/?envType=daily-question&envId=2024-11-27">3243. Shortest Distance After Road Addition Queries I</a></h2><h3>Medium</h3><hr><p>You are given an integer <code>n</code> and a 2D integer array <code>queries</code>.</p>
 
 <p>There are <code>n</code> cities numbered from <code>0</code> to <code>n - 1</code>. Initially, there is a <strong>unidirectional</strong> road from city <code>i</code> to city <code>i + 1</code> for all <code>0 &lt;= i &lt; n - 1</code>.</p>
 
