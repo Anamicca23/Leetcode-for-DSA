@@ -1,42 +1,49 @@
-import java.util.*;
-
 class Solution {
-    public List<int[]> validArrangement(int[][] pairs) {
-        // Graph adjacency list and degree tracker
-        Map<Integer, LinkedList<Integer>> graph = new HashMap<>();
-        Map<Integer, Integer> inOutDeg = new HashMap<>();
+    List<Integer> circuit;
+    public int[][] validArrangement(int[][] pairs) {
+        Map<Integer, List<Integer>> graph=new HashMap();
+        Map<Integer, Integer> node=new HashMap();
 
-        // Build graph and track in/out degrees
-        for (int[] pair : pairs) {
-            int start = pair[0], end = pair[1];
-            graph.computeIfAbsent(start, k -> new LinkedList<>()).add(end);
-            inOutDeg.put(start, inOutDeg.getOrDefault(start, 0) + 1); // Out-degree
-            inOutDeg.put(end, inOutDeg.getOrDefault(end, 0) - 1);    // In-degree
+        for(int[] pair:pairs){
+            if(!graph.containsKey(pair[0])){
+                graph.put(pair[0], new ArrayList());
+            }
+            graph.get(pair[0]).add(pair[1]);    //Preparing graph
+            node.put(pair[0], node.getOrDefault(pair[0],0)-1); //Outgoing
+            node.put(pair[1], node.getOrDefault(pair[1],0)+1); //Incoming
         }
 
-        // Find the start node
-        int startNode = pairs[0][0];
-        for (int node : inOutDeg.keySet()) {
-            if (inOutDeg.get(node) == 1) {
-                startNode = node;
+
+        //selecting the starting node
+        int startNode=pairs[0][0];
+        for(Map.Entry<Integer, Integer> enty:node.entrySet()){
+            if(enty.getValue()==-1){
+                startNode=enty.getKey();
                 break;
             }
         }
 
-        // Hierholzer's algorithm
-        LinkedList<int[]> path = new LinkedList<>();
-        dfs(startNode, graph, path);
-
-        // Convert LinkedList to List and return
-        return path;
-    }
-
-    private void dfs(int curr, Map<Integer, LinkedList<Integer>> graph, LinkedList<int[]> path) {
-        LinkedList<Integer> neighbors = graph.getOrDefault(curr, new LinkedList<>());
-        while (!neighbors.isEmpty()) {
-            int next = neighbors.poll();
-            dfs(next, graph, path);
-            path.addFirst(new int[]{curr, next}); // Add to path in reverse order
+        circuit=new ArrayList();
+        dfs(graph, startNode);
+        Collections.reverse(circuit);
+        
+       
+        int[][] result=new int[pairs.length][2];
+        for(int i=1; i<circuit.size(); i++){
+            result[i-1][0]=circuit.get(i-1);
+            result[i-1][1]=circuit.get(i);
         }
+
+        return result;
     }
+
+    void dfs(Map<Integer, List<Integer>> graph, int u){
+        while(graph.containsKey(u) && !graph.get(u).isEmpty()){
+            int v=graph.get(u).remove(0);
+            dfs(graph, v);
+        }
+        circuit.add(u);
+    }
+
+
 }
