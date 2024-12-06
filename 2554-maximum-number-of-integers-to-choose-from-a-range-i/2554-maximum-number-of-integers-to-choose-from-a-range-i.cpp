@@ -1,19 +1,36 @@
 class Solution {
 public:
-    int maxCount(vector<int>& banned, int n, int maxSum) {
-        unordered_map<int, bool> hash;
-        for (auto num: banned) {
-            hash[num] = 1;
-        }
-        int sum = 0, count = 0, i = 1;
-        while (i <= n) {
-            if (!hash[i]) {
-                if (sum + i > maxSum) return count;
-                sum += i;
-                count ++;
+    static int maxCount(vector<int>& banned, int n, int maxSum) {
+        banned.push_back(n+1);// make code easier
+        sort(banned.begin(), banned.end());
+        const int m=banned.size();
+        int prev=0, remain=maxSum, cnt=0;
+        for(int x: banned){
+            if (x>n+1) break;
+            if (x==prev) continue;
+            int d=x-prev-1;
+            int sum=(prev+x)*d/2;// arithmetic progression
+            if (sum<=remain){
+                cnt+=d;
+                remain-=sum;
             }
-            i++;
+            else{
+                // Use quadratic formula to find largest y such that sum<=remain
+                int y=(-1+sqrt(1+4*((prev+1)*prev+2*remain)))/2.0;
+                cnt+=y-prev;
+                break;
+            }
+            prev=x;
         }
-        return count;
+        return cnt;
     }
 };
+
+
+
+auto init = []() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    return 'c';
+}();
