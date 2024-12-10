@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-i/?envType=daily-question&envId=2024-12-10">2981. Find Longest Special Substring That Occurs Thrice I</a></h2><h3>Medium</h3><hr><p>You are given a string <code>s</code> that consists of lowercase English letters.</p>
+<h2><a href="https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-i">2981. Find Longest Special Substring That Occurs Thrice I</a></h2><h3>Medium</h3><hr><p>You are given a string <code>s</code> that consists of lowercase English letters.</p>
 
 <p>A string is called <strong>special</strong> if it is made up of only a single character. For example, the string <code>&quot;abc&quot;</code> is not special, whereas the strings <code>&quot;ddd&quot;</code>, <code>&quot;zz&quot;</code>, and <code>&quot;f&quot;</code> are special.</p>
 
