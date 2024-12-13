@@ -1,35 +1,33 @@
-import java.util.PriorityQueue;
-import java.util.Comparator;
-
 class Solution {
     public long findScore(int[] nums) {
         int n = nums.length;
-        PriorityQueue<int[]> minHeap = new PriorityQueue<>(Comparator.comparingInt(a -> a[0]));
-        boolean[] visited = new boolean[n];
+        int[][] dp = new int[n][2];
 
         for (int i = 0; i < n; i++) {
-            minHeap.offer(new int[]{nums[i], i});
+            dp[i][0] = nums[i];
+            dp[i][1] = i;
         }
 
-        long score = 0;
+        Arrays.sort(dp, (a, b) -> a[0] - b[0]);
 
-        while (!minHeap.isEmpty()) {
-            int[] temp = minHeap.poll();
-            int elem = temp[0], idx = temp[1];
+        boolean[] marked = new boolean[n];
+        long result = 0;
 
-            if (!visited[idx]) {
-                visited[idx] = true;
-                score += elem;
+        for (int[] arr : dp) {
+            int val = arr[0];
+            int ind = arr[1];
 
-                if (idx - 1 >= 0 && !visited[idx - 1]) {
-                    visited[idx - 1] = true;
-                }
-                if (idx + 1 < n && !visited[idx + 1]) {
-                    visited[idx + 1] = true;
-                }
+            if (!marked[ind]) {
+                result += val;
+
+                marked[ind] = true;
+                if (ind > 0)
+                    marked[ind - 1] = true;
+                if (ind < n - 1) 
+                    marked[ind + 1] = true;
             }
         }
 
-        return score;
+        return result;
     }
 }
