@@ -1,13 +1,11 @@
-import heapq
-
 class Solution:
-    def getFinalState(self, nums: list[int], k: int, multiplier: int) -> list[int]:
-        heap = [(num, i) for i, num in enumerate(nums)]
-        heapq.heapify(heap)  # Convert to min-heap
-
+    def getFinalState(self, nums: List[int], k: int, multiplier: int) -> List[int]:
         for _ in range(k):
-            num, idx = heapq.heappop(heap)  # Pop the smallest element
-            nums[idx] = num * multiplier   # Update the value in nums
-            heapq.heappush(heap, (nums[idx], idx))  # Push the updated pair back into the heap
-
+            minim = 10**10
+            index = 0
+            for i in range(len(nums)):
+                if nums[i] < minim:
+                    minim = nums[i]
+                    index = i
+            nums[index] *= multiplier
         return nums
