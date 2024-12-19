@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/max-chunks-to-make-sorted/?envType=daily-question&envId=2024-12-19">769. Max Chunks To Make Sorted</a></h2><h3>Medium</h3><hr><p>You are given an integer array <code>arr</code> of length <code>n</code> that represents a permutation of the integers in the range <code>[0, n - 1]</code>.</p>
+<h2><a href="https://leetcode.com/problems/max-chunks-to-make-sorted">769. Max Chunks To Make Sorted</a></h2><h3>Medium</h3><hr><p>You are given an integer array <code>arr</code> of length <code>n</code> that represents a permutation of the integers in the range <code>[0, n - 1]</code>.</p>
 
 <p>We split <code>arr</code> into some number of <strong>chunks</strong> (i.e., partitions), and individually sort each chunk. After concatenating them, the result should equal the sorted array.</p>
 
