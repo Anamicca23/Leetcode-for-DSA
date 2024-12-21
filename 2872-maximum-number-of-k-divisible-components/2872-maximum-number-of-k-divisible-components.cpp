@@ -1,48 +1,40 @@
 class Solution {
-public:
-    int ans=0;
-    vector<vector<int>> adj;
-    bitset<30001> visited=0;
-    inline void build_adj(int n, vector<vector<int>>& edges, vector<int>& values)
-    {
-        for(auto& e: edges){
-            int i=e[0], j=e[1];
-            adj[i].push_back(j);
-            adj[j].push_back(i);
+    public int maxKDivisibleComponents(int n, int[][] edges, int[] values, int k) {
+        List<List<Integer>> adj = new ArrayList<>();
+        boolean[] visited = new boolean[n];
+        int[] ans = {0}; // Use array to store result as we need to modify it in DFS.
+
+        // Build adjacency list
+        for (int i = 0; i < n; i++) {
+            adj.add(new ArrayList<>());
         }
-    }
-    inline long long dfs(int i, vector<int>& values, int k){
-        visited[i]=1;
-        long long sum=values[i];
-        for (int j: adj[i]){
-            if (visited[j]) continue;
-            sum+=dfs(j, values, k);
-            sum%=k;
+        for (int[] edge : edges) {
+            adj.get(edge[0]).add(edge[1]);
+            adj.get(edge[1]).add(edge[0]);
         }
-        if (sum%k==0){
-            ans++;
-            return 0;
+
+        // DFS function
+        class DFS {
+            long dfs(int node) {
+                visited[node] = true;
+                long sum = values[node];
+                for (int neighbor : adj.get(node)) {
+                    if (!visited[neighbor]) {
+                        sum += dfs(neighbor);
+                        sum %= k;
+                    }
+                }
+                if (sum % k == 0) {
+                    ans[0]++;
+                    return 0;
+                }
+                return sum;
+            }
         }
-        return sum;
+
+        // Call DFS from root node (0)
+        new DFS().dfs(0);
+
+        return ans[0];
     }
-    
-    int maxKDivisibleComponents(int n, vector<vector<int>>& edges, vector<int>& values, int k) 
-    {
-        adj.resize(n);
-    
-        build_adj(n, edges, values);
-
-        dfs(0, values, k);
-
-        return ans;
-    }
-};
-
-
-
-auto init = []() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-    return 'c';
-}();
+}
