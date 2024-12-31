@@ -1,26 +1,19 @@
-import java.util.*;
-
 class Solution {
-    private int[] dp;
-    
-    public int mincostTickets(int[] days, int[] costs) {
-        int n = days.length;
-        dp = new int[n];
-        Arrays.fill(dp, -1);
-        
-        return calculateMinCost(0, days, costs, n);
+public:
+    vector<int> dp;
+    int mincostTickets(vector<int>& days, vector<int>& costs) {
+        int n = days.size();
+        dp.assign(n, -1);
+        function<int(int)> f = [&](int i) -> int {
+            if (i >= n) return 0;
+            if (dp[i] != -1) return dp[i];
+            int ans = INT_MAX, j = i;
+            for (int d : {1, 7, 30}) {
+                while (j < n && days[j] < days[i] + d) j++;
+                ans = min(ans, f(j) + costs[d == 1 ? 0 : d == 7 ? 1 : 2]);
+            }
+            return dp[i] = ans;
+        };
+        return f(0);
     }
-    
-    private int calculateMinCost(int i, int[] days, int[] costs, int n) {
-        if (i >= n) return 0;
-        if (dp[i] != -1) return dp[i];
-        
-        int ans = Integer.MAX_VALUE, j = i;
-        for (int d : new int[] {1, 7, 30}) {
-            while (j < n && days[j] < days[i] + d) j++;
-            ans = Math.min(ans, calculateMinCost(j, days, costs, n) + 
-                                costs[d == 1 ? 0 : d == 7 ? 1 : 2]);
-        }
-        return dp[i] = ans;
-    }
-}
+};
