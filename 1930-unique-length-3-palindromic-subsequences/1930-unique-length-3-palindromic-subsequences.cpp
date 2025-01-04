@@ -1,18 +1,21 @@
 class Solution {
 public:
-    int countPalindromicSubsequence(string inputString) {
-    
-    int result = 0;
-    int firstIndex[26] = {[0 ... 25] = INT_MAX};
-    int lastIndex[26] = {};
-
-    for (int i = 0; i < inputString.size(); ++i) {
-        firstIndex[inputString[i] - 'a'] = min(firstIndex[inputString[i] - 'a'], i);
-        lastIndex[inputString[i] - 'a'] = i;
+    int countPalindromicSubsequence(string s) {
+        bitset<26> exist;
+        int ans = 0;
+        for(int i = 0; i < 26; i++){
+            int l = s.find('a' + i);
+            if(l != string::npos){
+                int r = s.find_last_of('a' + i);
+                if(r - l < 2) continue;
+                for(int k = l + 1; k < r; k++){
+                    exist.set(s[k] -'a');
+                    if(exist.count() == 26) break;
+                }
+                ans += exist.count();
+                exist.reset();
+            }
+        }
+        return ans;
     }
-    for (int i = 0; i < 26; ++i)
-        if (firstIndex[i] < lastIndex[i])
-            result += unordered_set<char>(begin(inputString) + firstIndex[i] + 1, begin(inputString) + lastIndex[i]).size();
-    return result;
-}
 };
