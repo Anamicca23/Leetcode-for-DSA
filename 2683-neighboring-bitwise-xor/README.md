@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/neighboring-bitwise-xor">2683. Neighboring Bitwise XOR</a></h2><h3>Medium</h3><hr><p>A <strong>0-indexed</strong> array <code>derived</code> with length <code>n</code> is derived by computing the <strong>bitwise XOR</strong>&nbsp;(&oplus;) of adjacent values in a <strong>binary array</strong> <code>original</code> of length <code>n</code>.</p>
+<h2><a href="https://leetcode.com/problems/neighboring-bitwise-xor/?envType=daily-question&envId=2025-01-17">2683. Neighboring Bitwise XOR</a></h2><h3>Medium</h3><hr><p>A <strong>0-indexed</strong> array <code>derived</code> with length <code>n</code> is derived by computing the <strong>bitwise XOR</strong>&nbsp;(&oplus;) of adjacent values in a <strong>binary array</strong> <code>original</code> of length <code>n</code>.</p>
 
 <p>Specifically, for each index <code>i</code> in the range <code>[0, n - 1]</code>:</p>
 
