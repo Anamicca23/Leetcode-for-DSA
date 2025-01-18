@@ -1,35 +1,22 @@
 class Solution {
 public:
-    vector<int> xd = {0, 0, 1, -1};
-    vector<int> yd = {1, -1, 0, 0};
-    int minCost(vector<vector<int>>& grid) {
-        int n = grid.size();
-        int m = grid[0].size();
-        set<tuple<int, int, int>> s;
-        s.insert({0, 0, 0});
-
-        vector<vector<int>> dis(n, vector<int>(m, INT_MAX));
-        dis[0][0] = 0;
-        while (!s.empty()) {
-            auto [cost, x, y] = *(s.begin());
-            s.erase(s.begin());
-            if (x == n - 1 && y == m - 1) {
-                return cost;
-            }
-            int p = grid[x][y];
-            for (int i = 1; i <= 4; i++) {
-                if (x + xd[i - 1] >= 0 && x + xd[i - 1] < n &&
-                    y + yd[i - 1] >= 0 && y + yd[i - 1] < m) {
-                    if (!(p == i) + dis[x][y] <
-                        dis[x + xd[i - 1]][y + yd[i - 1]]) {
-                        dis[x + xd[i - 1]][y + yd[i - 1]] =
-                            !(p == i) + dis[x][y];
-                        s.insert({dis[x + xd[i - 1]][y + yd[i - 1]],
-                                  x + xd[i - 1], y + yd[i - 1]});
-                    }
+    int minCost(vector<vector<int>>& g) {
+        int n = g.size(), m = g[0].size(), d[n][m];
+        memset(d, 0x3f, sizeof(d)); // Set all distances to a large value
+        int dx[] = {0, 0, 1, -1}, dy[] = {1, -1, 0, 0};
+        deque<pair<int, int>> q{{0, 0}};
+        d[0][0] = 0;
+        while (!q.empty()) {
+            auto [x, y] = q.front(); q.pop_front();
+            for (int i = 0; i < 4; ++i) {
+                int nx = x + dx[i], ny = y + dy[i], w = (i + 1 != g[x][y]);
+                if (nx >= 0 && ny >= 0 && nx < n && ny < m && d[nx][ny] > d[x][y] + w) {
+                    d[nx][ny] = d[x][y] + w;
+                    if (w) q.push_back({nx, ny});
+                    else q.push_front({nx, ny});
                 }
             }
         }
-        return 0;
+        return d[n-1][m-1];
     }
 };
