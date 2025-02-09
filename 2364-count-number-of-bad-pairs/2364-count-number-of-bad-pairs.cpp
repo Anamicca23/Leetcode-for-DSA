@@ -7,7 +7,6 @@ public:
         long long notBadPairs=0;
         for(int i=0;i<n;i++)
         {
-         // if any such element exist before i , which has nums[j]-j =nums[i]-i
             if(mp[nums[i]-i]!=0)
             {
                 notBadPairs+=mp[nums[i]-i];
