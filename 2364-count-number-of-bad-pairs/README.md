@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/count-number-of-bad-pairs">2364. Count Number of Bad Pairs</a></h2><h3>Medium</h3><hr><p>You are given a <strong>0-indexed</strong> integer array <code>nums</code>. A pair of indices <code>(i, j)</code> is a <strong>bad pair</strong> if <code>i &lt; j</code> and <code>j - i != nums[j] - nums[i]</code>.</p>
+<h2><a href="https://leetcode.com/problems/count-number-of-bad-pairs/?envType=daily-question&envId=2025-02-09">2364. Count Number of Bad Pairs</a></h2><h3>Medium</h3><hr><p>You are given a <strong>0-indexed</strong> integer array <code>nums</code>. A pair of indices <code>(i, j)</code> is a <strong>bad pair</strong> if <code>i &lt; j</code> and <code>j - i != nums[j] - nums[i]</code>.</p>
 
 <p>Return<em> the total number of <strong>bad pairs</strong> in </em><code>nums</code>.</p>
 
