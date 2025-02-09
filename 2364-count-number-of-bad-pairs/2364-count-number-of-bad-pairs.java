@@ -1,20 +1,16 @@
-import java.util.*;
-
 class Solution {
     public long countBadPairs(int[] nums) {
-        int b = nums.length;
-        long g = 0;
-        HashMap<Integer, Long> map = new HashMap<>();
+        int n = nums.length;
+        long totalBadPairs = (1L * n *(n-1)) /2;
+        long goodPair =0 ;
+         HashMap<Integer,Integer> mp= new HashMap<>();
+        for (int i =0 ; i  < n ; i++){
+           int prev = mp.getOrDefault(i-nums[i],0);
 
-        for (int i = 0; i < b; i++) {
-            nums[i] = i - nums[i];
-            map.put(nums[i], map.getOrDefault(nums[i], 0L) + 1);
+            goodPair+= prev;
+            mp.put(i-nums[i],prev+1);
         }
 
-        for (long v : map.values()) {
-            g += (v * (v - 1)) / 2;
-        }
-
-        return (long) b * (b - 1) / 2 - g;
+        return totalBadPairs - goodPair;
     }
 }
