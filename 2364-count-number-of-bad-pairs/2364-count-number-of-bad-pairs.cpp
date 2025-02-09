@@ -1,19 +1,15 @@
 class Solution {
 public:
-    long long countBadPairs(vector<int>& nums) {
-        long long n=nums.size();
-        long long totalPairs=(n*(n-1))/2;
-        unordered_map<int ,int>mp;
-        long long notBadPairs=0;
-        for(int i=0;i<n;i++)
-        {
-            if(mp[nums[i]-i]!=0)
-            {
-                notBadPairs+=mp[nums[i]-i];
-            }
-            mp[nums[i]-i]+=1;
+    long long countBadPairs(vector<int>& nums){
+        long long int b=nums.size(),g=0,k=0;
+        for(int i=0;i<b;i++){
+            nums[i]=i-nums[i];
         }
-
-        return totalPairs-notBadPairs;
+        sort(nums.begin(),nums.end());
+        for(int i=0;i<b-1;i++){
+            if(nums[i]==nums[i+1]){k++;}
+            else{g=g+(k*(k+1))/2;k=0;}
+        }
+        return (b*(b-1))/2-g-(k*(k+1))/2;
     }
 };
