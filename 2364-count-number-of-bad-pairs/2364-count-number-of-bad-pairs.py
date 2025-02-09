@@ -1,12 +1,20 @@
-from collections import Counter
-
-class Solution:
+class Solution(object):
     def countBadPairs(self, nums):
-        b = len(nums)
-        for i in range(b):
-            nums[i] = i - nums[i]
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        n = len(nums)
+        total = (n*(n-1))//2
+        good = 0
+        freq = {}
 
-        freq = Counter(nums)
-        g = sum((v * (v - 1)) // 2 for v in freq.values())
-
-        return (b * (b - 1)) // 2 - g
+        for i , num in enumerate(nums):
+            diff = num - i 
+            if diff in freq:
+                good += freq[diff]
+                freq[diff] += 1
+            else:
+                freq[diff] = 1
+        return total-good
+        
