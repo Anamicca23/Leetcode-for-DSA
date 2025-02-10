@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/clear-digits/?envType=daily-question&envId=2025-02-10">3174. Clear Digits</a></h2><h3>Easy</h3><hr><p>You are given a string <code>s</code>.</p>
+<h2><a href="https://leetcode.com/problems/clear-digits">3174. Clear Digits</a></h2><h3>Easy</h3><hr><p>You are given a string <code>s</code>.</p>
 
 <p>Your task is to remove <strong>all</strong> digits by doing this operation repeatedly:</p>
 
