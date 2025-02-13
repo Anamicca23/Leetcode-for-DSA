@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-ii/?envType=daily-question&envId=2025-02-13">3066. Minimum Operations to Exceed Threshold Value II</a></h2><h3>Medium</h3><hr><p>You are given a <strong>0-indexed</strong> integer array <code>nums</code>, and an integer <code>k</code>.</p>
+<h2><a href="https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-ii">3066. Minimum Operations to Exceed Threshold Value II</a></h2><h3>Medium</h3><hr><p>You are given a <strong>0-indexed</strong> integer array <code>nums</code>, and an integer <code>k</code>.</p>
 
 <p>In one operation, you will:</p>
 
