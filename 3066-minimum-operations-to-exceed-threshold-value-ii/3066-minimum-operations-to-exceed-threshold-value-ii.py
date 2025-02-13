@@ -1,13 +1,17 @@
-import heapq
-
-class Solution:
+from sortedcontainers import *
+class Solution(object):
     def minOperations(self, nums, k):
-        heapq.heapify(nums)
-        cnt = 0
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        nums = SortedList(nums)
+        a = 0
         while nums[0] < k:
-            first = heapq.heappop(nums)
-            second = heapq.heappop(nums)
-            num = 2 * min(first, second) + max(first, second)
-            heapq.heappush(nums, num)
-            cnt += 1
-        return cnt
+            b = nums.pop(0)
+            c = nums.pop(0)
+            d = min(b, c) * 2 + max(b, c)
+            nums.add(d)
+            a += 1
+        return a
