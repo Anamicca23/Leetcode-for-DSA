@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/construct-the-lexicographically-largest-valid-sequence/?envType=daily-question&envId=2025-02-16">1718. Construct the Lexicographically Largest Valid Sequence</a></h2><h3>Medium</h3><hr><p>Given an integer <code>n</code>, find a sequence that satisfies all of the following:</p>
+<h2><a href="https://leetcode.com/problems/construct-the-lexicographically-largest-valid-sequence">1718. Construct the Lexicographically Largest Valid Sequence</a></h2><h3>Medium</h3><hr><p>Given an integer <code>n</code>, find a sequence that satisfies all of the following:</p>
 
 <ul>
 	<li>The integer <code>1</code> occurs once in the sequence.</li>
