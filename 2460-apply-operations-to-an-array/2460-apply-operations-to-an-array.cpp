@@ -1,30 +1,17 @@
 class Solution {
 public:
     vector<int> applyOperations(vector<int>& nums) {
-        int n = nums.size();
-        
-        // Apply operations
-        for (int i = 0; i < n - 1; i++) {
-            if (nums[i] == nums[i + 1]) {
-                nums[i] *= 2;
-                nums[i + 1] = 0;
+        for(int i = 0; i+1 < nums.size(); ++i){
+            if(nums[i] == nums[i+1]){  
+                nums[i] = 2*nums[i]; 
+                nums[i+1] = 0;
             }
         }
-        
-        // Shift zeros to the end (in-place)
-        int nonZeroIdx = 0;
-        
-        // Move all non-zero elements to the front
-        for (int i = 0; i < n; i++) {
-            if (nums[i] != 0) {
-                nums[nonZeroIdx++] = nums[i];
-            }
+        int i = 0;
+        for(auto n: nums){  
+            if(n != 0) nums[i++] = n;
         }
-        
-        // Fill the remaining positions with zeros
-        while (nonZeroIdx < n) {
-            nums[nonZeroIdx++] = 0;
-        }
+        while(i < nums.size()) nums[i++] = 0;    
         
         return nums;
     }
