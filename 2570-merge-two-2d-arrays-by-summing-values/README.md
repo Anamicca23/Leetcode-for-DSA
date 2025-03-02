@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/?envType=daily-question&envId=2025-03-02">2570. Merge Two 2D Arrays by Summing Values</a></h2><h3>Easy</h3><hr><p>You are given two <strong>2D</strong> integer arrays <code>nums1</code> and <code>nums2.</code></p>
+<h2><a href="https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values">2570. Merge Two 2D Arrays by Summing Values</a></h2><h3>Easy</h3><hr><p>You are given two <strong>2D</strong> integer arrays <code>nums1</code> and <code>nums2.</code></p>
 
 <ul>
 	<li><code>nums1[i] = [id<sub>i</sub>, val<sub>i</sub>]</code>&nbsp;indicate that the number with the id <code>id<sub>i</sub></code> has a value equal to <code>val<sub>i</sub></code>.</li>
