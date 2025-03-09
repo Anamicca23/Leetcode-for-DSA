@@ -1,24 +1,21 @@
 class Solution {
 public:
-    int numberOfAlternatingGroups(vector<int>& nums, int len) {
-        nums.insert(nums.end(), nums.begin(),nums.begin() + len - 1 );
-        int countGroups = 0;
-        int n = nums.size();
-        int currentLength = 1;
-        for (int i = 1; i < n; i++) {
-        
-            if (nums[i] != nums[i - 1]) {
-                currentLength++;
-            } else {
-                currentLength = 1;
-            }
-            
-           
-            if (currentLength >= len) {
-                countGroups++;
-            }
+    static int numberOfAlternatingGroups(vector<int>& colors, int k) {
+        const int n=colors.size(), sz=n+k-1;
+        int ans=0, alt=1, prev=colors[0];
+        for(int i=1; i<sz; i++){
+            alt=(prev==colors[i%n])?1:alt+1;
+            if (alt>=k) ans++;
+            prev=colors[i%n];
         }
-        
-        return countGroups;
+        return  ans;
     }
 };
+
+
+auto init = []() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    return 'c';
+}();
