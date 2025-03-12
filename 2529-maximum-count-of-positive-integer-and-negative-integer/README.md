@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/?envType=daily-question&envId=2025-03-12">2529. Maximum Count of Positive Integer and Negative Integer</a></h2><h3>Easy</h3><hr><p>Given an array <code>nums</code> sorted in <strong>non-decreasing</strong> order, return <em>the maximum between the number of positive integers and the number of negative integers.</em></p>
+<h2><a href="https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer">2529. Maximum Count of Positive Integer and Negative Integer</a></h2><h3>Easy</h3><hr><p>Given an array <code>nums</code> sorted in <strong>non-decreasing</strong> order, return <em>the maximum between the number of positive integers and the number of negative integers.</em></p>
 
 <ul>
 	<li>In other words, if the number of positive integers in <code>nums</code> is <code>pos</code> and the number of negative integers is <code>neg</code>, then return the maximum of <code>pos</code> and <code>neg</code>.</li>
