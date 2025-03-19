@@ -29,7 +29,7 @@ leetcode
 | 2367    | [Number of Arithmetic Triplets](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2367-number-of-arithmetic-triplets) | Array, Hash Table, Two Pointers   | Easy             | 20  |
 | 2441    | [Largest Positive Integer That Exists With Its Negative](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2441-largest-positive-integer-that-exists-with-its-negative) | Array, Hash Table, Two Pointers   | Easy             | 21  |
 | 2465    | [Number of Distinct Averages](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2465-number-of-distinct-averages) | Array, Hash Table, Two Pointers   | Easy             | 22  |
-| 2511    | Maximum Enemy Forts That Can Be Captured                        | Array, Two Pointers               | Easy             | 23  |
+| 2511    | [Maximum Enemy Forts That Can Be Captured](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2511-maximum-enemy-forts-that-can-be-captured)                        | Array, Two Pointers               | Easy             | 23  |
 | 2540    | Minimum Common Value                                           | Array, Hash Table, Two Pointers   | Easy             | 24  |
 | 2562    | Find the Array Concatenation Value                             | Array, Two Pointers, Simulation   | Easy             | 25  |
 | 2570    | Merge Two 2D Arrays by Summing Values                          | Array, Hash Table, Two Pointers   | Easy             | 26  |
