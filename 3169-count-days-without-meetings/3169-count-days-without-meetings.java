@@ -1,29 +1,29 @@
 class Solution {
-    public int[][] merge(int[][] A) {
-        if(A.length <= 1) return A;
+    TreeMap<Integer, Integer> intervalTree = new TreeMap<>();
+    int totalCoveredLength = 0;
 
-        Arrays.sort(A, (i1, i2) -> Integer.compare(i1[0], i2[0]));
+    public int countDays(int days, int[][] meetings) {
+        for (int i = 0; i < meetings.length; i++) {
+            var from = meetings[i][0];
+            var to = meetings[i][1];
+            Map.Entry<Integer, Integer> entry = intervalTree.floorEntry(to);
+            while (entry != null && entry.getValue() >= from) {
+                int existingLeft = entry.getKey();
+                int existingRight = entry.getValue();
+                totalCoveredLength -= existingRight - existingLeft + 1;
+                from = Math.min(existingLeft, from);
+                to = Math.max(existingRight, to);
+                // Remove existing one
+                intervalTree.remove(existingLeft);
+                // Initialize entry to next one lesser than newly created entry
+                entry = intervalTree.floorEntry(to);
+            }
+            // At the end insert merged interval and update total count
+            intervalTree.put(from, to);
+            totalCoveredLength += to - from + 1;
+        }
 
-        List<int[]> res = new ArrayList<>();
-        int[] Prev = A[0];
-        res.add(Prev);
-        for(int[] Curr : A){
-            if(Curr[0] <= Prev[1]){
-                Prev[1] = Math.max(Prev[1], Curr[1]);
-            }
-            else {                             
-                res.add(Curr);
-                Prev = Curr;
-            }
-        }
-        return res.toArray(new int [res.size()][]);
+        return days - totalCoveredLength;
     }
-    
-    public int countDays(int days, int[][] A) {
-        int[][] newA = merge(A);
-        for(int[] interval : newA) {
-            days -= (interval[1] - interval[0] + 1);
-        }
-        return days;
-    }
+
 }
