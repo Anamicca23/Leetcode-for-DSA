@@ -1,41 +1,23 @@
 class Solution {
 public:
-    void out(vector <int> v){
-        for(int i = 0; i < v.size(); i++){
-            cout << v[i] << " ";
-        }
-        cout << endl;
-    }
     vector<int> largestDivisibleSubset(vector<int>& nums) {
-        vector <int> ret;
-        int endPoint = 0;
-        int retLen = 1;
-        int n = nums.size();
-        if(!n) return {};
         sort(nums.begin(), nums.end());
-        vector <int> len(n, 1);
-        vector <int> par(n, 0);
-        for(int i = 1; i < n; i++){
-            par[i] = i;
-            for(int j = 0; j < i; j++){
-                if(nums[i] % nums[j] == 0 && len[j] + 1 > len[i]){
-                    len[i]  = len[j] + 1;
-                    par[i] = j;
-                }
-            }
-            if(len[i] > retLen){
-                retLen = len[i];
-                endPoint = i;
-            }
-        }
-        //cout << endPoint << endl;
-        ret.push_back(nums[endPoint]);
-        //out(par);
-        while(endPoint != par[endPoint]){
-            endPoint = par[endPoint];
-            ret.push_back(nums[endPoint]);
-        }
-        reverse(ret.begin(), ret.end());
-        return ret;
+        int n = nums.size(), maxLen = 0, last = 0;
+        vector<int> dp(n, 1), par(n);
+        iota(par.begin(), par.end(), 0);
+        
+        for (int i = 0; i < n; ++i)
+            for (int j = 0; j < i; ++j)
+                if (nums[i] % nums[j] == 0 && dp[i] < dp[j] + 1)
+                    dp[i] = dp[j] + 1, par[i] = j;
+
+        for (int i = 0; i < n; ++i)
+            if (dp[i] > maxLen) maxLen = dp[i], last = i;
+
+        vector<int> res;
+        while (par[last] != last) res.push_back(nums[last]), last = par[last];
+        res.push_back(nums[last]);
+        reverse(res.begin(), res.end());
+        return res;
     }
 };
