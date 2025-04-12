@@ -1,43 +1,23 @@
-class Solution(object):
-    def __init__(self):
-        self.res = 0
-        self.visited = set()
+class Solution:
+    def countGoodIntegers(self, n: int, k: int) -> int:
+        if n == 1:
+            return sum(num % k == 0 for num in range(1, 10))
 
-    def vectorToNumber(self, digits):
-        return int(''.join(map(str, digits)))
+        part_pals = [str(num) for num in range(10**((n//2) - 1), 10**(n//2))]
+        k_pals = []
+        if n % 2 == 0:
+            k_pals = [num + num[::-1] for num in part_pals]
+        else:
+            for mid in range(10):
+                k_pals.extend([num + str(mid) + num[::-1] for num in part_pals])
 
-    def totalPermutations(self, freqMap, total):
-        res = factorial(total)
-        for count in freqMap.values():
-            res //= factorial(count)
-        return res
+        k_pals = [p for p in k_pals if int(p) % k == 0]
+        perms = set(''.join(sorted(pal)) for pal in k_pals)
 
-    def permsWithZero(self, freqMap, total):
-        if freqMap.get(0, 0) == 0:
-            return 0
-        freqMap[0] -= 1
-        res = factorial(total - 1)
-        for count in freqMap.values():
-            res //= factorial(count)
-        return res
-
-    def genPal(self, palin, left, right, divisor, total):
-        if left > right:
-            palinVal = self.vectorToNumber(palin)
-            if palinVal % divisor == 0:
-                freq = Counter(palin)
-                key = tuple(sorted(freq.items()))
-                if key not in self.visited:
-                    self.res += self.totalPermutations(freq, total) - self.permsWithZero(freq.copy(), total)
-                    self.visited.add(key)
-            return
-
-        for dig in range(1 if left == 0 else 0, 10):
-            palin[left] = palin[right] = dig
-            self.genPal(palin, left + 1, right - 1, divisor, total)
-
-    def countGoodIntegers(self, n, k):
-        self.res = 0
-        self.visited.clear()
-        self.genPal([0] * n, 0, n - 1, k, n)
-        return self.res
+        cnt = 0
+        for p in perms:
+            freqs = Counter(p)
+            cnt += ((n - freqs.get('0', 0)) * factorial(n - 1))//prod(map(factorial, freqs.values()))
+        
+        return cnt
+   
