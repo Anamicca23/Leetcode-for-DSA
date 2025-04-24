@@ -1,22 +1,22 @@
 class Solution {
 public:
-    int countCompleteSubarrays(vector<int>& A) {
-        vector<int> C(2050, 0);
-        int n = A.size();
-        for(auto c : A) C[c] = 1;
-        int dis = 0;
-        for(auto c : C) dis += c;
-        for(auto c : A) C[c] = 0;
-        int ans = 0;
-        for(int i = 0; i < n; i++) {
-            int curr = 0;
-            for(int j = i; j < n; j++) {
-                curr += C[A[j]] == 0;
-                C[A[j]] = 1;
-                ans += curr == dis;
+    int countCompleteSubarrays(vector<int>& nums) {
+        int n = nums.size(), l = 0, r = 0, res = 0;
+        bitset<2001> total, curr;
+        vector<int> freq(2001);
+
+        for (int x : nums) total.set(x);
+
+        while (r < n) {
+            curr.set(nums[r]);
+            freq[nums[r]]++;
+            while (curr == total) {
+                res += n - r;
+                if (--freq[nums[l]] == 0) curr.reset(nums[l]);
+                l++;
             }
-            for(int j = i; j < n; j++) C[A[j]] = 0;
+            r++;
         }
-        return ans;
+        return res;
     }
 };
