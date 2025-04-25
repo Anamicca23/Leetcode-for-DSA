@@ -7,14 +7,11 @@ public:
 
         for (int i : nums) {
             if (i % modulo == k) equals++;
-
             int rem = equals % modulo;
             int needed = (rem - k + modulo) % modulo;
-
             count += mpp[needed];
             mpp[rem]++;
         }
-
         return count;
     }
 };
