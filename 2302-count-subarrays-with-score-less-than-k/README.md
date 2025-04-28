@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/count-subarrays-with-score-less-than-k/">2302. Count Subarrays With Score Less Than K</a></h2><h3>Hard</h3><hr><p>The <strong>score</strong> of an array is defined as the <strong>product</strong> of its sum and its length.</p>
+<h2><a href="https://leetcode.com/problems/count-subarrays-with-score-less-than-k">2302. Count Subarrays With Score Less Than K</a></h2><h3>Hard</h3><hr><p>The <strong>score</strong> of an array is defined as the <strong>product</strong> of its sum and its length.</p>
 
 <ul>
 	<li>For example, the score of <code>[1, 2, 3, 4, 5]</code> is <code>(1 + 2 + 3 + 4 + 5) * 5 = 75</code>.</li>
