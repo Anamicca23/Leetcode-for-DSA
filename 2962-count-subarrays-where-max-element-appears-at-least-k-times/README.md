@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times/description/?envType=daily-question&envId=2025-04-29">2962. Count Subarrays Where Max Element Appears at Least K Times</a></h2><h3>Medium</h3><hr><p>You are given an integer array <code>nums</code> and a <strong>positive</strong> integer <code>k</code>.</p>
+<h2><a href="https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times">2962. Count Subarrays Where Max Element Appears at Least K Times</a></h2><h3>Medium</h3><hr><p>You are given an integer array <code>nums</code> and a <strong>positive</strong> integer <code>k</code>.</p>
 
 <p>Return <em>the number of subarrays where the <strong>maximum</strong> element of </em><code>nums</code><em> appears <strong>at least</strong> </em><code>k</code><em> times in that subarray.</em></p>
 
