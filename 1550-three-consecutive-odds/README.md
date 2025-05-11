@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/three-consecutive-odds/?envType=daily-question&envId=2025-05-11">1550. Three Consecutive Odds</a></h2><h3>Easy</h3><hr>Given an integer array <code>arr</code>, return <code>true</code>&nbsp;if there are three consecutive odd numbers in the array. Otherwise, return&nbsp;<code>false</code>.
+<h2><a href="https://leetcode.com/problems/three-consecutive-odds">1550. Three Consecutive Odds</a></h2><h3>Easy</h3><hr>Given an integer array <code>arr</code>, return <code>true</code>&nbsp;if there are three consecutive odd numbers in the array. Otherwise, return&nbsp;<code>false</code>.
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
