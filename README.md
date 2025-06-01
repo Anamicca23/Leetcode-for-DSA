@@ -3,152 +3,163 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 
 leetcode 
 
-1. Array- Easy level (Two Pointer)
+### 📚 Easy Level – Two Pointers (Array)
 
-| Sr. No. | Problem                                                        | Topic                             | Difficulty Level | No. |
-|---------|----------------------------------------------------------------|-----------------------------------|------------------|-----|
-| 26      | [Remove duplicates from sorted array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0026-remove-duplicates-from-sorted-array) | Array, Two Pointers               | Easy             | 1   |
-| 28      | [Remove Element](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0027-remove-element) | Array, Two Pointers               | Easy             | 2   |
-| 88      | [Merge Sorted Array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0088-merge-sorted-array) | Array, Two Pointers, Sorting      | Easy             | 3   |
-| 170     | Two Sum III - Data structure design                             | Array, Hash Table, Two Pointers   | Easy             | 4   |
-| 283     | [Move Zeroes](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0283-move-zeroes) | Array, Two Pointers               | Easy             | 5   |
-| 349     | [Intersection of Two Arrays](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0349-intersection-of-two-arrays) | Array, Hash Table, Two Pointers   | Easy             | 6   |
-| 350     | [Intersection of Two Arrays II](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0350-intersection-of-two-arrays-ii) | Array, Hash Table, Two Pointers   | Easy             | 7   |
-| 455     | [Assign Cookies](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0455-assign-cookies) | Array, Two Pointers, Greedy       | Easy             | 8   |
-| 821     | [Shortest Distance to a Character](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0821-shortest-distance-to-a-character) | Array, Two Pointers, String       | Easy             | 9   |
-| 832     | [Flipping an Image](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0832-flipping-an-image) | Array, Two Pointers, Matrix       | Easy             | 10  |
-| 905     | [Sort Array By Parity](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0905-sort-array-by-parity) | Array, Two Pointers, Sorting      | Easy             | 11  |
-| 922     | [Sort Array By Parity II](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0922-sort-array-by-parity-ii) | Array, Two Pointers, Sorting      | Easy             | 12  |
-| 942     | [DI String Match](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0979-di-string-match) | Array, Two Pointers, String       | Easy             | 13  |
-| 977     | [Squares of a Sorted Array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1019-squares-of-a-sorted-array) | Array, Two Pointers, Sorting      | Easy             | 14  |
-| 1089    | [Duplicate Zeros](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1168-duplicate-zeros) | Array, Two Pointers               | Easy             | 15  |
-| 1346    | [Check If N and Its Double Exist](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1468-check-if-n-and-its-double-exist) | Array, Hash Table, Two Pointers   | Easy             | 16  |
-| 1385    | [Find the Distance Value Between Two Arrays](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1486-find-the-distance-value-between-two-arrays) | Array, Two Pointers, Binary Search| Easy             | 17  |
-| 1826    | Faulty Sensor                                                  | Array, Two Pointers               | Easy             | 18  |
-| 2108    | [Find First Palindromic String in the Array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2231-find-first-palindromic-string-in-the-array) | Array, Two Pointers, String       | Easy             | 19  |
-| 2367    | [Number of Arithmetic Triplets](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2367-number-of-arithmetic-triplets) | Array, Hash Table, Two Pointers   | Easy             | 20  |
-| 2441    | [Largest Positive Integer That Exists With Its Negative](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2441-largest-positive-integer-that-exists-with-its-negative) | Array, Hash Table, Two Pointers   | Easy             | 21  |
-| 2465    | [Number of Distinct Averages](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2465-number-of-distinct-averages) | Array, Hash Table, Two Pointers   | Easy             | 22  |
-| 2511    | [Maximum Enemy Forts That Can Be Captured](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2511-maximum-enemy-forts-that-can-be-captured)                        | Array, Two Pointers               | Easy             | 23  |
-| 2540    | Minimum Common Value                                           | Array, Hash Table, Two Pointers   | Easy             | 24  |
-| 2562    | Find the Array Concatenation Value                             | Array, Two Pointers, Simulation   | Easy             | 25  |
-| 2570    | Merge Two 2D Arrays by Summing Values                          | Array, Hash Table, Two Pointers   | Easy             | 26  |
-
-(Sliding Window)
+| #  | No.  | Title                                                                                                                                                                            | Link                                                                                                                                                                                   | Tags                               | Level |
+| -- | ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | ----- |
+| 1  | 26   | [Remove Duplicates from Sorted Array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0026-remove-duplicates-from-sorted-array)                                       | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)                    | Array, Two Pointers                | Easy  |
+| 2  | 27   | [Remove Element](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0027-remove-element)                                                                                 | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/remove-element/description/)                                         | Array, Two Pointers                | Easy  |
+| 3  | 88   | [Merge Sorted Array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0088-merge-sorted-array)                                                                         | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/merge-sorted-array/description/)                                     | Array, Two Pointers, Sorting       | Easy  |
+| 4  | 170  | Two Sum III - Data Structure Design                                                                                                                                              | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/two-sum-iii-data-structure-design/description/)                      | Array, Hash Table, Two Pointers    | Easy  |
+| 5  | 283  | [Move Zeroes](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0283-move-zeroes)                                                                                       | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/move-zeroes/description/)                                            | Array, Two Pointers                | Easy  |
+| 6  | 349  | [Intersection of Two Arrays](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0349-intersection-of-two-arrays)                                                         | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/intersection-of-two-arrays/description/)                             | Array, Hash Table, Two Pointers    | Easy  |
+| 7  | 350  | [Intersection of Two Arrays II](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0350-intersection-of-two-arrays-ii)                                                   | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/intersection-of-two-arrays-ii/description/)                          | Array, Hash Table, Two Pointers    | Easy  |
+| 8  | 455  | [Assign Cookies](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0455-assign-cookies)                                                                                 | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/assign-cookies/description/)                                         | Array, Two Pointers, Greedy        | Easy  |
+| 9  | 821  | [Shortest Distance to a Character](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0821-shortest-distance-to-a-character)                                             | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/shortest-distance-to-a-character/description/)                       | Array, Two Pointers, String        | Easy  |
+| 10 | 832  | [Flipping an Image](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0832-flipping-an-image)                                                                           | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/flipping-an-image/description/)                                      | Array, Two Pointers, Matrix        | Easy  |
+| 11 | 905  | [Sort Array By Parity](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0905-sort-array-by-parity)                                                                     | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/sort-array-by-parity/description/)                                   | Array, Two Pointers, Sorting       | Easy  |
+| 12 | 922  | [Sort Array By Parity II](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0922-sort-array-by-parity-ii)                                                               | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/sort-array-by-parity-ii/description/)                                | Array, Two Pointers, Sorting       | Easy  |
+| 13 | 942  | [DI String Match](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0979-di-string-match)                                                                               | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/di-string-match/description/)                                        | Array, Two Pointers, String        | Easy  |
+| 14 | 977  | [Squares of a Sorted Array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1019-squares-of-a-sorted-array)                                                           | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/squares-of-a-sorted-array/description/)                              | Array, Two Pointers, Sorting       | Easy  |
+| 15 | 1089 | [Duplicate Zeros](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1168-duplicate-zeros)                                                                               | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/duplicate-zeros/description/)                                        | Array, Two Pointers                | Easy  |
+| 16 | 1346 | [Check If N and Its Double Exist](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1468-check-if-n-and-its-double-exist)                                               | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/check-if-n-and-its-double-exist/description/)                        | Array, Hash Table, Two Pointers    | Easy  |
+| 17 | 1385 | [Find the Distance Value Between Two Arrays](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1486-find-the-distance-value-between-two-arrays)                         | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/find-the-distance-value-between-two-arrays/description/)             | Array, Two Pointers, Binary Search | Easy  |
+| 18 | 1826 | Faulty Sensor                                                                                                                                                                    | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/faulty-sensor/description/)                                          | Array, Two Pointers                | Easy  |
+| 19 | 2108 | [Find First Palindromic String in the Array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2231-find-first-palindromic-string-in-the-array)                         | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/find-first-palindromic-string-in-the-array/description/)             | Array, Two Pointers, String        | Easy  |
+| 20 | 2367 | [Number of Arithmetic Triplets](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2367-number-of-arithmetic-triplets)                                                   | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/number-of-arithmetic-triplets/description/)                          | Array, Hash Table, Two Pointers    | Easy  |
+| 21 | 2441 | [Largest Positive Integer That Exists With Its Negative](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2441-largest-positive-integer-that-exists-with-its-negative) | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/description/) | Array, Hash Table, Two Pointers    | Easy  |
+| 22 | 2465 | [Number of Distinct Averages](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2465-number-of-distinct-averages)                                                       | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/number-of-distinct-averages/description/)                            | Array, Hash Table, Two Pointers    | Easy  |
+| 23 | 2511 | [Maximum Enemy Forts That Can Be Captured](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2511-maximum-enemy-forts-that-can-be-captured)                             | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/maximum-enemy-forts-that-can-be-captured/description/)               | Array, Two Pointers                | Easy  |
+| 24 | 2540 | Minimum Common Value                                                                                                                                                             | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/minimum-common-value/description/)                                   | Array, Hash Table, Two Pointers    | Easy  |
+| 25 | 2562 | Find the Array Concatenation Value                                                                                                                                               | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/find-the-array-concatenation-value/description/)                     | Array, Two Pointers, Simulation    | Easy  |
+| 26 | 2570 | Merge Two 2D Arrays by Summing Values                                                                                                                                            | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/description/)                  | Array, Hash Table, Two Pointers    | Easy  |
 
 
-219. Contains Duplicate II-Array,Hash Table,Sliding Window
-643. Maximum Average Subarray I-Array,Sliding Window
-1176. Diet Plan Performance-Array,Sliding Window
-1984. Minimum Difference Between Highest and Lowest of K Scores-Array,Sliding Window,Sorting
+### 📚 Easy Level – Sliding Window (Array)
+
+| # | No.  | Title                                                                                                                                                                                                                          | Link                                                                                                                                                                                                          | Tags                                       | Level |
+| - | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | ----- |
+| 1 | 1004 | [Max Consecutive Ones III](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1004-max-consecutive-ones-iii)                                                                                                           | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/max-consecutive-ones-iii/description/)                                                      | Array, Sliding Window, Two Pointers        | Easy  |
+| 2 | 1343 | [Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/description/) | Array, Sliding Window                      | Easy  |
+| 3 | 1456 | [Maximum Number of Vowels in a Substring of Given Length](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1456-maximum-number-of-vowels-in-a-substring-of-given-length)                                             | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/description/)                       | String, Sliding Window                     | Easy  |
+| 4 | 1493 | [Longest Subarray of 1's After Deleting One Element](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1493-longest-subarray-of-1s-after-deleting-one-element)                                                        | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/description/)                             | Array, Sliding Window, Dynamic Programming | Easy  |
+| 5 | 1652 | [Defuse the Bomb](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1652-defuse-the-bomb)                                                                                                                             | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/defuse-the-bomb/description/)                                                               | Array, Sliding Window                      | Easy  |
+| 6 | 1695 | [Maximum Erasure Value](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1695-maximum-erasure-value)                                                                                                                 | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/maximum-erasure-value/description/)                                                         | Array, Sliding Window, Hash Table          | Easy  |
+| 7 | 1984 | [Minimum Difference Between Highest and Lowest of K Scores](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1984-minimum-difference-between-highest-and-lowest-of-k-scores)                                         | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/description/)                     | Array, Sliding Window, Sorting             | Easy  |
+| 8 | 2024 | [Maximize the Confusion of an Exam](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2024-maximize-the-confusion-of-an-exam)                                                                                         | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/description/)                                             | String, Sliding Window, Binary Search      | Easy  |
+| 9 | 2270 | [Number of Ways to Split Array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2270-number-of-ways-to-split-array)                                                                                                 | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/number-of-ways-to-split-array/description/)                                                 | Array, Sliding Window, Prefix Sum          | Easy  |
 
 
+### 📘 Array – Medium Level
 
-2.Array- Medium Level
+| #  | No.  | Title                                                | Tags                               | Level  |
+| -- | ---- | ---------------------------------------------------- | ---------------------------------- | ------ |
+| 1  | 11   | Container With Most Water                            | Array, Two Pointers, Greedy        | Medium |
+| 2  | 15   | 3Sum                                                 | Array, Two Pointers, Sorting       | Medium |
+| 3  | 16   | 3Sum Closest                                         | Array, Two Pointers, Sorting       | Medium |
+| 4  | 18   | 4Sum                                                 | Array, Two Pointers, Sorting       | Medium |
+| 5  | 31   | Next Permutation                                     | Array, Two Pointers                | Medium |
+| 6  | 75   | Sort Colors                                          | Array, Two Pointers, Sorting       | Medium |
+| 7  | 80   | Remove Duplicates from Sorted Array II               | Array, Two Pointers                | Medium |
+| 8  | 167  | Two Sum II - Input Array Is Sorted                   | Array, Two Pointers, Binary Search | Medium |
+| 9  | 189  | Rotate Array                                         | Array, Math, Two Pointers          | Medium |
+| 10 | 244  | Shortest Word Distance II                            | Array, Hash Table, Two Pointers    | Medium |
+| 11 | 251  | Flatten 2D Vector                                    | Array, Two Pointers, Design        | Medium |
+| 12 | 253  | Meeting Rooms II                                     | Array, Two Pointers, Greedy        | Medium |
+| 13 | 259  | 3Sum Smaller                                         | Array, Two Pointers, Binary Search | Medium |
+| 14 | 287  | Find the Duplicate Number                            | Array, Two Pointers, Binary Search | Medium |
+| 15 | 360  | Sort Transformed Array                               | Array, Math, Two Pointers          | Medium |
+| 16 | 457  | Circular Array Loop                                  | Array, Hash Table, Two Pointers    | Medium |
+| 17 | 475  | Heaters                                              | Array, Two Pointers, Binary Search | Medium |
+| 18 | 522  | Longest Uncommon Subsequence II                      | Array, Hash Table, Two Pointers    | Medium |
+| 19 | 524  | Longest Word in Dictionary through Deleting          | Array, Two Pointers, String        | Medium |
+| 20 | 532  | K-diff Pairs in an Array                             | Array, Hash Table, Two Pointers    | Medium |
+| 21 | 581  | Shortest Unsorted Continuous Subarray                | Array, Two Pointers, Stack         | Medium |
+| 22 | 611  | Valid Triangle Number                                | Array, Two Pointers, Binary Search | Medium |
+| 23 | 658  | Find K Closest Elements                              | Array, Two Pointers, Binary Search | Medium |
+| 24 | 723  | Candy Crush                                          | Array, Two Pointers, Matrix        | Medium |
+| 25 | 795  | Number of Subarrays with Bounded Maximum             | Array, Two Pointers                | Medium |
+| 26 | 809  | Expressive Words                                     | Array, Two Pointers, String        | Medium |
+| 27 | 825  | Friends Of Appropriate Ages                          | Array, Two Pointers, Binary Search | Medium |
+| 28 | 826  | Most Profit Assigning Work                           | Array, Two Pointers, Binary Search | Medium |
+| 29 | 845  | Longest Mountain in Array                            | Array, Two Pointers                | Medium |
+| 30 | 870  | Advantage Shuffle                                    | Array, Two Pointers, Greedy        | Medium |
+| 31 | 881  | Boats to Save People                                 | Array, Two Pointers, Greedy        | Medium |
+| 32 | 923  | 3Sum With Multiplicity                               | Array, Hash Table, Two Pointers    | Medium |
+| 33 | 948  | Bag of Tokens                                        | Array, Two Pointers, Greedy        | Medium |
+| 34 | 969  | Pancake Sorting                                      | Array, Two Pointers, Greedy        | Medium |
+| 35 | 986  | Interval List Intersections                          | Array, Two Pointers                | Medium |
+| 36 | 1040 | Moving Stones Until Consecutive II                   | Array, Math, Two Pointers          | Medium |
+| 37 | 1048 | Longest String Chain                                 | Array, Hash Table, Two Pointers    | Medium |
+| 38 | 1229 | Meeting Scheduler                                    | Array, Two Pointers, Sorting       | Medium |
+| 39 | 1471 | The k Strongest Values in an Array                   | Array, Two Pointers, Sorting       | Medium |
+| 40 | 1498 | Subsequences Satisfying the Given Sum Condition      | Array, Two Pointers, Binary Search | Medium |
+| 41 | 1508 | Range Sum of Sorted Subarray Sums                    | Array, Two Pointers, Binary Search | Medium |
+| 42 | 1570 | Dot Product of Two Sparse Vectors                    | Array, Hash Table, Two Pointers    | Medium |
+| 43 | 1574 | Shortest Subarray to be Removed to Make Array Sorted | Array, Two Pointers, Binary Search | Medium |
+| 44 | 1577 | Square Equals Product of Two Numbers                 | Array, Hash Table, Math            | Medium |
+| 45 | 1679 | Max Number of K-Sum Pairs                            | Array, Hash Table, Two Pointers    | Medium |
+| 46 | 1712 | Ways to Split Array Into Three Subarrays             | Array, Two Pointers, Binary Search | Medium |
+| 47 | 1813 | Sentence Similarity III                              | Array, Two Pointers, String        | Medium |
+| 48 | 1855 | Max Distance Between a Pair of Values                | Array, Two Pointers, Binary Search | Medium |
+| 49 | 1861 | Rotating the Box                                     | Array, Two Pointers, Matrix        | Medium |
+| 50 | 1868 | Product of Two Run-Length Encoded Arrays             | Array, Two Pointers                | Medium |
+| 51 | 1877 | Minimize Maximum Pair Sum in Array                   | Array, Two Pointers, Greedy        | Medium |
+| 52 | 2105 | Watering Plants II                                   | Array, Two Pointers, Simulation    | Medium |
+| 53 | 2149 | Rearrange Array Elements by Sign                     | Array, Two Pointers, Simulation    | Medium |
+| 54 | 2161 | Partition Array According to Given Pivot             | Array, Two Pointers, Simulation    | Medium |
+| 55 | 2300 | Successful Pairs of Spells and Potions               | Array, Two Pointers, Binary Search | Medium |
+| 56 | 2332 | Latest Time to Catch a Bus                           | Array, Two Pointers, Binary Search | Medium |
+| 57 | 2406 | Divide Intervals Into Min Number of Groups           | Array, Two Pointers, Greedy        | Medium |
+| 58 | 2410 | Max Matching of Players With Trainers                | Array, Two Pointers, Greedy        | Medium |
+| 59 | 2422 | Merge Operations to Turn Array Into Palindrome       | Array, Two Pointers, Greedy        | Medium |
+| 60 | 2462 | Total Cost to Hire K Workers                         | Array, Two Pointers                | Medium |
+| 61 | 2491 | Divide Players Into Teams of Equal Skill             | Array, Hash Table, Two Pointers    | Medium |
+| 62 | 2563 | Count the Number of Fair Pairs                       | Array, Two Pointers, Binary Search | Medium |
+| 63 | 2576 | Max Number of Marked Indices                         | Array, Two Pointers, Binary Search | Medium |
+| 64 | 2592 | Maximize Greatness of an Array                       | Array, Two Pointers, Greedy        | Medium |
 
+---
 
-11. Container With Most Water-Array,Two Pointers,Greedy
-15. 3Sum-Array,Two Pointers,Sorting
-16. 3Sum Closest-Array,Two Pointers,Sorting
-18. 4Sum-Array,Two Pointers,Sorting
-31. Next Permutation-Array,Two Pointers
-75. Sort Colors-Array,Two Pointers,Sorting
-80. Remove Duplicates from Sorted Array II-Array,Two Pointers
-167. Two Sum II - Input Array Is Sorted-Array,Two Pointers,Binary Search
-189. Rotate Array-Array,Math,Two Pointers
-244. Shortest Word Distance II-Array,Hash Table,Two Pointers
-251. Flatten 2D Vector-Array,Two Pointers,Design
-253. Meeting Rooms II-Array,Two Pointers,Greedy,3+
-259. 3Sum Smaller-Array,Two Pointers,Binary Search,1+
-287. Find the Duplicate Number-Array,Two Pointers,Binary Search,1+
-360. Sort Transformed Array-Array,Math,Two Pointers,1+
-457. Circular Array Loop-Array,Hash Table,Two Pointers
-475. Heaters-Array,Two Pointers,Binary Search,1+
-522. Longest Uncommon Subsequence II-Array,Hash Table,Two Pointers,2+
-524. Longest Word in Dictionary through Deleting-Array,Two Pointers,String,1+
-532. K-diff Pairs in an Array-Array,Hash Table,Two Pointers,2+
-581. Shortest Unsorted Continuous Subarray-Array,Two Pointers,Stack,3+
-611. Valid Triangle Number-Array,Two Pointers,Binary Search,2+
-658. Find K Closest Elements-Array,Two Pointers,Binary Search,3+
-723. Candy Crush-Array,Two Pointers,Matrix,1+
-795. Number of Subarrays with Bounded Maximum-Array,Two Pointers
-809. Expressive Words-Array,Two Pointers,String
-825. Friends Of Appropriate Ages-Array,Two Pointers,Binary Search,1+
-826. Most Profit Assigning Work-Array,Two Pointers,Binary Search,2+
-845. Longest Mountain in Array-Array,Two Pointers,2+
-870. Advantage Shuffle-Array,Two Pointers,Greed,1+
-881. Boats to Save People-Array,Two Pointers,Greedy,1+
-923. 3Sum With Multiplicity-Array,Hash Table,Two Pointers,2+
-948. Bag of Tokens-Array,Two Pointers,Greedy,1+
-969. Pancake Sorting-Array,Two Pointers,Greedy,1+
-986. Interval List Intersections-Array,Two Pointers
-1040. Moving Stones Until Consecutive II-Array,Math,Two Pointers,1+
-1048. Longest String Chain-Array,Hash Table,Two Pointers,2+
-1229. Meeting Scheduler-Array,Two Pointers,Sorting
-1471. The k Strongest Values in an Array-Array,Two Pointers,Sorting
-1498. Number of Subsequences That Satisfy the Given Sum Condition-Array,Two Pointers,Binary Search,1+
-1508. Range Sum of Sorted Subarray Sums-Array,Two Pointers,Binary Search,1+
-1570. Dot Product of Two Sparse Vectors-Array,Hash Table,Two Pointers,1+
-1574. Shortest Subarray to be Removed to Make Array Sorted-Array,Two Pointers,Binary Search,2+
-1577. Number of Ways Where Square of Number Is Equal to Product of Two Numbers-Array,Hash Table,Math,1+
-1679. Max Number of K-Sum Pairs-Array,Hash Table,Two Pointers,1+
-1712. Ways to Split Array Into Three Subarrays-Array,Two Pointers,Binary Search,1+
-1813. Sentence Similarity III-Array,Two Pointers,String
-1855. Maximum Distance Between a Pair of Values-Array,Two Pointers,Binary Search,1+
-1861. Rotating the Box-Array,Two Pointers,Matrix
-1868. Product of Two Run-Length Encoded Arrays-Array,Two Pointers
-1877. Minimize Maximum Pair Sum in Array-Array,Two Pointers,Greedy,1+
-2105. Watering Plants II-Array,Two Pointers,Simulation
-2149. Rearrange Array Elements by Sign-Array,Two Pointers,Simulation
-2161. Partition Array According to Given Pivot-Array,Two Pointers,Simulation
-2300. Successful Pairs of Spells and Potions-Array,Two Pointers,Binary Search,1+
-2332. The Latest Time to Catch a Bus-Array,Two Pointers,Binary Search,1+
-2406. Divide Intervals Into Minimum Number of Groups-Array,Two Pointers,Greedy,3+
-2410. Maximum Matching of Players With Trainers-Array,Two Pointers,Greedy,1+
-2422. Merge Operations to Turn Array Into a Palindrome-Array,Two Pointers,Greedy
-2462. Total Cost to Hire K Workers-Array,Two Pointers,2+
-2491. Divide Players Into Teams of Equal Skill-Array,Hash Table,Two Pointers,1+
-2563. Count the Number of Fair Pairs-Array,Two Pointers,Binary Search,1+
-2576. Find the Maximum Number of Marked Indices-Array,Two Pointers,Binary Search,2+
-2592. Maximize Greatness of an Array-Array,Two Pointers,Greedy,1+
+### 🧊 Sliding Window
 
-(Sliding Window)
+| #  | No.  | Title                                              | Tags                                    | Level  |
+| -- | ---- | -------------------------------------------------- | --------------------------------------- | ------ |
+| 1  | 209  | Minimum Size Subarray Sum                          | Array, Binary Search, Sliding Window    | Medium |
+| 2  | 487  | Max Consecutive Ones II                            | Array, DP, Sliding Window               | Medium |
+| 3  | 658  | Find K Closest Elements                            | Array, Two Pointers, Binary Search      | Medium |
+| 4  | 713  | Subarray Product Less Than K                       | Array, Sliding Window                   | Medium |
+| 5  | 718  | Maximum Length of Repeated Subarray                | Array, Binary Search                    | Medium |
+| 6  | 904  | Fruit Into Baskets                                 | Array, Hash Table, Sliding Window       | Medium |
+| 7  | 930  | Binary Subarrays With Sum                          | Array, Hash Table, Sliding Window       | Medium |
+| 8  | 978  | Longest Turbulent Subarray                         | Array, DP, Sliding Window               | Medium |
+| 9  | 1004 | Max Consecutive Ones III                           | Array, Binary Search, Sliding Window    | Medium |
+| 10 | 1031 | Max Sum of Two Non-Overlapping Subarrays           | Array, DP, Sliding Window               | Medium |
+| 11 | 1052 | Grumpy Bookstore Owner                             | Array, Sliding Window                   | Medium |
+| 12 | 1151 | Min Swaps to Group All 1's Together                | Array, Sliding Window                   | Medium |
+| 13 | 1248 | Count Number of Nice Subarrays                     | Array, Hash Table, Math                 | Medium |
+| 14 | 1343 | Subarrays of Size K with Avg ≥ Threshold           | Array, Sliding Window                   | Medium |
+| 15 | 1423 | Max Points You Can Obtain from Cards               | Array, Sliding Window, Prefix Sum       | Medium |
+| 16 | 1438 | Longest Continuous Subarray Abs Diff ≤ Limit       | Array, Queue, Sliding Window            | Medium |
+| 17 | 1477 | Two Non-overlapping Subarrays With Target Sum      | Array, Hash Table, Binary Search        | Medium |
+| 18 | 1493 | Longest Subarray of 1's After Deleting One Element | Array, DP, Sliding Window               | Medium |
+| 19 | 1658 | Min Operations to Reduce X to Zero                 | Array, Hash Table, Binary Search        | Medium |
+| 20 | 1695 | Maximum Erasure Value                              | Array, Hash Table, Sliding Window       | Medium |
+| 21 | 1696 | Jump Game VI                                       | Array, DP, Queue                        | Medium |
+| 22 | 1838 | Frequency of the Most Frequent Element             | Array, Binary Search, Greedy            | Medium |
+| 23 | 1852 | Distinct Numbers in Each Subarray                  | Array, Hash Table, Sliding Window       | Medium |
+| 24 | 1918 | Kth Smallest Subarray Sum                          | Array, Binary Search, Sliding Window    | Medium |
+| 25 | 2090 | K Radius Subarray Averages                         | Array, Sliding Window                   | Medium |
+| 26 | 2107 | Unique Flavors After Sharing K Candies             | Array, Hash Table, Sliding Window       | Medium |
+| 27 | 2134 | Minimum Swaps to Group All 1's Together II         | Array, Sliding Window                   | Medium |
+| 28 | 2260 | Minimum Consecutive Cards to Pick Up               | Array, Hash Table, Sliding Window       | Medium |
+| 29 | 2401 | Longest Nice Subarray                              | Array, Bit Manipulation, Sliding Window | Medium |
+| 30 | 2411 | Smallest Subarrays With Max Bitwise OR             | Array, Binary Search, Bit Manipulation  | Medium |
+| 31 | 2461 | Maximum Sum of Distinct Subarrays of Length K      | Array, Hash Table, Sliding Window       | Medium |
+| 32 | 2537 | Count the Number of Good Subarrays                 | Array, Hash Table, Sliding Window       | Medium |
+| 33 | 2555 | Maximize Win From Two Segments                     | Array, Binary Search, Sliding Window    | Medium |
+| 34 | 2653 | Sliding Subarray Beauty                            | Array, Hash Table, Sliding Window       | Medium |
 
-
-209. Minimum Size Subarray Sum-Array,Binary Search,Sliding Window,1+
-487. Max Consecutive Ones II-Array,Dynamic Programming,Sliding Window
-658. Find K Closest Elements-Array,Two Pointers,Binary Search,3+
-713. Subarray Product Less Than K-Array,Sliding Window
-718. Maximum Length of Repeated Subarray-Array,Binary Search,4+
-904. Fruit Into Baskets-Array,Hash Table,Sliding Window
-930. Binary Subarrays With Sum-Array,Hash Table,Sliding Window,1+
-978. Longest Turbulent Subarray-Array,Dynamic Programming,Sliding Window
-1004. Max Consecutive Ones III-Array,Binary Search,Sliding Window,1+
-1031. Maximum Sum of Two Non-Overlapping Subarrays-Array,Dynamic Programming,Sliding Window
-1052. Grumpy Bookstore Owner-Array,Sliding Window
-1151. Minimum Swaps to Group All 1's Together-Array,Sliding Window
-1248. Count Number of Nice Subarrays-Array,Hash Table,Math,1+
-1343. Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold-Array,Sliding Window
-1423. Maximum Points You Can Obtain from Cards-Array,Sliding Window,Prefix Sum
-1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit-Array,Queue,Sliding Window,3+
-1477. Find Two Non-overlapping Sub-arrays Each With Target Sum-Array,Hash Table,Binary Search,2+
-1493. Longest Subarray of 1's After Deleting One Element-Array,Dynamic Programming,Sliding Window
-1658. Minimum Operations to Reduce X to Zero-Array,Hash Table,Binary Search,2+
-1695. Maximum Erasure Value-Array,Hash Table,Sliding Window
-1696. Jump Game VI-Array,Dynamic Programming,Queue,3+
-1838. Frequency of the Most Frequent Element-Array,Binary Search,Greedy,3+
-1852. Distinct Numbers in Each Subarray-Array,Hash Table,Sliding Window
-1918. Kth Smallest Subarray Sum-Array,Binary Search,Sliding Window
-2090. K Radius Subarray Averages-Array,Sliding Window
-2107. Number of Unique Flavors After Sharing K Candies-Array,Hash Table,Sliding Window
-2134. Minimum Swaps to Group All 1's Together II-Array,Sliding Window
-2260. Minimum Consecutive Cards to Pick Up-Array,Hash Table,Sliding Window
-2401. Longest Nice Subarray-Array,Bit Manipulation,Sliding Window
-2411. Smallest Subarrays With Maximum Bitwise OR-Array,Binary Search,Bit Manipulation,1+
-2461. Maximum Sum of Distinct Subarrays With Length K-Array,Hash Table,Sliding Window
-2537. Count the Number of Good Subarrays-Array,Hash Table,Sliding Window
-2555. Maximize Win From Two Segments-Array,Binary Search,Sliding Window
-2653. Sliding Subarray Beauty-Array,Hash Table,Sliding Window
 
 3.Array - Hard level
 (Two Pointer)
