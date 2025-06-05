@@ -1,37 +1,103 @@
 class Solution {
 public:
-    // DFS to find the smallest lex character in the component
-    char dfs(unordered_map<char, vector<char>>& adj, char cur, vector<int>& vis) {
-        vis[cur - 'a'] = 1;
-        char minChar = cur;
-        for (char neighbor : adj[cur]) {
-            if (vis[neighbor - 'a'] == 0) {
-                minChar = min(minChar, dfs(adj, neighbor, vis));
+    class DSU{
+
+        vector<int> parent;
+        vector<int> rank;
+
+        public:
+        DSU(int n){
+            parent.resize(n);
+            rank.resize(n);
+
+            for(int i = 0; i < n; i++){
+                parent[i] = i;
             }
         }
-        return minChar;
-    }
 
+        int findPar(int u){
+
+            if(parent[u] != u){
+                parent[u] = findPar(parent[u]);
+            }
+
+            return parent[u];
+        }
+
+        void unionByRank(int u , int v){
+
+            int par_u = findPar(u);
+            int par_v = findPar(v);
+
+            if(par_u == par_v) return;
+
+            if(rank[par_u] < rank[par_v]){
+                parent[par_u] = par_v;
+            }else if(rank[par_u] < rank[par_v]){
+                parent[par_v] = par_u;
+            }else{
+                parent[par_u] = par_v;
+                rank[par_u]++;
+            }
+        }
+
+        void unionByLex(int u, int v){
+
+            int par_u = findPar(u);
+            int par_v = findPar(v);
+
+            if(par_u == par_v) return;
+
+            if(par_u > par_v){
+                parent[par_u] = par_v;
+            }else{
+                parent[par_v] = par_u;
+            }
+        }
+    };
     string smallestEquivalentString(string s1, string s2, string baseStr) {
-        int n = s1.length();
-        unordered_map<char, vector<char>> adj;
+        
 
-        // Step 1: Build the equivalence graph
-        for (int i = 0; i < n; ++i) {
-            char u = s1[i];
-            char v = s2[i];
-            adj[u].push_back(v);
-            adj[v].push_back(u);
+        int n = s1.size();
+
+        vector<pair<int, int>> vp;
+
+        for(int i = 0; i < n; i++){
+
+            pair<int, int> temp;
+            
+            int c1 = s1[i] - 'a';
+            int c2 = s2[i] - 'a';
+
+            if(c1 != c2){
+                if(c1 > c2) temp = {c2, c1};
+                else temp = {c1, c2};
+                vp.push_back(temp);
+            }
         }
 
-        // Step 2: Replace each character in baseStr with the smallest equivalent
-        string result;
-        for (char ch : baseStr) {
-            vector<int> vis(26, 0);
-            char minChar = dfs(adj, ch, vis);
-            result.push_back(minChar);
+        sort(vp.begin(), vp.end());
+
+        DSU dsu = DSU(26);
+
+        for(auto &pr : vp){
+            
+            int u = pr.first;
+            int v = pr.second;
+
+            if(dsu.findPar(u) != dsu.findPar(v)){
+                dsu.unionByLex(u, v);
+            }
+        } 
+
+        for(int i = 0; i < baseStr.size(); i++){
+
+            int k = (baseStr[i] - 'a');
+
+            int par = dsu.findPar(k);
+            baseStr[i] = par + 'a';
         }
 
-        return result;
+        return baseStr;
     }
 };
