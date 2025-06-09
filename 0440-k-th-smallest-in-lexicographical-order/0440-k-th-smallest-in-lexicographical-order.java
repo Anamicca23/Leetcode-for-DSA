@@ -1,28 +1,27 @@
 class Solution {
-    // Function to calculate the gap between numbers a and b in the lexicographical tree
-    private long getGap(long a, long b, long n) {
-        long gap = 0;
-        while (a <= n) {
-            gap += Math.min(n + 1, b) - a;
-            a *= 10;
-            b *= 10;
-        }
-        return gap;
-    }
-
-    // Function to find the k-th smallest number in lexicographical order
-    public int findKthNumber(long n, int k) {
-        long cur = 1;
-        for (int i = 1; i < k;) {
-            long gap = getGap(cur, cur + 1, n);
-            if (i + gap <= k) {
-                i += gap;
-                cur++;
+    public int findKthNumber(int n, int k) {
+        int curr = 1;
+        k--;
+        while (k > 0) {
+            long steps = countSteps(n, curr, curr + 1);
+            if (steps <= k) {
+                curr++;
+                k -= steps;
             } else {
-                i++;
-                cur *= 10;
+                curr *= 10;
+                k--;
             }
         }
-        return (int) cur;
+        return curr;
+    }
+
+    private long countSteps(int n, long curr, long next) {
+        long steps = 0;
+        while (curr <= n) {
+            steps += Math.min(n + 1L, next) - curr;
+            curr *= 10;
+            next *= 10;
+        }
+        return steps;
     }
 }
