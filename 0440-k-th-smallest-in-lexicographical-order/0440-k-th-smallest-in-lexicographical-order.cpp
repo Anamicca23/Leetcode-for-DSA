@@ -1,29 +1,18 @@
 class Solution {
 public:
-    int findKthNumber(int n, int k) {
-        int curr = 1;
-        --k;
-        while (k > 0) {
-            long long steps = countSteps(n, curr, curr + 1);
-            if (steps <= k) {
-                curr++;
-                k -= steps;
-            } else {
-                curr *= 10;
-                k--;
-            }
-        }
-        return curr;
-    }
+    int findKthNumber(long n, int k) {
+        auto getGap = [&n](long a, long b) {
+            long gap = 0;
+            for (; a <= n; a *= 10, b *= 10)
+                gap += min(n + 1, b) - a;
+            return gap;
+        };
 
-private:
-    long long countSteps(int n, long long curr, long long next) {
-        long long steps = 0;
-        while (curr <= n) {
-            steps += min((long long)n + 1, next) - curr;
-            curr *= 10;
-            next *= 10;
+        long cur = 1;
+        for (int i = 1; i < k;) {
+            long gap = getGap(cur, cur + 1);
+            i + gap <= k ? (i += gap, ++cur) : (++i, cur *= 10);
         }
-        return steps;
+        return cur;
     }
 };
