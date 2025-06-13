@@ -1,12 +1,22 @@
-
-typedef long long int lli;
-
 class Solution {
 public:
-	int getCommon(vector<int>& nums1, vector<int>& nums2) {
-		set<int> all(nums1.begin(), nums1.end())      ;
-		sort(nums2.begin(), nums2.end());
-		for (auto& it : nums2)if (all.count(it)) return it;
-		return -1;
-	}
+    int getCommon(vector<int>& nums1, vector<int>& nums2) {
+        int m = nums1.size();
+        int n = nums2.size();
+
+        int i = 0; // for nums1
+        int j = 0; // for nums2
+
+        while (i < m && j < n) {
+            if (nums1[i] == nums2[j]) {
+                return nums1[i];
+            } else if (nums1[i] < nums2[j]) {
+                i++;
+            } else {
+                j++;
+            }
+        }
+
+        return -1;
+    }
 };
