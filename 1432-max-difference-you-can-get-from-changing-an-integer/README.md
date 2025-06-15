@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer">1432. Max Difference You Can Get From Changing an Integer</a></h2><h3>Medium</h3><hr><p>You are given an integer <code>num</code>. You will apply the following steps to <code>num</code> <strong>two</strong> separate times:</p>
+<h2><a href="https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer/?envType=daily-question&envId=2025-06-15">1432. Max Difference You Can Get From Changing an Integer</a></h2><h3>Medium</h3><hr><p>You are given an integer <code>num</code>. You will apply the following steps to <code>num</code> <strong>two</strong> separate times:</p>
 
 <ul>
 	<li>Pick a digit <code>x (0 &lt;= x &lt;= 9)</code>.</li>
