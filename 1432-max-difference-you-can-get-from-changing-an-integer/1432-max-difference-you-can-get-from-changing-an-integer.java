@@ -1,49 +1,51 @@
 class Solution {
-
-    public int maxDiff(int num) {
-        StringBuffer min_num = new StringBuffer(String.valueOf(num));
-        StringBuffer max_num = new StringBuffer(String.valueOf(num));
-
-        // Find a high position and replace it with 9.
-        int max_length = max_num.length();
-        for (int i = 0; i < max_length; ++i) {
-            char digit = max_num.charAt(i);
-            if (digit != '9') {
-                replace(max_num, digit, '9');
-                break;
+    private int difference(int num) {
+        int firstNonNine = -1, firstNonOne = -1, firstDigit = -1;
+        int remaining = num;
+        while (remaining > 0) {
+            int digit = remaining % 10;
+            if (digit != 9) {
+                firstNonNine = digit;
             }
-        }
-
-        // Replace the most significant bit with 1
-        // Or find a high-order digit that is not equal to the highest digit and replace it with 0.
-        int min_length = min_num.length();
-        for (int i = 0; i < min_length; ++i) {
-            char digit = min_num.charAt(i);
-            if (i == 0) {
-                if (digit != '1') {
-                    replace(min_num, digit, '1');
-                    break;
-                }
-            } else {
-                if (digit != '0' && digit != min_num.charAt(0)) {
-                    replace(min_num, digit, '0');
-                    break;
-                }
+            if (digit > 1) {
+                firstNonOne = digit;
             }
+            firstDigit = digit;
+            remaining /= 10;
         }
+        
+        remaining = num;
+        int min = 0, max = 0;
+        int multiplier = 1;
+        while (remaining > 0) {
+            int digit = remaining % 10;
+            
+            int minDigit = digit;
+            int maxDigit = digit;
+            
+            if (firstDigit == 1 && digit == firstNonOne) {
+                minDigit = 0;
+            }
+            
+            if (firstDigit != 1 && digit == firstDigit) {
+                minDigit = 1;
+            }
 
-        return (
-            Integer.parseInt(max_num.toString()) -
-            Integer.parseInt(min_num.toString())
-        );
+            if (digit == firstNonNine) {
+                maxDigit = 9;
+            }
+
+            min += multiplier * minDigit;
+            max += multiplier * maxDigit;
+
+            multiplier *= 10;    
+            remaining /= 10;
+        }
+        
+        return max - min;
     }
 
-    public void replace(StringBuffer s, char x, char y) {
-        int length = s.length();
-        for (int i = 0; i < length; ++i) {
-            if (s.charAt(i) == x) {
-                s.setCharAt(i, y);
-            }
-        }
+    public int maxDiff(int num) {
+        return difference(num);
     }
 }
