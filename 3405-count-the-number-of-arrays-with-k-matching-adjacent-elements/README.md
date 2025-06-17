@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/count-the-number-of-arrays-with-k-matching-adjacent-elements/?envType=daily-question&envId=2025-06-17">3405. Count the Number of Arrays with K Matching Adjacent Elements</a></h2><h3>Hard</h3><hr><p>You are given three integers <code>n</code>, <code>m</code>, <code>k</code>. A <strong>good array</strong> <code>arr</code> of size <code>n</code> is defined as follows:</p>
+<h2><a href="https://leetcode.com/problems/count-the-number-of-arrays-with-k-matching-adjacent-elements">3405. Count the Number of Arrays with K Matching Adjacent Elements</a></h2><h3>Hard</h3><hr><p>You are given three integers <code>n</code>, <code>m</code>, <code>k</code>. A <strong>good array</strong> <code>arr</code> of size <code>n</code> is defined as follows:</p>
 
 <ul>
 	<li>Each element in <code>arr</code> is in the <strong>inclusive</strong> range <code>[1, m]</code>.</li>
