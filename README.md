@@ -506,4 +506,14 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## 👤 About
 
 Made with ☕ and code by [Anamicca23](https://github.com/Anamicca23)
+
 Let’s crack those coding interviews one problem at a time!
+
+<br>
+
+<div align="center">
+  <a href="#top">
+    <img src="https://img.shields.io/badge/🔝_Back_to_Top-blue?style=for-the-badge&logo=readme&logoColor=white" alt="Return to Top"/>
+  </a>
+</div>
+
