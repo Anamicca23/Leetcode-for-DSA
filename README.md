@@ -1,9 +1,58 @@
-# Leetcode-for-DSA
-Collection of LeetCode questions to ace the coding interview! - Created using [LeetHub](https://github.com/QasimWani/LeetHub)
+<h1 align="center">📘 Leetcode-for-DSA</h1>
 
-leetcode 
+<p align="center">
+  <b>A curated collection of LeetCode solutions for mastering Data Structures & Algorithms</b><br>
+  <i>Built with ❤️ using <a href="https://github.com/QasimWani/LeetHub">LeetHub</a> | Track. Solve. Grow.</i>
+</p>
 
-### 📚 Easy Level – Two Pointers (Array)
+<p align="center">
+  <img src="https://img.shields.io/github/stars/Anamicca23/Leetcode-for-DSA?style=flat-square" />
+  <img src="https://img.shields.io/github/forks/Anamicca23/Leetcode-for-DSA?style=flat-square" />
+  <img src="https://img.shields.io/github/license/Anamicca23/Leetcode-for-DSA?style=flat-square" />
+</p>
+
+---
+
+## 📂 Structure
+
+Each folder is named after the LeetCode problem:
+```
+
+📁 0001-two-sum/
+┣ 📄 solution.cpp
+┣ 📄 solution.java
+┗ 📄 solution.py
+
+````
+
+Problems are sorted by difficulty and topic (Easy / Medium / Hard).
+
+---
+
+## 🔧 Tech Stack
+
+- 💻 **Languages**: C++, Java, Python  
+- 🔁 **Sync Tool**: [LeetHub](https://github.com/QasimWani/LeetHub)  
+- 📚 **Platform**: LeetCode
+
+---
+
+## 🚀 How to Use
+
+```bash
+# Step 1: Fork this repo
+# Step 2: Clone it locally
+git clone https://github.com/your-username/Leetcode-for-DSA.git
+
+# Step 3: Add your own solutions following the naming convention
+```
+## ARRAY
+### Easy Level ❤️
+<details>
+<summary>📚 <strong>Array - two pinter, hash table</strong></summary>
+
+<br>
+
 
 | #  | No.  | Title                                                                                                                                                                            | Link                                                                                                                                                                                   | Tags                               | Level |
 | -- | ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | ----- |
@@ -34,8 +83,12 @@ leetcode
 | 25 | 2562 | [Find the Array Concatenation Value](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2562-find-the-array-concatenation-value)                                         | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/find-the-array-concatenation-value/description/)                     | Array, Two Pointers, Simulation    | Easy  |
 | 26 | 2570 | [Merge Two 2D Arrays by Summing Values](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2570-merge-two-2d-arrays-by-summing-values)                                   | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/description/)                  | Array, Hash Table, Two Pointers    | Easy  |
 
+</details>
 
-### 📚 Easy Level – Sliding Window (Array)
+<details>
+<summary>📚 <strong>Array -  Sliding Window </strong></summary>
+
+<br>
 
 | # | No.  | Title                                                                                                                                                                                                                          | Link                                                                                                                                                                                                          | Tags                                       | Level |
 | - | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | ----- |
@@ -49,8 +102,17 @@ leetcode
 | 8 | 2024 | [Maximize the Confusion of an Exam](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2024-maximize-the-confusion-of-an-exam)                                                                                         | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/description/)                                             | String, Sliding Window, Binary Search      | Easy  |
 | 9 | 2270 | [Number of Ways to Split Array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2270-number-of-ways-to-split-array)                                                                                                 | [![LC](https://img.icons8.com/?size=40\&id=9L16NypUzu38\&format=png\&color=000000)](https://leetcode.com/problems/number-of-ways-to-split-array/description/)                                                 | Array, Sliding Window, Prefix Sum          | Easy  |
 
+</details>
 
-### 📘 Array – Medium Level
+
+### Medium Level ❤️❤️❤️
+
+<details>
+  
+<summary><strong> 📘 Array - Two Pointer,Sorting , Binary Search , Greedy </strong></summary>
+
+<br>
+
 
 | #  | No.  | Title                                                                                                                                                                                                                                           | LC                                                                                                                                                              | Tags                               | Level  |
 | -- | ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | ------ |
@@ -119,8 +181,15 @@ leetcode
 | 63 | 2576 | [Max Number of Marked Indices](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2576-max-number-of-marked-indices) | [![LC](https://img.icons8.com/?size=40&id=9L16NypUzu38&format=png&color=000000)](https://leetcode.com/problems/max-number-of-marked-indices/) | Array, Two Pointers, Binary Search | Medium |
 | 64 | 2592 | [Maximize Greatness of an Array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2592-maximize-greatness-of-an-array) | [![LC](https://img.icons8.com/?size=40&id=9L16NypUzu38&format=png&color=000000)](https://leetcode.com/problems/maximize-greatness-of-an-array/) | Array, Two Pointers, Greedy    | Medium |
 
----
-## sliding Window - Medium
+</details>
+
+
+<details>
+
+<summary><strong> 📘 Array - Sliding Window , Binary Search, Hash Table </strong></summary>
+
+<br>
+
 
 | #  | No.  | Title                                                                                                         | LC Link                                                                                                                     | Tags                                    | Level  |
 | ---|------|---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|----------------------------------------|--------|
@@ -158,9 +227,15 @@ leetcode
 | 32 | 2537 | [Count the Number of Good Subarrays](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2537-count-the-number-of-good-subarrays) | [![LC](https://img.icons8.com/?size=40&id=9L16NypUzu38&format=png&color=000000)](https://leetcode.com/problems/count-the-number-of-good-subarrays/)                 | Array, Hash Table, Sliding Window       | Medium |
 | 33 | 2555 | [Maximize Win From Two Segments](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2555-maximize-win-from-two-segments) | [![LC](https://img.icons8.com/?size=40&id=9L16NypUzu38&format=png&color=000000)](https://leetcode.com/problems/maximize-win-from-two-segments/)                     | Array, Binary Search, Sliding Window    | Medium |
 | 34 | 2653 | [Sliding Subarray Beauty](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2653-sliding-subarray-beauty)                    | [![LC](https://img.icons8.com/?size=40&id=9L16NypUzu38&format=png&color=000000)](https://leetcode.com/problems/sliding-subarray-beauty/)                              | Array, Hash Table, Sliding Window       | Medium |
+</details>
 
-3.Array - Hard level
-(Two Pointer)
+
+### Hard level ❤️❤️❤️❤️❤️
+
+<details>
+<summary><strong> 📚 Array - two pointer, Binary Search </strong></summary>
+
+<br>
 
 42. Trapping Rain Water-Array,Two Pointers,3+
 719. Find K-th Smallest Pair Distance-Array,Two Pointers,Binary Search,1+
@@ -170,7 +245,12 @@ leetcode
 2035. Partition Array Into Two Arrays to Minimize Sum Difference-Array,Two Pointers,Binary Search,4+
 2234. Maximum Total Beauty of the Gardens-Array,Two Pointers,Binary Search,2+
 
-(Sliding Window)
+</details>
+
+<details>
+<summary><strong> 📚 Array - Sliding Window, Hash Tbale , Binary Search</strong></summary>
+
+<br>
 
 220. Contains Duplicate III-Array,Sliding Window,Sorting,2+
 239. Sliding Window Maximum-Array,Queue,Sliding Window,2+
@@ -190,6 +270,8 @@ leetcode
 2444. Count Subarrays With Fixed Bounds-Array,Queue,Sliding Window,1+
 2524. Maximum Frequency Score of a Subarray-Array,Hash Table,Math,1+
 2528. Maximize the Minimum Powered City-Array,Binary Search,Greedy,3+
+
+</details>
 
 
 Trees and Graphs:
@@ -382,3 +464,46 @@ Trie
 https://leetcode.com/problems/sum-of-prefix-scores-of-strings/
 https://leetcode.com/problems/maximum-genetic-difference-query/ (Tree Query)
 https://leetcode.com/problems/prefix-and-suffix-search/
+
+
+
+✅ Best Practices:
+
+* Keep filenames clean (`solution.cpp`, `solution.py`)
+* Add comments where necessary
+* Group problems by topics (optional but encouraged)
+
+---
+
+## 🤝 Contributing
+
+Want to help expand this repository?
+
+1. Fork it 🍴
+2. Create your feature branch (`git checkout -b new-solution`)
+3. Commit your changes (`git commit -m 'Added XYZ problem'`)
+4. Push to the branch (`git push origin new-solution`)
+5. Open a PR 🚀
+
+---
+
+## 🌟 Support & Recognition
+
+If this project helps you:
+
+* ⭐ **Star** the repo
+* 🔁 **Share** it with peers preparing for coding interviews
+* 🧠 Keep coding and contribute back!
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 👤 About
+
+Made with ☕ and code by [Anamicca23](https://github.com/Anamicca23)
+Let’s crack those coding interviews one problem at a time!
