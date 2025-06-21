@@ -1,41 +1,37 @@
-using namespace std;
-
 class Solution {
-public:
-    int minimumDeletions(const string& word, int k) {
-        array<int, 26> freq{};
-        for (unsigned char c : word)
-            ++freq[c - 'a'];
-
-        vector<int> freqList;
-        freqList.reserve(26);
-        for (int f : freq)
-            if (f > 0)
-                freqList.push_back(f);
-
-        sort(begin(freqList), end(freqList));
-
-        int n = freqList.size(), total = word.size(), removedLeft = 0,
-            inWindowSum = 0, best = INT_MAX, r = 0;
-
-        for (int l = 0; l < n; ++l) {
-            int base = freqList[l];
-            int limit = base + k;
-
-            while (r < n && freqList[r] <= limit)
-                inWindowSum += freqList[r++];
-
-            int rightCount = n - r;
-            int rightSum = total - inWindowSum;
-            int delRight = rightSum - rightCount * limit;
-
-            best = min(best, removedLeft + delRight);
-
-            total -= freqList[l];
-            removedLeft += freqList[l];
-            inWindowSum -= freqList[l];
+    public int minimumDeletions(String word, int k) {
+        int[] freq = new int[26];
+        for (char c : word.toCharArray()) {
+            freq[c - 'a']++;
         }
 
-        return best;
+        int[] updated = new int[26];
+        int size = 0;
+        for (int f : freq) {
+            if (f > 0) updated[size++] = f;
+        }
+
+        Arrays.sort(updated, 0, size);
+
+        int min = 100000, totalSum = word.length(), deletedLeftSum = 0, sum = 0, j = 0;
+        for (int i = 0; i < size; i++) {
+            int from = updated[i], to = from + k;
+            while (j < size && updated[j] <= to) {
+                sum += updated[j++];
+            }
+
+            int left = size - j;
+            int leftSum = totalSum - sum;
+            int required = left * to;
+            int deleted = leftSum - required;
+
+            min = Math.min(min, deleted + deletedLeftSum);
+
+            totalSum -= updated[i];
+            deletedLeftSum += updated[i];
+            sum -= updated[i];
+        }
+
+        return min;
     }
-};
+}
