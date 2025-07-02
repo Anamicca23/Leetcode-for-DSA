@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/find-the-original-typed-string-ii/?envType=daily-question&envId=2025-07-02">3333. Find the Original Typed String II</a></h2><h3>Hard</h3><hr><p>Alice is attempting to type a specific string on her computer. However, she tends to be clumsy and <strong>may</strong> press a key for too long, resulting in a character being typed <strong>multiple</strong> times.</p>
+<h2><a href="https://leetcode.com/problems/find-the-original-typed-string-ii">3333. Find the Original Typed String II</a></h2><h3>Hard</h3><hr><p>Alice is attempting to type a specific string on her computer. However, she tends to be clumsy and <strong>may</strong> press a key for too long, resulting in a character being typed <strong>multiple</strong> times.</p>
 
 <p>You are given a string <code>word</code>, which represents the <strong>final</strong> output displayed on Alice&#39;s screen. You are also given a <strong>positive</strong> integer <code>k</code>.</p>
 
