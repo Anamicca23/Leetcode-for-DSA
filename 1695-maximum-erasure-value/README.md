@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/maximum-erasure-value/?envType=daily-question&envId=2025-07-22">1695. Maximum Erasure Value</a></h2><h3>Medium</h3><hr><p>You are given an array of positive integers <code>nums</code> and want to erase a subarray containing&nbsp;<strong>unique elements</strong>. The <strong>score</strong> you get by erasing the subarray is equal to the <strong>sum</strong> of its elements.</p>
+<h2><a href="https://leetcode.com/problems/maximum-erasure-value">1695. Maximum Erasure Value</a></h2><h3>Medium</h3><hr><p>You are given an array of positive integers <code>nums</code> and want to erase a subarray containing&nbsp;<strong>unique elements</strong>. The <strong>score</strong> you get by erasing the subarray is equal to the <strong>sum</strong> of its elements.</p>
 
 <p>Return <em>the <strong>maximum score</strong> you can get by erasing <strong>exactly one</strong> subarray.</em></p>
 
