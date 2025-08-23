@@ -1,61 +1,79 @@
 class Solution {
 public:
-    int minimumSum(vector<vector<int>>& A) {
-        int res = INT_MAX;
-        for (int rot = 0; rot < 4; rot++) {
-            int n = A.size(), m = A[0].size();
-            for (int i = 1; i < n; i++) {
-                int a1 = minimumArea(vector<vector<int>>(A.begin(), A.begin() + i));
-                for (int j = 1; j < m; j++) {
-                    vector<vector<int>> part2(n - i, vector<int>(j));
-                    vector<vector<int>> part3(n - i, vector<int>(m - j));
-                    for (int r = 0; r < n - i; r++) {
-                        copy(A[i + r].begin(), A[i + r].begin() + j, part2[r].begin());
-                        copy(A[i + r].begin() + j, A[i + r].end(), part3[r].begin());
-                    }
-                    int a2 = minimumArea(part2);
-                    int a3 = minimumArea(part3);
-                    res = min(res, a1 + a2 + a3);
-                }
-                for (int i2 = i + 1; i2 < n; i2++) {
-                    vector<vector<int>> part2(A.begin() + i, A.begin() + i2);
-                    vector<vector<int>> part3(A.begin() + i2, A.end());
-                    int a2 = minimumArea(part2);
-                    int a3 = minimumArea(part3);
-                    res = min(res, a1 + a2 + a3);
-                }
-            }
-            A = rotate(A);
-        }
-        return res;
-    }
-private:
-    int minimumArea(vector<vector<int>>& A) {
-        if (A.empty() || A[0].empty()) return 0;
-        int n = A.size(), m = A[0].size();
-        int left = INT_MAX, top = INT_MAX, right = -1, bottom = -1;
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                if (A[i][j] == 1) {
-                    left = min(left, j);
-                    top = min(top, i);
-                    right = max(right, j);
-                    bottom = max(bottom, i);
-                }
-            }
-        }
-        if (right == -1) return 0;
-        return (right - left + 1) * (bottom - top + 1);
+    
+    vector<vector<int>> row_sfx, col_sfx;
+
+    int get_row_count(int i, int l, int r) {
+        return row_sfx[i][l] - row_sfx[i][r + 1];
     }
 
-    vector<vector<int>> rotate(vector<vector<int>>& A) {
-        int n = A.size(), m = A[0].size();
-        vector<vector<int>> rotated(m, vector<int>(n));
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                rotated[j][n - 1 - i] = A[i][j];
-            }
+    int get_col_count(int j, int t, int b) {
+        return col_sfx[j][t] - col_sfx[j][b + 1];
+    }
+
+    int f1(int si, int ei, int sj, int ej) 
+    { // start i, end i, start j, end j;
+        int const n = row_sfx.size(), m = col_sfx.size();
+
+        while (si < ei && !get_row_count(si, sj, ej)) si++;
+        while (ei > si && !get_row_count(ei, sj, ej)) ei--;
+        while (sj < ej && !get_col_count(sj, si, ei)) sj++;
+        while (ej > sj && !get_col_count(ej, si, ei)) ej--;
+
+        int l = ej - sj + 1, h = ei - si + 1;
+        return max(l, 0) * max(h, 0); 
+    } // min area to cover all ones in range with a single rect;
+
+    int f2(int si, int ei, int sj, int ej)
+    { // min area to cover all ones in range with 2 rect;
+        int res = max(0, (ei - si + 1)) * max(0, (ej - sj + 1));
+
+        for (int i = si; i <= ei - 1; i++)
+        { // row partition, [si, i] U [i + 1, ei];
+            int curr = f1(si, i, sj, ej) + f1(i + 1, ei, sj, ej);
+            res = min(res, curr);
         }
-        return rotated;
+
+        for (int j = sj; j <= ej - 1; j++)
+        { // col partiion, [sj, j] U [j + 1, ej];
+            int curr = f1(si, ei, sj, j) + f1(si, ei, j + 1, ej);
+            res = min(res, curr);
+        }
+
+        return res;
+    }
+
+    int minimumSum(vector<vector<int>>& grid)
+    {
+        int const n = grid.size(), m = grid[0].size();
+        row_sfx = vector<vector<int>>(n, vector<int>(m + 1)), col_sfx = vector<vector<int>>(m, vector<int>(n + 1));
+
+        for (int i = 0; i <= n - 1; i++) {
+            for (int j = m - 1; j >= 0; j--) row_sfx[i][j] = grid[i][j] + row_sfx[i][j + 1];
+        }
+        for (int j = 0; j <= m - 1; j++) {
+            for (int i = n - 1; i >= 0; i--) col_sfx[j][i] = grid[i][j] + col_sfx[j][i + 1];
+        }
+    
+        int ans = n * m;
+        for (int i = 0; i <= n - 2; i++)
+        { // row partition, [0, i] U [i + 1, n - 1]
+            int c12 = f1(0, i, 0, m - 1) + f2(i + 1, n - 1, 0, m - 1);
+            int c21 = f2(0, i, 0, m - 1) + f1(i + 1, n - 1, 0, m - 1);
+
+            int c = min(c12, c21);
+            ans = min(ans, c);
+        }
+
+        for (int j = 0; j <= m - 2; j++)
+        { // row partition, [0, i] U [i + 1, n - 1]
+            int c12 = f1(0, n - 1, 0, j) + f2(0, n - 1, j + 1, m - 1);
+            int c21 = f2(0, n - 1, 0, j) + f1(0, n - 1, j + 1, m - 1);
+
+            int c = min(c12, c21);
+            ans = min(ans, c);
+        }
+
+        return ans;    
     }
 };
