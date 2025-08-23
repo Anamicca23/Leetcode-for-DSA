@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-ii">3197. Find the Minimum Area to Cover All Ones II</a></h2><h3>Hard</h3><hr><p>You are given a 2D <strong>binary</strong> array <code>grid</code>. You need to find 3 <strong>non-overlapping</strong> rectangles having <strong>non-zero</strong> areas with horizontal and vertical sides such that all the 1&#39;s in <code>grid</code> lie inside these rectangles.</p>
+<h2><a href="https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-ii/?envType=daily-question&envId=2025-08-23">3197. Find the Minimum Area to Cover All Ones II</a></h2><h3>Hard</h3><hr><p>You are given a 2D <strong>binary</strong> array <code>grid</code>. You need to find 3 <strong>non-overlapping</strong> rectangles having <strong>non-zero</strong> areas with horizontal and vertical sides such that all the 1&#39;s in <code>grid</code> lie inside these rectangles.</p>
 
 <p>Return the <strong>minimum</strong> possible sum of the area of these rectangles.</p>
 
