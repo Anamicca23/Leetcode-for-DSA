@@ -1,62 +1,62 @@
 class Solution {
-    public int minimumSum(int[][] A) {
-        int res = Integer.MAX_VALUE;
+    int[][] ruc;
+    int m, n;
 
-        for (int rot = 0; rot < 4; rot++) {
-            int n = A.length, m = A[0].length;
-            for (int i = 1; i < n; i++) {
-                int a1 = minimumArea(Arrays.copyOfRange(A, 0, i));
-                for (int j = 1; j < m; j++) {
-                    int[][] part2 = new int[n - i][j];
-                    int[][] part3 = new int[n - i][m - j];
-                    for (int r = 0; r < n - i; r++) {
-                        part2[r] = Arrays.copyOfRange(A[i + r], 0, j);
-                        part3[r] = Arrays.copyOfRange(A[i + r], j, m);
-                    }
-                    int a2 = minimumArea(part2);
-                    int a3 = minimumArea(part3);
-                    res = Math.min(res, a1 + a2 + a3);
-                }
-                for (int i2 = i + 1; i2 < n; i2++) {
-                    int[][] part2 = Arrays.copyOfRange(A, i, i2);
-                    int[][] part3 = Arrays.copyOfRange(A, i2, n);
-                    int a2 = minimumArea(part2);
-                    int a3 = minimumArea(part3);
-                    res = Math.min(res, a1 + a2 + a3);
-                }
+    public int minimumSum(int[][] grid) {
+        m = grid.length; n = grid[0].length;
+        ruc = new int[m + 1][n + 1];
+        for (int i = 0; i < m; i++)
+            for (int j = 0; j < n; j++)
+                ruc[i + 1][j + 1] = ruc[i][j + 1] + ruc[i + 1][j] - ruc[i][j] + grid[i][j];
+
+        int ans = m * n;
+        for (int i = 0; i < m - 2; i++)
+            for (int j = i + 1; j < m - 1; j++)
+                ans = Math.min(ans, 
+                    minArea(0, 0, i, n - 1)
+                  + minArea(i + 1, 0, j, n - 1)
+                  + minArea(j + 1, 0, m - 1, n - 1));
+        for (int i = 0; i < n - 2; i++)
+            for (int j = i + 1; j < n - 1; j++)
+                ans = Math.min(ans,
+                    minArea(0, 0, m - 1, i)
+                  + minArea(0, i + 1, m - 1, j)
+                  + minArea(0, j + 1, m - 1, n - 1));
+        for (int i = 0; i < m - 1; i++) {
+            int top = minArea(0, 0, i, n - 1);
+            int bottom = minArea(i + 1, 0, m - 1, n - 1);
+            for (int j = 0; j < n - 1; j++) {
+                int bl = minArea(i + 1, 0, m - 1, j);
+                int br = minArea(i + 1, j + 1, m - 1, n - 1);
+                ans = Math.min(ans, top + bl + br);
+                int tl = minArea(0, 0, i, j);
+                int tr = minArea(0, j + 1, i, n - 1);
+                ans = Math.min(ans, bottom + tl + tr);
             }
-            A = rotate(A);
         }
-        return res;
+        for (int j = 0; j < n - 1; j++) {
+            int left = minArea(0, 0, m - 1, j);
+            int right = minArea(0, j + 1, m - 1, n - 1);
+            for (int i = 0; i < m - 1; i++) {
+                int tl = minArea(0, j + 1, i, n - 1);
+                int bl = minArea(i + 1, j + 1, m - 1, n - 1);
+                ans = Math.min(ans, left + tl + bl);
+                int tr = minArea(0, 0, i, j);
+                int br = minArea(i + 1, 0, m - 1, j);
+                ans = Math.min(ans, right + tr + br);
+            }
+        }
+
+        return ans;
     }
-
-    private int minimumArea(int[][] A) {
-        if (A.length == 0 || A[0].length == 0) return 0;
-        int n = A.length, m = A[0].length;
-        int left = Integer.MAX_VALUE, top = Integer.MAX_VALUE;
-        int right = -1, bottom = -1;
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                if (A[i][j] == 1) {
-                    left = Math.min(left, j);
-                    top = Math.min(top, i);
-                    right = Math.max(right, j);
-                    bottom = Math.max(bottom, i);
-                }
-            }
-        }
-        if (right == -1) return 0;
-        return (right - left + 1) * (bottom - top + 1);
-    }
-
-    private int[][] rotate(int[][] A) {
-        int n = A.length, m = A[0].length;
-        int[][] rotated = new int[m][n];
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                rotated[j][n - 1 - i] = A[i][j];
-            }
-        }
-        return rotated;
+    int minArea(int r0, int c0, int r1, int c1) {
+        int total = ruc[r1 + 1][c1 + 1] - ruc[r0][c1 + 1] - ruc[r1 + 1][c0] + ruc[r0][c0];
+        if (total == 0) return 0;
+        int rl = r0, rr = r1, cl = c0, cr = c1;
+        while (ruc[rl + 1][c1 + 1] - ruc[rl][c1 + 1] - ruc[rl + 1][c0] + ruc[rl][c0] == 0) rl++;
+        while (ruc[r1 + 1][c1 + 1] - ruc[rr][c1 + 1] - ruc[r1 + 1][c0] + ruc[rr][c0] == 0) rr--;
+        while (ruc[r1 + 1][cl + 1] - ruc[r0][cl + 1] - ruc[r1 + 1][cl] + ruc[r0][cl] == 0) cl++;
+        while (ruc[r1 + 1][c1 + 1] - ruc[r0][c1 + 1] - ruc[r1 + 1][cr] + ruc[r0][cr] == 0) cr--;
+        return (rr - rl + 1) * (cr - cl + 1);
     }
 }
