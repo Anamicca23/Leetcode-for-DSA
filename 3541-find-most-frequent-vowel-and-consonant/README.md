@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/?envType=daily-question&envId=2025-09-13">3541. Find Most Frequent Vowel and Consonant</a></h2><h3>Easy</h3><hr><p>You are given a string <code>s</code> consisting of lowercase English letters (<code>&#39;a&#39;</code> to <code>&#39;z&#39;</code>). </p>
+<h2><a href="https://leetcode.com/problems/find-most-frequent-vowel-and-consonant">3541. Find Most Frequent Vowel and Consonant</a></h2><h3>Easy</h3><hr><p>You are given a string <code>s</code> consisting of lowercase English letters (<code>&#39;a&#39;</code> to <code>&#39;z&#39;</code>). </p>
 
 <p>Your task is to:</p>
 
