@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/design-spreadsheet/?envType=daily-question&envId=2025-09-19">3484. Design Spreadsheet</a></h2><h3>Medium</h3><hr><p>A spreadsheet is a grid with 26 columns (labeled from <code>&#39;A&#39;</code> to <code>&#39;Z&#39;</code>) and a given number of <code>rows</code>. Each cell in the spreadsheet can hold an integer value between 0 and 10<sup>5</sup>.</p>
+<h2><a href="https://leetcode.com/problems/design-spreadsheet">3484. Design Spreadsheet</a></h2><h3>Medium</h3><hr><p>A spreadsheet is a grid with 26 columns (labeled from <code>&#39;A&#39;</code> to <code>&#39;Z&#39;</code>) and a given number of <code>rows</code>. Each cell in the spreadsheet can hold an integer value between 0 and 10<sup>5</sup>.</p>
 
 <p>Implement the <code>Spreadsheet</code> class:</p>
 
