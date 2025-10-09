@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/find-the-minimum-amount-of-time-to-brew-potions/?envType=daily-question&envId=2025-10-09">3494. Find the Minimum Amount of Time to Brew Potions</a></h2><h3>Medium</h3><hr><p>You are given two integer arrays, <code>skill</code> and <code><font face="monospace">mana</font></code>, of length <code>n</code> and <code>m</code>, respectively.</p>
+<h2><a href="https://leetcode.com/problems/find-the-minimum-amount-of-time-to-brew-potions">3494. Find the Minimum Amount of Time to Brew Potions</a></h2><h3>Medium</h3><hr><p>You are given two integer arrays, <code>skill</code> and <code><font face="monospace">mana</font></code>, of length <code>n</code> and <code>m</code>, respectively.</p>
 
 <p>In a laboratory, <code>n</code> wizards must brew <code>m</code> potions <em>in order</em>. Each potion has a mana capacity <code>mana[j]</code> and <strong>must</strong> pass through <strong>all</strong> the wizards sequentially to be brewed properly. The time taken by the <code>i<sup>th</sup></code> wizard on the <code>j<sup>th</sup></code> potion is <code>time<sub>ij</sub> = skill[i] * mana[j]</code>.</p>
 
