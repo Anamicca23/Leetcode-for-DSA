@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/find-sum-of-array-product-of-magical-sequences/solutions/7269067/you-don-t-understand-you-ll-understand-now-90-beats/?envType=daily-question&envId=2025-10-12">3539. Find Sum of Array Product of Magical Sequences</a></h2><h3>Hard</h3><hr><p>You are given two integers, <code>m</code> and <code>k</code>, and an integer array <code>nums</code>.</p>
+<h2><a href="https://leetcode.com/problems/find-sum-of-array-product-of-magical-sequences">3539. Find Sum of Array Product of Magical Sequences</a></h2><h3>Hard</h3><hr><p>You are given two integers, <code>m</code> and <code>k</code>, and an integer array <code>nums</code>.</p>
 A sequence of integers <code>seq</code> is called <strong>magical</strong> if:
 
 <ul>
