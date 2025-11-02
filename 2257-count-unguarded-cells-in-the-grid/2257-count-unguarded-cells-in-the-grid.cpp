@@ -1,45 +1,52 @@
 class Solution {
 public:
-    void markedguarded(int row, int col, vector<vector<int>>&grid){
-        for(int i= row-1;i>=0;i--){
-            if(grid[i][col]==2 || grid[i][col]==3)break;
-            grid[i][col]=1;
-        }
+    void dfs(int r, int c, string dir, vector<vector<int>>& vis, map<pair<int, int>, int>& mp){
+        int n = vis.size();
+        int m = vis[0].size();
+        if(r<0 || c<0 || r>=n || c>=m) return;
+        if(mp.find({r, c})!=mp.end()) return;
+        else vis[r][c] = 1;
 
-        for(int i= row+1;i<grid.size();i++){
-            if(grid[i][col]==2 || grid[i][col]==3)break;
-            grid[i][col]=1;
+        if(dir == "r"){
+            dfs(r, c+1, "r", vis, mp);
         }
-
-        for(int j= col-1;j>=0;j--){
-            if(grid[row][j]==2 || grid[row][j]==3)break;
-            grid[row][j]=1;
+        if(dir == "l"){
+            dfs(r, c-1, "l", vis, mp);
         }
-
-        for(int j= col+1;j<grid[0].size();j++){
-            if(grid[row][j]==2 || grid[row][j]==3)break;
-            grid[row][j]=1;
+        if(dir == "u"){
+            dfs(r-1, c, "u", vis, mp);
+        }
+        if(dir == "d"){
+            dfs(r+1, c, "d", vis, mp);
         }
     }
     int countUnguarded(int m, int n, vector<vector<int>>& guards, vector<vector<int>>& walls) {
-        vector<vector<int>>grid(m,vector<int>(n,0));
-        for(auto &vec:guards){
-            int i=vec[0],j=vec[1];
-            grid[i][j]=2;
+        vector<vector<int>> vis(m, vector<int> (n));
+        queue<pair<int, int>> q;
+        map<pair<int, int>, int> mp;
+        for(auto it: guards){
+            q.push({it[0], it[1]});
+            mp[{it[0], it[1]}]++;
+            vis[it[0]][it[1]] = 1;
         }
-        for(auto&vec:walls){
-            int i=vec[0],j=vec[1];
-            grid[i][j]=3;
+        for(auto it: walls) {
+            mp[{it[0], it[1]}]++;
+            vis[it[0]][it[1]] = 1;
         }
-        for(auto & guard:guards){
-            int i=guard[0],j=guard[1];
-            markedguarded(i,j,grid);
+        for(auto it: guards){
+            int r = it[0];
+            int c = it[1];
+            dfs(r, c+1, "r", vis, mp);
+            dfs(r, c-1, "l", vis, mp);
+            dfs(r+1, c, "d", vis, mp);
+            dfs(r-1, c, "u", vis, mp);
         }
         int cnt=0;
-        for(int i=0;i<m;i++)
-           for(int j=0; j<n;j++)
-                if(grid[i][j]==0)cnt++;
-
-        return cnt;        
+        for(int i=0; i<m; i++){
+            for(int j=0; j<n; j++){
+                if(vis[i][j] == 0) cnt++;
+            }
+        }
+        return cnt;
     }
 };
