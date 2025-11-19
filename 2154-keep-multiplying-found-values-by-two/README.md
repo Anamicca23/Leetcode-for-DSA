@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/keep-multiplying-found-values-by-two/?envType=daily-question&envId=2025-11-19">2154. Keep Multiplying Found Values by Two</a></h2><h3>Easy</h3><hr><p>You are given an array of integers <code>nums</code>. You are also given an integer <code>original</code> which is the first number that needs to be searched for in <code>nums</code>.</p>
+<h2><a href="https://leetcode.com/problems/keep-multiplying-found-values-by-two">2154. Keep Multiplying Found Values by Two</a></h2><h3>Easy</h3><hr><p>You are given an array of integers <code>nums</code>. You are also given an integer <code>original</code> which is the first number that needs to be searched for in <code>nums</code>.</p>
 
 <p>You then do the following steps:</p>
 
