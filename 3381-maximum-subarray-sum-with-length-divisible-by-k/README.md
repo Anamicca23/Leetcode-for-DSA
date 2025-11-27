@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/?envType=daily-question&envId=2025-11-27">3381. Maximum Subarray Sum With Length Divisible by K</a></h2><h3>Medium</h3><hr><p>You are given an array of integers <code>nums</code> and an integer <code>k</code>.</p>
+<h2><a href="https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k">3381. Maximum Subarray Sum With Length Divisible by K</a></h2><h3>Medium</h3><hr><p>You are given an array of integers <code>nums</code> and an integer <code>k</code>.</p>
 
 <p>Return the <strong>maximum</strong> sum of a <span data-keyword="subarray-nonempty">subarray</span> of <code>nums</code>, such that the size of the subarray is <strong>divisible</strong> by <code>k</code>.</p>
 
