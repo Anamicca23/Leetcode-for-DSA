@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/count-number-of-trapezoids-i/?envType=daily-question&envId=2025-12-02">3623. Count Number of Trapezoids I</a></h2><h3>Medium</h3><hr><p data-end="189" data-start="146">You are given a 2D integer array <code>points</code>, where <code>points[i] = [x<sub>i</sub>, y<sub>i</sub>]</code> represents the coordinates of the <code>i<sup>th</sup></code> point on the Cartesian plane.</p>
+<h2><a href="https://leetcode.com/problems/count-number-of-trapezoids-i">3623. Count Number of Trapezoids I</a></h2><h3>Medium</h3><hr><p data-end="189" data-start="146">You are given a 2D integer array <code>points</code>, where <code>points[i] = [x<sub>i</sub>, y<sub>i</sub>]</code> represents the coordinates of the <code>i<sup>th</sup></code> point on the Cartesian plane.</p>
 
 <p data-end="579" data-start="405">A <strong>horizontal</strong> <strong>trapezoid</strong> is a convex quadrilateral with <strong data-end="496" data-start="475">at least one pair</strong> of horizontal sides (i.e. parallel to the x-axis). Two lines are parallel if and only if they have the same slope.</p>
 
