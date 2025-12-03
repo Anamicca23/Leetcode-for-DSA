@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/count-number-of-trapezoids-ii/?envType=daily-question&envId=2025-12-03">3625. Count Number of Trapezoids II</a></h2><h3>Hard</h3><hr><p data-end="189" data-start="146">You are given a 2D integer array <code>points</code> where <code>points[i] = [x<sub>i</sub>, y<sub>i</sub>]</code> represents the coordinates of the <code>i<sup>th</sup></code> point on the Cartesian plane.</p>
+<h2><a href="https://leetcode.com/problems/count-number-of-trapezoids-ii">3625. Count Number of Trapezoids II</a></h2><h3>Hard</h3><hr><p data-end="189" data-start="146">You are given a 2D integer array <code>points</code> where <code>points[i] = [x<sub>i</sub>, y<sub>i</sub>]</code> represents the coordinates of the <code>i<sup>th</sup></code> point on the Cartesian plane.</p>
 
 <p data-end="189" data-start="146">Return <em data-end="330" data-start="297">the number of unique </em><em>trapezoids</em> that can be formed by choosing any four distinct points from <code>points</code>.</p>
 
