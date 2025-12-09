@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/count-special-triplets/?envType=daily-question&envId=Invalid%20Date">3583. Count Special Triplets</a></h2><h3>Medium</h3><hr><p>You are given an integer array <code>nums</code>.</p>
+<h2><a href="https://leetcode.com/problems/count-special-triplets">3583. Count Special Triplets</a></h2><h3>Medium</h3><hr><p>You are given an integer array <code>nums</code>.</p>
 
 <p>A <strong>special triplet</strong> is defined as a triplet of indices <code>(i, j, k)</code> such that:</p>
 
