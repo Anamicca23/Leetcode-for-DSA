@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/four-divisors/?envType=daily-question&envId=2026-01-04">1390. Four Divisors</a></h2><h3>Medium</h3><hr><p>Given an integer array <code>nums</code>, return <em>the sum of divisors of the integers in that array that have exactly four divisors</em>. If there is no such integer in the array, return <code>0</code>.</p>
+<h2><a href="https://leetcode.com/problems/four-divisors">1390. Four Divisors</a></h2><h3>Medium</h3><hr><p>Given an integer array <code>nums</code>, return <em>the sum of divisors of the integers in that array that have exactly four divisors</em>. If there is no such integer in the array, return <code>0</code>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
