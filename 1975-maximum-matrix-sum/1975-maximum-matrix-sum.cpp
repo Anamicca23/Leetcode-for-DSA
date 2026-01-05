@@ -2,10 +2,10 @@ class Solution {
 public:
     long long maxMatrixSum(vector<vector<int>>& matrix) {
         int n = matrix.size();
-        long long sum =0; int ncnt=0,absmin =INT_MAX;
-        for(auto &r:matrix){
+        long long sum=0;int absmin=INT_MAX, ncnt=0;
+        for(auto & r:matrix){
             for(int x:r){
-                sum+=abs(x);
+                sum += abs(x);
                 if(x<0)ncnt++;
                 absmin= min(absmin,abs(x));
             }
