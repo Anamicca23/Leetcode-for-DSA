@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/maximum-matrix-sum/?envType=daily-question&envId=2024-11-24">1975. Maximum Matrix Sum</a></h2><h3>Medium</h3><hr><p>You are given an <code>n x n</code> integer <code>matrix</code>. You can do the following operation <strong>any</strong> number of times:</p>
+<h2><a href="https://leetcode.com/problems/maximum-matrix-sum">1975. Maximum Matrix Sum</a></h2><h3>Medium</h3><hr><p>You are given an <code>n x n</code> integer <code>matrix</code>. You can do the following operation <strong>any</strong> number of times:</p>
 
 <ul>
 	<li>Choose any two <strong>adjacent</strong> elements of <code>matrix</code> and <strong>multiply</strong> each of them by <code>-1</code>.</li>
