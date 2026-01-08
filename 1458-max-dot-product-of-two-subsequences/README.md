@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/max-dot-product-of-two-subsequences/description/?envType=daily-question&envId=2026-01-08">1458. Max Dot Product of Two Subsequences</a></h2><h3>Hard</h3><hr><p>Given two arrays <code>nums1</code>&nbsp;and <code><font face="monospace">nums2</font></code><font face="monospace">.</font></p>
+<h2><a href="https://leetcode.com/problems/max-dot-product-of-two-subsequences/?envType=daily-question&envId=2026-01-08">1458. Max Dot Product of Two Subsequences</a></h2><h3>Hard</h3><hr><p>Given two arrays <code>nums1</code>&nbsp;and <code><font face="monospace">nums2</font></code><font face="monospace">.</font></p>
 
 <p>Return the maximum dot product&nbsp;between&nbsp;<strong>non-empty</strong> subsequences of nums1 and nums2 with the same length.</p>
 
