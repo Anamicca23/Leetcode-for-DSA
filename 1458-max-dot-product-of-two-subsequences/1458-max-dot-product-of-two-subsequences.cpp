@@ -1,16 +1,27 @@
 class Solution {
 public:
-    int maxDotProduct(vector<int>& A, vector<int>& B) {
-        int n = A.size(), m = B.size();
-        vector<vector<int>> dp(n, vector<int>(m));
-        for (int i = 0; i < n; ++i) {
-            for (int j = 0; j < m; ++j) {
-                dp[i][j] = A[i] * B[j];
-                if (i && j) dp[i][j] += max(dp[i - 1][j - 1], 0);
-                if (i) dp[i][j] = max(dp[i][j], dp[i - 1][j]);
-                if (j) dp[i][j] = max(dp[i][j], dp[i][j - 1]);
+    int maxDotProduct(vector<int>& nums1, vector<int>& nums2) {
+        int n = nums1.size();
+        int m = nums2.size();
+        vector<vector<int>> memo(n, vector<int>(m, INT_MIN));
+        
+        function<int(int, int)> dp = [&](int i, int j) {
+            if (i == n || j == m) {
+                return INT_MIN;
             }
-        }
-        return dp[n - 1][m - 1];
+            
+            if (memo[i][j] != INT_MIN) {
+                return memo[i][j];
+            }
+            
+            memo[i][j] = max(
+                nums1[i] * nums2[j] + max(dp(i + 1, j + 1), 0),
+                max(dp(i + 1, j), dp(i, j + 1))
+            );
+            
+            return memo[i][j];
+        };
+        
+        return dp(0, 0);
     }
 };
