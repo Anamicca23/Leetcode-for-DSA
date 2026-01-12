@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/minimum-time-visiting-all-points/?envType=daily-question&envId=2026-01-12">1266. Minimum Time Visiting All Points</a></h2><h3>Easy</h3><hr><p>On a 2D plane, there are <code>n</code> points with integer coordinates <code>points[i] = [x<sub>i</sub>, y<sub>i</sub>]</code>. Return <em>the <strong>minimum time</strong> in seconds to visit all the points in the order given by </em><code>points</code>.</p>
+<h2><a href="https://leetcode.com/problems/minimum-time-visiting-all-points">1266. Minimum Time Visiting All Points</a></h2><h3>Easy</h3><hr><p>On a 2D plane, there are <code>n</code> points with integer coordinates <code>points[i] = [x<sub>i</sub>, y<sub>i</sub>]</code>. Return <em>the <strong>minimum time</strong> in seconds to visit all the points in the order given by </em><code>points</code>.</p>
 
 <p>You can move according to these rules:</p>
 
