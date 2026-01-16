@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/maximum-square-area-by-removing-fences-from-a-field/?envType=daily-question&envId=2026-01-16">2975. Maximum Square Area by Removing Fences From a Field</a></h2><h3>Medium</h3><hr><p>There is a large <code>(m - 1) x (n - 1)</code> rectangular field with corners at <code>(1, 1)</code> and <code>(m, n)</code> containing some horizontal and vertical fences given in arrays <code>hFences</code> and <code>vFences</code> respectively.</p>
+<h2><a href="https://leetcode.com/problems/maximum-square-area-by-removing-fences-from-a-field">2975. Maximum Square Area by Removing Fences From a Field</a></h2><h3>Medium</h3><hr><p>There is a large <code>(m - 1) x (n - 1)</code> rectangular field with corners at <code>(1, 1)</code> and <code>(m, n)</code> containing some horizontal and vertical fences given in arrays <code>hFences</code> and <code>vFences</code> respectively.</p>
 
 <p>Horizontal fences are from the coordinates <code>(hFences[i], 1)</code> to <code>(hFences[i], n)</code> and vertical fences are from the coordinates <code>(1, vFences[i])</code> to <code>(m, vFences[i])</code>.</p>
 
