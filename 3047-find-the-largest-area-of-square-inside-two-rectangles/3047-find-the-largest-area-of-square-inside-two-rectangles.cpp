@@ -1,3 +1,4 @@
+
 class Solution {
 public:
     long largestSquareArea(vector<std::vector<int>>& bottomLeft, vector<std::vector<int>>& topRight) {
