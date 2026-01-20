@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/construct-the-minimum-bitwise-array-i">3314. Construct the Minimum Bitwise Array I</a></h2><h3>Easy</h3><hr><p>You are given an array <code>nums</code> consisting of <code>n</code> <span data-keyword="prime-number">prime</span> integers.</p>
+<h2><a href="https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/?envType=daily-question&envId=2026-01-20">3314. Construct the Minimum Bitwise Array I</a></h2><h3>Easy</h3><hr><p>You are given an array <code>nums</code> consisting of <code>n</code> <span data-keyword="prime-number">prime</span> integers.</p>
 
 <p>You need to construct an array <code>ans</code> of length <code>n</code>, such that, for each index <code>i</code>, the bitwise <code>OR</code> of <code>ans[i]</code> and <code>ans[i] + 1</code> is equal to <code>nums[i]</code>, i.e. <code>ans[i] OR (ans[i] + 1) == nums[i]</code>.</p>
 
