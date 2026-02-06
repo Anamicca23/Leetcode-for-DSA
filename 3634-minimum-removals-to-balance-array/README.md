@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/minimum-removals-to-balance-array/?envType=daily-question&envId=2026-02-06">3634. Minimum Removals to Balance Array</a></h2><h3>Medium</h3><hr><p>You are given an integer array <code>nums</code> and an integer <code>k</code>.</p>
+<h2><a href="https://leetcode.com/problems/minimum-removals-to-balance-array">3634. Minimum Removals to Balance Array</a></h2><h3>Medium</h3><hr><p>You are given an integer array <code>nums</code> and an integer <code>k</code>.</p>
 
 <p>An array is considered <strong>balanced</strong> if the value of its <strong>maximum</strong> element is <strong>at most</strong> <code>k</code> times the <strong>minimum</strong> element.</p>
 
