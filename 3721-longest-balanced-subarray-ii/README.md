@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/longest-balanced-subarray-ii/solutions/7569933/step-by-step-by-balepavleski-kutq/?envType=daily-question&envId=2026-02-11">3721. Longest Balanced Subarray II</a></h2><h3>Hard</h3><hr><p>You are given an integer array <code>nums</code>.</p>
+<h2><a href="https://leetcode.com/problems/longest-balanced-subarray-ii">3721. Longest Balanced Subarray II</a></h2><h3>Hard</h3><hr><p>You are given an integer array <code>nums</code>.</p>
 
 <p>A <strong><span data-keyword="subarray-nonempty">subarray</span></strong> is called <strong>balanced</strong> if the number of <strong>distinct even</strong> numbers in the subarray is equal to the number of <strong>distinct odd</strong> numbers.</p>
 
