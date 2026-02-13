@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/longest-balanced-substring-ii/solutions/?envType=daily-question&envId=2026-02-13">3714. Longest Balanced Substring II</a></h2><h3>Medium</h3><hr><p>You are given a string <code>s</code> consisting only of the characters <code>&#39;a&#39;</code>, <code>&#39;b&#39;</code>, and <code>&#39;c&#39;</code>.</p>
+<h2><a href="https://leetcode.com/problems/longest-balanced-substring-ii">3714. Longest Balanced Substring II</a></h2><h3>Medium</h3><hr><p>You are given a string <code>s</code> consisting only of the characters <code>&#39;a&#39;</code>, <code>&#39;b&#39;</code>, and <code>&#39;c&#39;</code>.</p>
 
 <p>A <strong><span data-keyword="substring-nonempty">substring</span></strong> of <code>s</code> is called <strong>balanced</strong> if all <strong>distinct</strong> characters in the <strong>substring</strong> appear the <strong>same</strong> number of times.</p>
 
