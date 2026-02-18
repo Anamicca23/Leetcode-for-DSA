@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/binary-number-with-alternating-bits/?envType=daily-question&envId=2026-02-18">693. Binary Number with Alternating Bits</a></h2><h3>Easy</h3><hr><p>Given a positive integer, check whether it has alternating bits: namely, if two adjacent bits will always have different values.</p>
+<h2><a href="https://leetcode.com/problems/binary-number-with-alternating-bits">693. Binary Number with Alternating Bits</a></h2><h3>Easy</h3><hr><p>Given a positive integer, check whether it has alternating bits: namely, if two adjacent bits will always have different values.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
