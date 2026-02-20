@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/special-binary-string/?envType=daily-question&envId=2026-02-20">761. Special Binary String</a></h2><h3>Hard</h3><hr><p><strong>Special binary strings</strong> are binary strings with the following two properties:</p>
+<h2><a href="https://leetcode.com/problems/special-binary-string">761. Special Binary String</a></h2><h3>Hard</h3><hr><p><strong>Special binary strings</strong> are binary strings with the following two properties:</p>
 
 <ul>
 	<li>The number of <code>0</code>&#39;s is equal to the number of <code>1</code>&#39;s.</li>
