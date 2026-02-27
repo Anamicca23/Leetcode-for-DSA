@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/minimum-operations-to-equalize-binary-string">3666. Minimum Operations to Equalize Binary String</a></h2><h3>Hard</h3><hr><p>You are given a binary string <code>s</code>, and an integer <code>k</code>.</p>
+<h2><a href="https://leetcode.com/problems/minimum-operations-to-equalize-binary-string/?envType=daily-question&envId=2026-02-27">3666. Minimum Operations to Equalize Binary String</a></h2><h3>Hard</h3><hr><p>You are given a binary string <code>s</code>, and an integer <code>k</code>.</p>
 
 <p>In one operation, you must choose <strong>exactly</strong> <code>k</code> <strong>different</strong> indices and <strong>flip</strong> each <code>&#39;0&#39;</code> to <code>&#39;1&#39;</code> and each <code>&#39;1&#39;</code> to <code>&#39;0&#39;</code>.</p>
 
