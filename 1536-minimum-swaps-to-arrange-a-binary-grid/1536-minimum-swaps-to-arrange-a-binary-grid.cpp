@@ -8,6 +8,7 @@ public:
                 trail++;
             grid[i][0] = trail;
         }
+
         int swaps = 0;
         for (int i = 0; i < n; i++) {
             int j, req = n - 1 - i;
@@ -17,6 +18,7 @@ public:
             swaps += j;
             grid.erase(grid.begin() + j);
         }
+
         return swaps;
     }
 };
