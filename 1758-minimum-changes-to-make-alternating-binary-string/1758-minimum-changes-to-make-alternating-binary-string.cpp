@@ -1,18 +1,15 @@
 class Solution {
 public:
-    
     int minOperations(string s) {
-        int cost1 = 0;
-        int cost2 = 0;
-        char first = '0';
-        char second = '1';
-        int n = s.size();
-        for(int i = 0; i < n; i++){
-            cost1 += s[i] != first;
-            cost2 += s[i] != second;
-            first = first == '0'? '1' : '0';
-            second = second == '0'? '1' : '0';
+        int count1 = 0, count2 = 0;
+
+        for(int i=0; i<s.size(); ++i) {
+            char expected1 = (i % 2) == 0 ? '0' : '1';
+            char expected2 = (i % 2) == 0 ? '1' : '0';
+
+            if(s[i] != expected1) count1++;
+            if(s[i] != expected2) count2++;
         }
-        return min(cost1, cost2);
+        return min(count1, count2);
     }
 };
