@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/description/?envType=daily-question&envId=2026-03-06">1784. Check if Binary String Has at Most One Segment of Ones</a></h2><h3>Easy</h3><hr><p>Given a binary string <code>s</code> <strong>​​​​​without leading zeros</strong>, return <code>true</code>​​​ <em>if </em><code>s</code><em> contains <strong>at most one contiguous segment of ones</strong></em>. Otherwise, return <code>false</code>.</p>
+<h2><a href="https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones">1784. Check if Binary String Has at Most One Segment of Ones</a></h2><h3>Easy</h3><hr><p>Given a binary string <code>s</code> <strong>​​​​​without leading zeros</strong>, return <code>true</code>​​​ <em>if </em><code>s</code><em> contains <strong>at most one contiguous segment of ones</strong></em>. Otherwise, return <code>false</code>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
