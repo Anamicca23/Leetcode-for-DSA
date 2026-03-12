@@ -2,13 +2,10 @@ class Solution {
 public:
     int components;
     vector<int> parent, size;
-
     int Union(int u, int v){
         int pu = findParent(u);
         int pv = findParent(v);
-
         if(pu == pv) return 0;
-
         components--;
         if(size[pu] > size[pv]){
             size[pu] += size[pv];
@@ -30,32 +27,24 @@ public:
         components = n;
         parent.resize(n);
         size.resize(n, 1);
-
         for(int i = 0; i < n; i++){
             parent[i] = i;
         }
-
         vector<vector<int>> must, flex;
-
         for(auto &it : edges){
             if(it[3] == 1) must.push_back(it);
             else flex.push_back(it);
         }
-
         int mini = INT_MAX;
-
         for(auto &it : must){
             int u = it[0];
             int v = it[1];
             int w = it[2];
-
             mini = min(mini, w);
-
             if(!Union(u, v)){
                 return -1;
             }
         }
-
         sort(flex.begin(), flex.end(), [](vector<int>& a, vector<int>& b){
             return a[2] > b[2];
         });
