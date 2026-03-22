@@ -1,19 +1,25 @@
 class Solution:
-    def rotate(self, mat):
+    def findRotation(
+        self, mat: List[List[int]], target: List[List[int]]
+    ) -> bool:
         n = len(mat)
+        # at most 4 rotations
+        for k in range(4):
+            # rotation operation
+            for i in range(n // 2):
+                for j in range((n + 1) // 2):
+                    (
+                        mat[i][j],
+                        mat[n - 1 - j][i],
+                        mat[n - 1 - i][n - 1 - j],
+                        mat[j][n - 1 - i],
+                    ) = (
+                        mat[n - 1 - j][i],
+                        mat[n - 1 - i][n - 1 - j],
+                        mat[j][n - 1 - i],
+                        mat[i][j],
+                    )
 
-        # transpose
-        for i in range(n):
-            for j in range(i, n):
-                mat[i][j], mat[j][i] = mat[j][i], mat[i][j]
-
-        # reverse rows
-        for i in range(n):
-            mat[i].reverse()
-
-    def findRotation(self, mat, target):
-        for _ in range(4):
             if mat == target:
                 return True
-            self.rotate(mat)
         return False
