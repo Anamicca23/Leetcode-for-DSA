@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/maximum-amount-of-money-robot-can-earn/?envType=daily-question&envId=2026-04-02">3418. Maximum Amount of Money Robot Can Earn</a></h2><h3>Medium</h3><hr><p>You are given an <code>m x n</code> grid. A robot starts at the top-left corner of the grid <code>(0, 0)</code> and wants to reach the bottom-right corner <code>(m - 1, n - 1)</code>. The robot can move either right or down at any point in time.</p>
+<h2><a href="https://leetcode.com/problems/maximum-amount-of-money-robot-can-earn">3418. Maximum Amount of Money Robot Can Earn</a></h2><h3>Medium</h3><hr><p>You are given an <code>m x n</code> grid. A robot starts at the top-left corner of the grid <code>(0, 0)</code> and wants to reach the bottom-right corner <code>(m - 1, n - 1)</code>. The robot can move either right or down at any point in time.</p>
 
 <p>The grid contains a value <code>coins[i][j]</code> in each cell:</p>
 
