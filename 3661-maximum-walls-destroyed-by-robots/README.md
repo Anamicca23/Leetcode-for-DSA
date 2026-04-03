@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/maximum-walls-destroyed-by-robots">3661. Maximum Walls Destroyed by Robots</a></h2><h3>Hard</h3><hr><div data-docx-has-block-data="false" data-lark-html-role="root" data-page-id="Rax8d6clvoFeVtx7bzXcvkVynwf">
+<h2><a href="https://leetcode.com/problems/maximum-walls-destroyed-by-robots/solutions/7118560/java-dp-sliding-window-beat-100-time-100-m50u/?envType=daily-question&envId=2026-04-03">3661. Maximum Walls Destroyed by Robots</a></h2><h3>Hard</h3><hr><div data-docx-has-block-data="false" data-lark-html-role="root" data-page-id="Rax8d6clvoFeVtx7bzXcvkVynwf">
 <div class="old-record-id-Y5dGdSKIMoNTttxGhHLccrpEnaf">There is an endless straight line populated with some robots and walls. You are given integer arrays <code>robots</code>, <code>distance</code>, and <code>walls</code>:</div>
 </div>
 
