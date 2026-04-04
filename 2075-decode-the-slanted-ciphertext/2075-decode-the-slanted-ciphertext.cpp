@@ -1,33 +1,25 @@
 class Solution {
 public:
-    string decodeCiphertext(string encodedText, int rows) {
-        int n = encodedText.size();
-        int col = n / rows;
-        vector<vector<char>> mat(rows, vector<char>(col));
-        int k = 0;
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < col; j++) {
-                mat[i][j] = encodedText[k++];
+    string decodeCiphertext(string encoded, int rows) {
+        int n = encoded.length();
+        int cols = n / rows;
+
+        string original;
+        original.reserve(n);
+
+        int last_chr = -1;
+        for (int i = 0; i < cols; i++) {
+            for (int j = 0; j < rows; j++) {
+                if (i + j == cols) {
+                    original.resize(last_chr + 1); 
+                    return original;
+                }
+                int idx = j * cols + i + j;
+                if (encoded[idx] != ' ') last_chr = original.length();
+                original.push_back(encoded[idx]);
             }
         }
-        int i = 0, j = 0;
-        string s = "";
-        while (i < rows && j < col) {
-            int prev = j;
-            
-            while (i < rows && j < col) {
-                s += mat[i][j];
-                i++;
-                j++;
-            }
-            if (i >= rows || j >= col) {
-                i = 0;
-                j = prev + 1;
-            }
-        }
-        while (!s.empty() && s.back() == ' ') {
-    s.pop_back();
-}
-        return s;
+        original.resize(last_chr + 1);
+        return original;
     }
 };
