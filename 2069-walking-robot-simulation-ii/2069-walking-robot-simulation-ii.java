@@ -1,81 +1,101 @@
 class Robot {
-    private final int width, height;
-    private int x, y;
-    private Direction dir;
 
-    public Robot(final int width, final int height) {
+    int direction;
+    String[] directionName;
+    int width, height;
+    int[] position;
+    int[][] stepMovement;
+    int num;
+
+    public Robot(int width, int height) {
         this.width = width;
         this.height = height;
-        this.x = 0;
-        this.y = 0;
+        this.position = new int[2];
+        this.position[0] = 0;
+        this.position[1] = 0;
+        this.direction = 0;
+        this.directionName = new String[]{"East", "North", "West", "South"};
+        this.stepMovement = new int[][]{{1,0},  {0,1}, {-1, 0}, {0, -1}};
+        this.num = 0;
 
-        final Direction east = new Direction("East", 1, 0);
-        final Direction north = new Direction("North", 0, 1);
-        final Direction west = new Direction("West", -1, 0);
-        final Direction south = new Direction("South", 0, -1);
-
-        east.next = north;
-        north.next = west;
-        west.next = south;
-        south.next = east;
-
-        this.dir = east;
     }
-
-    public void step(int num) {
-        final int perimeter = 2 * (width + height) - 4;
-
-        num = num % perimeter == 0 && num > 0 ? perimeter : num % perimeter;
-
-        while (num > 0) {
-            final int steps = stepsToEdge(dir.name, x, y, width, height);
-
-            if (num <= steps) {
-                x += dir.dx * num;
-                y += dir.dy * num;
-                num = 0;
-            } else {
-                x += dir.dx * steps;
-                y += dir.dy * steps;
-
-                num -= steps;
-                dir = dir.next;
+    
+    private void lazyStep(int num){
+        num = num%(2*(this.width + this.height) - 4);
+        if(num == 0){
+            num = 2*(this.width + this.height) - 4;
+        }
+        while(num > 0){
+            switch(direction){
+                case 0:
+                    if(this.position[0] + num > this.width - 1){
+                        num = num - (this.width - this.position[0] - 1);
+                        this.direction = (this.direction + 1)%4;
+                        this.position[0] = this.width-1;
+                    }
+                    else{
+                        this.position[0] = this.position[0] + num;
+                        num = 0;
+                    }
+                    break;
+                case 2:
+                    if(this.position[0] - num < 0){
+                        num = num - (this.position[0]);
+                        this.direction = (this.direction + 1)%4;
+                        this.position[0] = 0;
+                    }
+                    else{
+                        this.position[0] = this.position[0] - num;
+                        num = 0;
+                    }
+                    break;
+                case 1:
+                    if(this.position[1] + num > this.height - 1){
+                        num = num - (this.height - this.position[1] - 1);
+                        this.direction = (this.direction + 1)%4;
+                        this.position[1] = this.height - 1;
+                    }
+                    else{
+                        this.position[1] = this.position[1] + num;
+                        num = 0;
+                    }
+                    break;
+                case 3:
+                    if(this.position[1] - num < 0){
+                        num = num - (this.position[1]);
+                        this.direction = (this.direction + 1)%4;
+                        this.position[1] = 0;
+                    }
+                    else{
+                        this.position[1] = this.position[1] - num;
+                        num = 0;
+                    }
+                    break;
             }
         }
+        this.num = 0;
     }
-
+    public void step(int num) {
+        this.num += num;
+    }
+    
     public int[] getPos() {
-        return new int[] { x, y };
+        if(this.num > 0)
+            this.lazyStep(this.num);
+        return this.position;
     }
-
+    
     public String getDir() {
-        return dir.name;
-    }
-
-    private int stepsToEdge(final String name, final int x, final int y, final int width, final int height) {
-        switch (name) {
-            case "East":
-                return width - 1 - x;
-            case "North":
-                return height - 1 - y;
-            case "West":
-                return x;
-            case "South":
-                return y;
-            default:
-                return 0;
-        }
-    }
-
-    private final class Direction {
-        public final String name;
-        public final int dx, dy;
-        public Direction next;
-
-        public Direction(final String name, final int dx, final int dy) {
-            this.name = name;
-            this.dx = dx;
-            this.dy = dy;
-        }
+        if(this.num > 0)
+            this.lazyStep(this.num);
+        return this.directionName[this.direction];
     }
 }
+
+/**
+ * Your Robot object will be instantiated and called as such:
+ * Robot obj = new Robot(width, height);
+ * obj.step(num);
+ * int[] param_2 = obj.getPos();
+ * String param_3 = obj.getDir();
+ */
