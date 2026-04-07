@@ -1,37 +1,41 @@
+#pragma GCC optimize("Ofast,unroll-loops,inline")
+#include <vector>
+#include <string>
+
+static const int speedup = []() {
+    std::ios_base::sync_with_stdio(false);
+    std::cin.tie(NULL);
+    return 0;
+}();
+
 class Robot {
-private:
-    int w, h, perimeter;
-    int x = 0, y = 0, dir = 0;
-    static constexpr int dirs[5] = {0, 1, 0, -1, 0};
-    static constexpr const char* dirsText[4] = {"East", "North", "West", "South"};
+    int w, h, p, curr;
+    bool moved;
+    const std::string dirs[4] = {"East", "North", "West", "South"};
+
 public:
-    Robot(int width, int height) : w(width), h(height), perimeter(2 * (w + h - 2)) {}
-    void step(int num) {
-        num %= perimeter;
-        while (num) {
-            int move = 0;
-            if (dir == 0) move = w - 1 - x;
-            else if (dir == 1) move = h - 1 - y;
-            else if (dir == 2) move = x;
-            else move = y;
-            if (num <= move) {
-                x += dirs[dir + 1] * num;
-                y += dirs[dir] * num;
-                num = 0;
-            } 
-            else {
-                x += dirs[dir + 1] * move;
-                y += dirs[dir] * move;
-                num -= move;
-                dir = (dir + 1) % 4;
-            }
-        }
-        if (x == 0 && y == 0 && num == 0 && dir == 0) dir = 3;
+    Robot(int width, int height) : w(width), h(height), curr(0), moved(false) {
+        p = (w + h - 2) << 1;
     }
-    vector<int> getPos() const {
-        return {x, y};
+    
+    inline void step(int num) {
+        moved = true;
+        curr = (curr + num) % p;
     }
-    string getDir() const {
-        return dirsText[dir];
+    
+    inline std::vector<int> getPos() {
+        if (curr < w) return {curr, 0};
+        if (curr < w + h - 1) return {w - 1, curr - w + 1};
+        if (curr < (w << 1) + h - 2) return { (w << 1) + h - 3 - curr, h - 1};
+        return {0, p - curr};
+    }
+    
+    inline std::string getDir() {
+        if (!moved) return dirs[0];
+        if (curr == 0) return dirs[3]; 
+        if (curr < w) return dirs[0];
+        if (curr < w + h - 1) return dirs[1];
+        if (curr < (w << 1) + h - 2) return dirs[2];
+        return dirs[3];
     }
 };
