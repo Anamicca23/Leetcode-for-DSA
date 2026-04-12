@@ -9,9 +9,7 @@ class Solution {
             res += d(b, c);
         }
         return res - save;
-
     }
-
     private int d(int a, int b) {
         return Math.abs(a / 6 - b / 6) + Math.abs(a % 6 - b % 6);
     }
