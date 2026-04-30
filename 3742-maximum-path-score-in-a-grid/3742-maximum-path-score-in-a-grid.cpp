@@ -23,6 +23,7 @@ public:
         return ans<0?-1:ans;
     }
 };
+
 const auto init = []() noexcept {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
