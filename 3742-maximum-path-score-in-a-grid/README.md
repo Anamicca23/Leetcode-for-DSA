@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/maximum-path-score-in-a-grid">3742. Maximum Path Score in a Grid</a></h2><h3>Medium</h3><hr><p>You are given an <code>m x n</code> grid where each cell contains one of the values 0, 1, or 2. You are also given an integer <code>k</code>.</p>
+<h2><a href="https://leetcode.com/problems/maximum-path-score-in-a-grid/?envType=daily-question&envId=2026-04-30">3742. Maximum Path Score in a Grid</a></h2><h3>Medium</h3><hr><p>You are given an <code>m x n</code> grid where each cell contains one of the values 0, 1, or 2. You are also given an integer <code>k</code>.</p>
 
 <p>You start from the top-left corner <code>(0, 0)</code> and want to reach the bottom-right corner <code>(m - 1, n - 1)</code> by moving only <strong>right</strong> or <strong>down</strong>.</p>
 
