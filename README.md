@@ -965,6 +965,7 @@ Let's crack those coding interviews one problem at a time!
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0061-rotate-list](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0061-rotate-list/) | Medium |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [3643-flip-square-submatrix-vertically](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3643-flip-square-submatrix-vertically/) | Easy |
 ## Enumeration
@@ -1007,4 +1008,8 @@ Let's crack those coding interviews one problem at a time!
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1559-detect-cycles-in-2d-grid](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1559-detect-cycles-in-2d-grid/) | Medium |
+## Linked List
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0061-rotate-list](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0061-rotate-list/) | Medium |
 <!---LeetCode Topics End-->
