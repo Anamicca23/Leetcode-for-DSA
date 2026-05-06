@@ -1,31 +1,23 @@
 class Solution {
 public:
-    static vector<vector<char>> rotateTheBox(vector<vector<char>>& box) {
-        const int r=box.size(), c=box[0].size();
-        vector<vector<char>> rotate(c, vector<char>(r, '.'));
-        for(int i=0; i<r; i++){
-            int bottom=c-1;
-            for(int j=c-1; j>=0; j--){
-                if (box[i][j]=='#'){
-                    rotate[bottom][r-1-i]='#';
-                    bottom--;
-                }
-                else if (box[i][j]=='*'){
-                    rotate[j][r-1-i]='*';
-                    bottom=j-1;
-                }
+    vector<vector<char>> rotateTheBox(vector<vector<char>>& grid) {
+        int rows = grid.size(), cols = grid[0].size();
+        for (int r = 0; r < rows; r++) {
+            int p = 0;
+            for (int c = 0; c < cols; c++) {
+                if (grid[r][c] == '.') {
+                    swap(grid[r][c], grid[r][p]);
+                    p++;
+                } else if (grid[r][c] == '*')
+                    p = c + 1;
             }
         }
-        return rotate;
+        
+        vector<vector<char>> res(cols, vector<char>(rows));
+        for (int r = 0; r < rows; r++)
+            for (int c = 0; c < cols; c++)
+                res[c][rows - 1 - r] = grid[r][c];
+                
+        return res;
     }
 };
-
-
-
-auto init = []()
-{ 
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-    cout.tie(0);
-    return 'c';
-}();
