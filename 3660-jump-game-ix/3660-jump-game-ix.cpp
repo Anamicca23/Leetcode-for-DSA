@@ -1,22 +1,23 @@
 class Solution {
 public:
-    vector<int> maxValue(vector<int>& nums) {
-        int n = nums.size();
-        vector<int> res;
-        res.push_back(nums[0]);
-        for (int i = 1; i < n; i++) {
-            res.push_back(max(res.back(), nums[i]));
-        }
+    static vector<int> maxValue(vector<int>& nums) {
+        const int n=nums.size();
+        vector<int> prefMax(n), sufMin(n);
+        prefMax[0]=nums[0];
+        sufMin[n-1]=nums[n-1];
 
-        int min_idx = n - 1;
-        for (int i = n - 2; i >= 0; i--) {
-            if (res[i] > nums[min_idx]) {
-                res[i] = res[min_idx];
-            }
-            if (nums[i] < nums[min_idx]) {
-                min_idx = i;
-            }
+        for(int i=1; i<n; i++){
+            const int x=nums[i], y=nums[n-1-i];
+            prefMax[i]=max(prefMax[i-1], x);
+            sufMin[n-1-i]=min(sufMin[n-i], y);
         }
-        return res;
+        vector<int> ans(n);
+        ans[n-1]=prefMax[n-1];
+        for(int i=n-2; i>=0; i--){
+            if (prefMax[i]>sufMin[i+1]) 
+                ans[i]=max(prefMax[i], ans[i+1]);
+            else ans[i]=prefMax[i];
+        }
+        return ans;
     }
 };
