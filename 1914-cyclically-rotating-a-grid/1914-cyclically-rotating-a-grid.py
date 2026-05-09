@@ -1,34 +1,33 @@
 class Solution:
     def rotateGrid(self, grid: List[List[int]], k: int) -> List[List[int]]:
-        T, L = 0, 0
-        B, R = len(grid) - 1, len(grid[0]) - 1
+        m, n = len(grid), len(grid[0])
+        for offset in range(min(m, n) // 2):
+            row = m - 2 * offset
+            col = n - 2 * offset
+            length = row * 2 + col * 2 - 4
+            rot = k % length
+            if rot == 0:
+                continue
 
-        while T < B and L < R:
-            ln, wid = B - T, R - L
-            perimeter = 2 * ln + 2 * wid
-            r = k % perimeter
+            ring = grid[offset][offset : n - 1 - offset]
+            ring += [c[n - 1 - offset] for c in grid[offset : m - 1 - offset]]
+            ring += grid[m - 1 - offset][n - 1 - offset : offset : -1]
+            ring += [c[offset] for c in grid[m - 1 - offset : offset : -1]]
 
-            while r:
-                tmp = grid[T][L]
+            ring = ring[rot:] + ring[:rot]
 
-                for i in range(L, R):
-                    grid[T][i] = grid[T][i + 1]
-
-                for i in range(T, B):
-                    grid[i][R] = grid[i + 1][R]
-
-                for i in range(R, L, -1):
-                    grid[B][i] = grid[B][i - 1]
-
-                for i in range(B, T, -1):
-                    grid[i][L] = grid[i - 1][L]
-
-                grid[T + 1][L] = tmp
-                r -= 1
-
-            T += 1
-            L += 1
-            B -= 1
-            R -= 1
+            idx = 0
+            for j in range(offset, n - offset):
+                grid[offset][j] = ring[idx]
+                idx += 1
+            for i in range(offset + 1, m - offset - 1):
+                grid[i][n - 1 - offset] = ring[idx]
+                idx += 1
+            for j in range(n - offset - 1, offset - 1, -1):
+                grid[m - 1 - offset][j] = ring[idx]
+                idx += 1
+            for i in range(m - offset - 2, offset, -1):
+                grid[i][offset] = ring[idx]
+                idx += 1
 
         return grid
