@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks">1665. Minimum Initial Energy to Finish Tasks</a></h2><h3>Hard</h3><hr><p>You are given an array <code>tasks</code> where <code>tasks[i] = [actual<sub>i</sub>, minimum<sub>i</sub>]</code>:</p>
+<h2><a href="https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/solutions/?envType=daily-question&envId=2026-05-12">1665. Minimum Initial Energy to Finish Tasks</a></h2><h3>Hard</h3><hr><p>You are given an array <code>tasks</code> where <code>tasks[i] = [actual<sub>i</sub>, minimum<sub>i</sub>]</code>:</p>
 
 <ul>
 	<li><code>actual<sub>i</sub></code> is the actual amount of energy you <strong>spend to finish</strong> the <code>i<sup>th</sup></code> task.</li>
