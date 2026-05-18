@@ -747,6 +747,7 @@ Let's crack those coding interviews one problem at a time!
 | [0396-rotate-function](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0396-rotate-function/) | Medium |
 | [0874-walking-robot-simulation](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0874-walking-robot-simulation/) | Medium |
 | [1306-jump-game-iii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1306-jump-game-iii/) | Medium |
+| [1345-jump-game-iv](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1345-jump-game-iv/) | Hard |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1559-detect-cycles-in-2d-grid](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1559-detect-cycles-in-2d-grid/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
@@ -890,6 +891,7 @@ Let's crack those coding interviews one problem at a time!
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0874-walking-robot-simulation](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0874-walking-robot-simulation/) | Medium |
+| [1345-jump-game-iv](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1345-jump-game-iv/) | Hard |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1980-find-unique-binary-string/) | Medium |
 | [2615-sum-of-distances](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2615-sum-of-distances/) | Medium |
@@ -1038,6 +1040,7 @@ Let's crack those coding interviews one problem at a time!
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1306-jump-game-iii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1306-jump-game-iii/) | Medium |
+| [1345-jump-game-iv](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1345-jump-game-iv/) | Hard |
 | [1559-detect-cycles-in-2d-grid](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1559-detect-cycles-in-2d-grid/) | Medium |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3629-minimum-jumps-to-reach-end-via-prime-teleportation/) | Medium |
 ## Linked List
