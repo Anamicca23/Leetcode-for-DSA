@@ -1,22 +1,21 @@
 class Solution {
 public:
-    int getCommon(vector<int>& nums1, vector<int>& nums2) {
-        int m = nums1.size();
-        int n = nums2.size();
-
-        int i = 0; // for nums1
-        int j = 0; // for nums2
-
-        while (i < m && j < n) {
-            if (nums1[i] == nums2[j]) {
-                return nums1[i];
-            } else if (nums1[i] < nums2[j]) {
-                i++;
-            } else {
-                j++;
-            }
+    static int getCommon(vector<int>& nums1, vector<int>& nums2) {
+        int n1=nums1.size(), n2=nums2.size();
+        int p1=0, p2=0;
+        for( ; p1<n1 && p2<n2; ){
+            int x=nums1[p1], y=nums2[p2];
+            if (x==y) return x;
+            else if (x>y) p2++;
+            else p1++;
         }
-
         return -1;
     }
 };
+
+auto init = []() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    return 'c';
+}();
