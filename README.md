@@ -850,6 +850,7 @@ Let's crack those coding interviews one problem at a time!
 | [2833-furthest-point-from-origin](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2833-furthest-point-from-origin/) | Easy |
 | [2839-check-if-strings-can-be-made-equal-with-operations-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2839-check-if-strings-can-be-made-equal-with-operations-i/) | Easy |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2840-check-if-strings-can-be-made-equal-with-operations-ii/) | Medium |
+| [3120-count-the-number-of-special-characters-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3120-count-the-number-of-special-characters-i/) | Easy |
 | [3474-lexicographically-smallest-generated-string](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3474-lexicographically-smallest-generated-string/) | Hard |
 ## Recursion
 | Problem Name | Difficulty |
@@ -902,6 +903,7 @@ Let's crack those coding interviews one problem at a time!
 | [2615-sum-of-distances](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2615-sum-of-distances/) | Medium |
 | [2784-check-if-array-is-good](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2784-check-if-array-is-good/) | Easy |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2840-check-if-strings-can-be-made-equal-with-operations-ii/) | Medium |
+| [3120-count-the-number-of-special-characters-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3120-count-the-number-of-special-characters-i/) | Easy |
 | [3488-closest-equal-element-queries](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3488-closest-equal-element-queries/) | Medium |
 | [3548-equal-sum-grid-partition-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3548-equal-sum-grid-partition-ii/) | Hard |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3629-minimum-jumps-to-reach-end-via-prime-teleportation/) | Medium |
