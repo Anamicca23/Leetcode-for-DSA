@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/?envType=daily-question&envId=2026-06-01">2144. Minimum Cost of Buying Candies With Discount</a></h2><h3>Easy</h3><hr><p>A shop is selling candies at a discount. For <strong>every two</strong> candies sold, the shop gives a <strong>third</strong> candy for <strong>free</strong>.</p>
+<h2><a href="https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount">2144. Minimum Cost of Buying Candies With Discount</a></h2><h3>Easy</h3><hr><p>A shop is selling candies at a discount. For <strong>every two</strong> candies sold, the shop gives a <strong>third</strong> candy for <strong>free</strong>.</p>
 
 <p>The customer can choose <strong>any</strong> candy to take away for free as long as the cost of the chosen candy is less than or equal to the <strong>minimum</strong> cost of the two candies bought.</p>
 
