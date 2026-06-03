@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-ii/solutions/8307930/simple-5-liner-function-only-one-observa-bbw8/?envType=daily-question&envId=2026-06-03">3635. Earliest Finish Time for Land and Water Rides II</a></h2><h3>Medium</h3><hr><p data-end="143" data-start="53">You are given two categories of theme park attractions: <strong data-end="122" data-start="108">land rides</strong> and <strong data-end="142" data-start="127">water rides</strong>.</p>
+<h2><a href="https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-ii">3635. Earliest Finish Time for Land and Water Rides II</a></h2><h3>Medium</h3><hr><p data-end="143" data-start="53">You are given two categories of theme park attractions: <strong data-end="122" data-start="108">land rides</strong> and <strong data-end="142" data-start="127">water rides</strong>.</p>
 
 <ul>
 	<li data-end="163" data-start="147"><strong data-end="161" data-start="147">Land rides</strong>
