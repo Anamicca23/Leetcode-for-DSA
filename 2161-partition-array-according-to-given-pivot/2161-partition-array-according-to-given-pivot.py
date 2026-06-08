@@ -1,20 +1,22 @@
 class Solution:
     def pivotArray(self, nums: List[int], pivot: int) -> List[int]:
-        result = [0] * len(nums)
+        n = len(nums)
+        ans = [0] * n
         left = 0
-        right = len(nums) - 1
-        
-        for i, j in zip(range(len(nums)), range(len(nums) - 1, -1, -1)):
+        right = n - 1
+        i = 0
+        j = n - 1
+        while i < n:
             if nums[i] < pivot:
-                result[left] = nums[i]
+                ans[left] = nums[i]
                 left += 1
-            
             if nums[j] > pivot:
-                result[right] = nums[j]
+                ans[right] = nums[j]
                 right -= 1
-        
+            i += 1
+            j -= 1
         while left <= right:
-            result[left] = pivot
+            ans[left] = pivot
             left += 1
-            
-        return result
+
+        return ans
