@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/weighted-word-mapping/?envType=daily-question&envId=2026-06-13">3838. Weighted Word Mapping</a></h2><h3>Easy</h3><hr><p>You are given an array of strings <code>words</code>, where each string represents a word containing lowercase English letters.</p>
+<h2><a href="https://leetcode.com/problems/weighted-word-mapping">3838. Weighted Word Mapping</a></h2><h3>Easy</h3><hr><p>You are given an array of strings <code>words</code>, where each string represents a word containing lowercase English letters.</p>
 
 <p>You are also given an integer array <code>weights</code> of length 26, where <code>weights[i]</code> represents the weight of the <code>i<sup>th</sup></code> lowercase English letter.</p>
 
