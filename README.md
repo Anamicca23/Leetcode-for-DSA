@@ -757,6 +757,7 @@ Let's crack those coding interviews one problem at a time!
 | [1722-minimize-hamming-distance-after-swap-operations](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1722-minimize-hamming-distance-after-swap-operations/) | Medium |
 | [1727-largest-submatrix-with-rearrangements](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1727-largest-submatrix-with-rearrangements/) | Medium |
 | [1732-find-the-highest-altitude](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1732-find-the-highest-altitude/) | Easy |
+| [1840-maximum-building-height](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1840-maximum-building-height/) | Hard |
 | [1848-minimum-distance-to-the-target-element](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1848-minimum-distance-to-the-target-element/) | Easy |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [1861-rotating-the-box](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1861-rotating-the-box/) | Medium |
@@ -1005,6 +1006,7 @@ Let's crack those coding interviews one problem at a time!
 | [0788-rotated-digits](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0788-rotated-digits/) | Medium |
 | [1344-angle-between-hands-of-a-clock](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1344-angle-between-hands-of-a-clock/) | Medium |
 | [1622-fancy-sequence](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1622-fancy-sequence/) | Hard |
+| [1840-maximum-building-height](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1840-maximum-building-height/) | Hard |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2946-matrix-similarity-after-cyclic-shifts/) | Easy |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
@@ -1037,6 +1039,7 @@ Let's crack those coding interviews one problem at a time!
 | ------- | ------- |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [1727-largest-submatrix-with-rearrangements](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1727-largest-submatrix-with-rearrangements/) | Medium |
+| [1840-maximum-building-height](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1840-maximum-building-height/) | Hard |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
 | [2126-destroying-asteroids](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2126-destroying-asteroids/) | Medium |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2144-minimum-cost-of-buying-candies-with-discount/) | Easy |
