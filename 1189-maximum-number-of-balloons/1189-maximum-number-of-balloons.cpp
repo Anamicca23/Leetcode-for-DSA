@@ -1,17 +1,13 @@
 class Solution {
 public:
-    int maxNumberOfBalloons(string text) {
-        unordered_map<char, int> freq;
-        for (char c : text) {
-            if (c == 'b' || c == 'a' || c == 'l' || c == 'o' || c == 'n') {
-                freq[c]++;
-            }
-        }
-        int b = freq['b'];
-        int a = freq['a'];
-        int l = freq['l'] / 2;
-        int o = freq['o'] / 2;
-        int n = freq['n'];
-        return min({b, a, l, o, n});
+    int maxNumberOfBalloons(string t) {
+        int f[5] = {0};
+        string s = "balon";
+
+        for (uint32_t ch : t)
+            for (int i = 0; i < 5; i++)
+                f[i] += !(ch ^ s[i]);
+
+        return min({f[0], f[1], f[2] >> 1, f[3] >> 1, f[4]});
     }
 };
