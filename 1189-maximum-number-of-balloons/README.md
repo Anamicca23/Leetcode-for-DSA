@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/maximum-number-of-balloons/solutions/8350567/2-simple-approaches-constant-space-with-24jgd/?envType=daily-question&envId=2026-06-22">1189. Maximum Number of Balloons</a></h2><h3>Easy</h3><hr><p>Given a string <code>text</code>, you want to use the characters of <code>text</code> to form as many instances of the word <strong>&quot;balloon&quot;</strong> as possible.</p>
+<h2><a href="https://leetcode.com/problems/maximum-number-of-balloons">1189. Maximum Number of Balloons</a></h2><h3>Easy</h3><hr><p>Given a string <code>text</code>, you want to use the characters of <code>text</code> to form as many instances of the word <strong>&quot;balloon&quot;</strong> as possible.</p>
 
 <p>You can use each character in <code>text</code> <strong>at most once</strong>. Return the maximum number of instances that can be formed.</p>
 
