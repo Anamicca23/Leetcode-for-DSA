@@ -759,6 +759,7 @@ Let's crack those coding interviews one problem at a time!
 | [1732-find-the-highest-altitude](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1732-find-the-highest-altitude/) | Easy |
 | [1833-maximum-ice-cream-bars](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1833-maximum-ice-cream-bars/) | Medium |
 | [1840-maximum-building-height](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1840-maximum-building-height/) | Hard |
+| [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
 | [1848-minimum-distance-to-the-target-element](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1848-minimum-distance-to-the-target-element/) | Easy |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [1861-rotating-the-box](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1861-rotating-the-box/) | Medium |
@@ -820,6 +821,7 @@ Let's crack those coding interviews one problem at a time!
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [1727-largest-submatrix-with-rearrangements](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1727-largest-submatrix-with-rearrangements/) | Medium |
 | [1833-maximum-ice-cream-bars](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1833-maximum-ice-cream-bars/) | Medium |
+| [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2078-two-furthest-houses-with-different-colors/) | Easy |
 | [2126-destroying-asteroids](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2126-destroying-asteroids/) | Medium |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2144-minimum-cost-of-buying-candies-with-discount/) | Easy |
@@ -1057,6 +1059,7 @@ Let's crack those coding interviews one problem at a time!
 | [1727-largest-submatrix-with-rearrangements](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1727-largest-submatrix-with-rearrangements/) | Medium |
 | [1833-maximum-ice-cream-bars](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1833-maximum-ice-cream-bars/) | Medium |
 | [1840-maximum-building-height](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1840-maximum-building-height/) | Hard |
+| [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
 | [2126-destroying-asteroids](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2126-destroying-asteroids/) | Medium |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2144-minimum-cost-of-buying-candies-with-discount/) | Easy |
