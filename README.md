@@ -746,6 +746,7 @@ Let's crack those coding interviews one problem at a time!
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
 | [0396-rotate-function](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0396-rotate-function/) | Medium |
 | [0874-walking-robot-simulation](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0874-walking-robot-simulation/) | Medium |
+| [1288-remove-covered-intervals](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1288-remove-covered-intervals/) | Medium |
 | [1301-number-of-paths-with-max-score](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1301-number-of-paths-with-max-score/) | Hard |
 | [1306-jump-game-iii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1306-jump-game-iii/) | Medium |
 | [1345-jump-game-iv](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1345-jump-game-iv/) | Hard |
@@ -1077,6 +1078,7 @@ Let's crack those coding interviews one problem at a time!
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1288-remove-covered-intervals](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1288-remove-covered-intervals/) | Medium |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [1727-largest-submatrix-with-rearrangements](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1727-largest-submatrix-with-rearrangements/) | Medium |
 | [1833-maximum-ice-cream-bars](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1833-maximum-ice-cream-bars/) | Medium |
