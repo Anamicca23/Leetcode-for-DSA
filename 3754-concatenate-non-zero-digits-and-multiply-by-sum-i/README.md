@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/?envType=daily-question&envId=2026-07-07">3754. Concatenate Non-Zero Digits and Multiply by Sum I</a></h2><h3>Easy</h3><hr><p>You are given an integer <code>n</code>.</p>
+<h2><a href="https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i">3754. Concatenate Non-Zero Digits and Multiply by Sum I</a></h2><h3>Easy</h3><hr><p>You are given an integer <code>n</code>.</p>
 
 <p>Form a new integer <code>x</code> by concatenating all the <strong>non-zero digits</strong> of <code>n</code> in their original order. If there are no <strong>non-zero</strong> digits, <code>x = 0</code>.</p>
 
