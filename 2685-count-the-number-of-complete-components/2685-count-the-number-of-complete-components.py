@@ -1,50 +1,26 @@
 class Solution:
     def countCompleteComponents(self, n: int, edges: List[List[int]]) -> int:
-        parent = list(range(n))
-        rank = [0] * n
-
-        def find(x):
-            if parent[x] != x:
-                parent[x] = find(parent[x])
-            return parent[x]
-
-        def union(x, y):
-            root_x = find(x)
-            root_y = find(y)
-            if root_x == root_y:
-                return
-            if rank[root_x] < rank[root_y]:
-                parent[root_x] = root_y
-            elif rank[root_x] > rank[root_y]:
-                parent[root_y] = root_x
-            else:
-                parent[root_y] = root_x
-                rank[root_x] += 1
-
+        A = defaultdict(list)
         for u, v in edges:
-            union(u, v)
+            A[u].append(v)
+            A[v].append(u)
 
-        component_vertices = {}
-        component_edges = {}
+        vis, res = [False] * n, 0
+        for i, state in enumerate(vis):
+            if not state:
+                D = V = 0
 
-        for i in range(n):
-            root = find(i)
-            if root not in component_vertices:
-                component_vertices[root] = set()
-                component_edges[root] = 0
-            component_vertices[root].add(i)
+                def dfs(x):
+                    nonlocal V, D
+                    V += 1
+                    D += len(A[x])
+                    vis[x] = True
 
-        for u, v in edges:
-            root = find(u)
-            component_edges[root] += 1
+                    for state in A[x]:
+                        if not vis[state]:
+                            dfs(state)
 
-        complete_count = 0
-        for root in component_vertices:
-            num_vertices = len(component_vertices[root])
+                dfs(i)
+                res += D == V * (V - 1)
 
-            expected_edges = num_vertices * (num_vertices - 1) // 2
-
-            if component_edges[root] == expected_edges:
-                complete_count += 1
-
-        return complete_count
+        return res
