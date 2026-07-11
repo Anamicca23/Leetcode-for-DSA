@@ -1,56 +1,39 @@
 class Solution {
 public:
     int countCompleteComponents(int n, vector<vector<int>>& edges) {
-        vector<int> parent(n), rank(n, 0);
-        iota(parent.begin(), parent.end(), 0);
-        
-        function<int(int)> find = [&](int x) {
-            if (parent[x] != x) {
-                parent[x] = find(parent[x]);
-            }
-            return parent[x];
-        };
-        
-        auto unionSets = [&](int x, int y) {
-            int rootX = find(x);
-            int rootY = find(y);
-            if (rootX == rootY) return;
-            if (rank[rootX] < rank[rootY]) {
-                parent[rootX] = rootY;
-            } else if (rank[rootX] > rank[rootY]) {
-                parent[rootY] = rootX;
-            } else {
-                parent[rootY] = rootX;
-                rank[rootX]++;
-            }
-        };
-        
-        for (auto& edge : edges) {
-            unionSets(edge[0], edge[1]);
+        vector<vector<int>> A(n);
+
+        for (auto& e : edges) {
+            int u = e[0], v = e[1];
+            A[u].push_back(v);
+            A[v].push_back(u);
         }
-        
-        unordered_map<int, unordered_set<int>> componentVertices;
-        unordered_map<int, int> componentEdges;
-        
-        for (int i = 0; i < n; ++i) {
-            int root = find(i);
-            componentVertices[root].insert(i);
-        }
-        
-        for (auto& edge : edges) {
-            int root = find(edge[0]);
-            componentEdges[root]++;
-        }
-        
-        int completeCount = 0;
-        for (auto& [root, vertices] : componentVertices) {
-            int numVertices = vertices.size();
-            int expectedEdges = numVertices * (numVertices - 1) / 2;
-            if (componentEdges[root] == expectedEdges) {
-                completeCount++;
+
+        bitset<51> vis;
+        int res = 0;
+
+        for (int i = 0; i < n; i++) {
+            bool state = vis.test(i);
+
+            if (!state) {
+                int V = 0, D = 0;
+
+                auto dfs = [&](auto& self, int x) -> void {
+                    V++;
+                    D += A[x].size();
+                    vis.set(x);
+
+                    for (auto& state : A[x])
+                        if (!vis.test(state))
+                            self(self, state);
+                };
+
+                dfs(dfs, i);
+
+                res += D == V * (V - 1);
             }
         }
-        
-        return completeCount;
+
+        return res;
     }
 };
