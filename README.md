@@ -795,6 +795,7 @@ Let's crack those coding interviews one problem at a time!
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3286-find-a-safe-walk-through-a-grid/) | Medium |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3300-minimum-element-after-replacement-with-digit-sum/) | Easy |
+| [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3336-find-the-number-of-subsequences-with-equal-gcd/) | Hard |
 | [3418-maximum-amount-of-money-robot-can-earn](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3418-maximum-amount-of-money-robot-can-earn/) | Medium |
 | [3464-maximize-the-distance-between-points-on-a-square](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3464-maximize-the-distance-between-points-on-a-square/) | Hard |
 | [3488-closest-equal-element-queries](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3488-closest-equal-element-queries/) | Medium |
@@ -935,6 +936,7 @@ Let's crack those coding interviews one problem at a time!
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2770-maximum-number-of-jumps-to-reach-the-last-index/) | Medium |
 | [3129-find-all-possible-stable-binary-arrays-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3129-find-all-possible-stable-binary-arrays-i/) | Medium |
 | [3130-find-all-possible-stable-binary-arrays-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3130-find-all-possible-stable-binary-arrays-ii/) | Hard |
+| [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3336-find-the-number-of-subsequences-with-equal-gcd/) | Hard |
 | [3418-maximum-amount-of-money-robot-can-earn](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3418-maximum-amount-of-money-robot-can-earn/) | Medium |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3559-number-of-ways-to-assign-edge-weights-ii/) | Hard |
@@ -1063,6 +1065,7 @@ Let's crack those coding interviews one problem at a time!
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2946-matrix-similarity-after-cyclic-shifts/) | Easy |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3300-minimum-element-after-replacement-with-digit-sum/) | Easy |
+| [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3336-find-the-number-of-subsequences-with-equal-gcd/) | Hard |
 | [3464-maximize-the-distance-between-points-on-a-square](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3464-maximize-the-distance-between-points-on-a-square/) | Hard |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3558-number-of-ways-to-assign-edge-weights-i/) | Medium |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3559-number-of-ways-to-assign-edge-weights-ii/) | Hard |
@@ -1196,6 +1199,7 @@ Let's crack those coding interviews one problem at a time!
 ## Number Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3336-find-the-number-of-subsequences-with-equal-gcd/) | Hard |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3629-minimum-jumps-to-reach-end-via-prime-teleportation/) | Medium |
 ## Binary Indexed Tree
 | Problem Name | Difficulty |
