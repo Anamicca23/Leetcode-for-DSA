@@ -769,6 +769,7 @@ Let's crack those coding interviews one problem at a time!
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1886-determine-whether-matrix-can-be-obtained-by-rotation/) | Easy |
 | [1914-cyclically-rotating-a-grid](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1914-cyclically-rotating-a-grid/) | Medium |
+| [1979-find-greatest-common-divisor-of-array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
 | [1980-find-unique-binary-string](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1980-find-unique-binary-string/) | Medium |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2078-two-furthest-houses-with-different-colors/) | Easy |
 | [2126-destroying-asteroids](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2126-destroying-asteroids/) | Medium |
@@ -1068,6 +1069,7 @@ Let's crack those coding interviews one problem at a time!
 | [1622-fancy-sequence](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1622-fancy-sequence/) | Hard |
 | [1840-maximum-building-height](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1840-maximum-building-height/) | Hard |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
+| [1979-find-greatest-common-divisor-of-array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2946-matrix-similarity-after-cyclic-shifts/) | Easy |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3300-minimum-element-after-replacement-with-digit-sum/) | Easy |
@@ -1211,6 +1213,7 @@ Let's crack those coding interviews one problem at a time!
 ## Number Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1979-find-greatest-common-divisor-of-array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
 | [3312-sorted-gcd-pair-queries](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3336-find-the-number-of-subsequences-with-equal-gcd/) | Hard |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3629-minimum-jumps-to-reach-end-via-prime-teleportation/) | Medium |
