@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/shift-2d-grid/?envType=daily-question&envId=2026-07-20">1260. Shift 2D Grid</a></h2><h3>Easy</h3><hr><p>Given a 2D <code>grid</code> of size <code>m x n</code>&nbsp;and an integer <code>k</code>. You need to shift the <code>grid</code>&nbsp;<code>k</code> times.</p>
+<h2><a href="https://leetcode.com/problems/shift-2d-grid">1260. Shift 2D Grid</a></h2><h3>Easy</h3><hr><p>Given a 2D <code>grid</code> of size <code>m x n</code>&nbsp;and an integer <code>k</code>. You need to shift the <code>grid</code>&nbsp;<code>k</code> times.</p>
 
 <p>In one shift operation:</p>
 
