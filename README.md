@@ -841,6 +841,7 @@ Let's crack those coding interviews one problem at a time!
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2144-minimum-cost-of-buying-candies-with-discount/) | Easy |
 | [2573-find-the-string-with-lcp](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2573-find-the-string-with-lcp/) | Hard |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
+| [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
 | [3474-lexicographically-smallest-generated-string](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3474-lexicographically-smallest-generated-string/) | Hard |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
@@ -901,6 +902,7 @@ Let's crack those coding interviews one problem at a time!
 | [2839-check-if-strings-can-be-made-equal-with-operations-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2839-check-if-strings-can-be-made-equal-with-operations-i/) | Easy |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2840-check-if-strings-can-be-made-equal-with-operations-ii/) | Medium |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
+| [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
 | [3093-longest-common-suffix-queries](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3093-longest-common-suffix-queries/) | Hard |
 | [3120-count-the-number-of-special-characters-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3120-count-the-number-of-special-characters-i/) | Easy |
 | [3121-count-the-number-of-special-characters-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3121-count-the-number-of-special-characters-ii/) | Medium |
@@ -979,6 +981,7 @@ Let's crack those coding interviews one problem at a time!
 | [2615-sum-of-distances](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2615-sum-of-distances/) | Medium |
 | [2784-check-if-array-is-good](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2784-check-if-array-is-good/) | Easy |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2840-check-if-strings-can-be-made-equal-with-operations-ii/) | Medium |
+| [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
 | [3120-count-the-number-of-special-characters-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3120-count-the-number-of-special-characters-i/) | Easy |
 | [3121-count-the-number-of-special-characters-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3121-count-the-number-of-special-characters-ii/) | Medium |
 | [3312-sorted-gcd-pair-queries](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
@@ -1134,6 +1137,7 @@ Let's crack those coding interviews one problem at a time!
 | [2751-robot-collisions](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2751-robot-collisions/) | Hard |
 | [2784-check-if-array-is-good](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2784-check-if-array-is-good/) | Easy |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2840-check-if-strings-can-be-made-equal-with-operations-ii/) | Medium |
+| [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
 | [3464-maximize-the-distance-between-points-on-a-square](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3464-maximize-the-distance-between-points-on-a-square/) | Hard |
 | [3517-smallest-palindromic-rearrangement-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3517-smallest-palindromic-rearrangement-i/) | Medium |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
@@ -1199,6 +1203,7 @@ Let's crack those coding interviews one problem at a time!
 | ------- | ------- |
 | [1189-maximum-number-of-balloons](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [2833-furthest-point-from-origin](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2833-furthest-point-from-origin/) | Easy |
+| [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
 | [3312-sorted-gcd-pair-queries](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3737-count-subarrays-with-majority-element-i/) | Medium |
 ## Geometry
