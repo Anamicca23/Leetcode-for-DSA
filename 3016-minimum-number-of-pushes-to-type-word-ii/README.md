@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/?envType=daily-question&envId=2024-08-06">3016. Minimum Number of Pushes to Type Word II</a></h2><h3>Medium</h3><hr><p>You are given a string <code>word</code> containing lowercase English letters.</p>
+<h2><a href="https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii">3016. Minimum Number of Pushes to Type Word II</a></h2><h3>Medium</h3><hr><p>You are given a string <code>word</code> containing lowercase English letters.</p>
 
 <p>Telephone keypads have keys mapped with <strong>distinct</strong> collections of lowercase English letters, which can be used to form words by pushing them. For example, the key <code>2</code> is mapped with <code>[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]</code>, we need to push the key one time to type <code>&quot;a&quot;</code>, two times to type <code>&quot;b&quot;</code>, and three times to type <code>&quot;c&quot;</code> <em>.</em></p>
 
@@ -25,7 +25,7 @@ It can be shown that no other mapping can provide a lower cost.
 </pre>
 
 <p><strong class="example">Example 2:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2023/12/26/keypadv2e2.png" style="width: 329px; height: 313px;" />
+<img alt="" src="https://assets.leetcode.com/uploads/2024/08/20/edited.png" style="width: 329px; height: 313px;" />
 <pre>
 <strong>Input:</strong> word = &quot;xyzxyzxyzxyz&quot;
 <strong>Output:</strong> 12
