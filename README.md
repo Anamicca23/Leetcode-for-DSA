@@ -745,6 +745,7 @@ Let's crack those coding interviews one problem at a time!
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
 | [0396-rotate-function](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0396-rotate-function/) | Medium |
+| [0486-predict-the-winner](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0486-predict-the-winner/) | Medium |
 | [0874-walking-robot-simulation](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0874-walking-robot-simulation/) | Medium |
 | [1260-shift-2d-grid](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1260-shift-2d-grid/) | Easy |
 | [1288-remove-covered-intervals](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1288-remove-covered-intervals/) | Medium |
@@ -915,6 +916,7 @@ Let's crack those coding interviews one problem at a time!
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0486-predict-the-winner](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0486-predict-the-winner/) | Medium |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1545-find-kth-bit-in-nth-binary-string/) | Medium |
 ## Simulation
 | Problem Name | Difficulty |
@@ -939,6 +941,7 @@ Let's crack those coding interviews one problem at a time!
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0396-rotate-function](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0396-rotate-function/) | Medium |
+| [0486-predict-the-winner](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0486-predict-the-winner/) | Medium |
 | [0788-rotated-digits](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0788-rotated-digits/) | Medium |
 | [1301-number-of-paths-with-max-score](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1301-number-of-paths-with-max-score/) | Hard |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1320-minimum-distance-to-type-a-word-using-two-fingers/) | Hard |
@@ -1075,6 +1078,7 @@ Let's crack those coding interviews one problem at a time!
 | ------- | ------- |
 | [0048-rotate-image](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0048-rotate-image/) | Medium |
 | [0396-rotate-function](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0396-rotate-function/) | Medium |
+| [0486-predict-the-winner](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0486-predict-the-winner/) | Medium |
 | [0788-rotated-digits](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0788-rotated-digits/) | Medium |
 | [1344-angle-between-hands-of-a-clock](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1344-angle-between-hands-of-a-clock/) | Medium |
 | [1622-fancy-sequence](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1622-fancy-sequence/) | Hard |
@@ -1276,4 +1280,8 @@ Let's crack those coding interviews one problem at a time!
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
+## Game Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0486-predict-the-winner](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0486-predict-the-winner/) | Medium |
 <!---LeetCode Topics End-->
