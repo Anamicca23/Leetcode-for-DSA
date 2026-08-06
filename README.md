@@ -1097,6 +1097,7 @@ Let's crack those coding interviews one problem at a time!
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3300-minimum-element-after-replacement-with-digit-sum/) | Easy |
 | [3312-sorted-gcd-pair-queries](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3336-find-the-number-of-subsequences-with-equal-gcd/) | Hard |
+| [3345-smallest-divisible-digit-product-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3345-smallest-divisible-digit-product-i/) | Easy |
 | [3464-maximize-the-distance-between-points-on-a-square](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3464-maximize-the-distance-between-points-on-a-square/) | Hard |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3558-number-of-ways-to-assign-edge-weights-i/) | Medium |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3559-number-of-ways-to-assign-edge-weights-ii/) | Hard |
@@ -1174,6 +1175,7 @@ Let's crack those coding interviews one problem at a time!
 ## Enumeration
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [3345-smallest-divisible-digit-product-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3345-smallest-divisible-digit-product-i/) | Easy |
 | [3546-equal-sum-grid-partition-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3546-equal-sum-grid-partition-i/) | Medium |
 | [3548-equal-sum-grid-partition-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3548-equal-sum-grid-partition-ii/) | Hard |
 ## String Matching
