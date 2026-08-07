@@ -1,133 +1,111 @@
+using u64=unsigned long long;
+int prime[]={2, 3, 5, 7};
 class Solution {
 public:
-    string smallestNumber(string num, long long t) {
-        int req2 = 0, req3 = 0, req5 = 0, req7 = 0;
-        long long temp = t;
-        while (temp % 2 == 0) { temp /= 2; req2++; }
-        while (temp % 3 == 0) { temp /= 3; req3++; }
-        while (temp % 5 == 0) { temp /= 5; req5++; }
-        while (temp % 7 == 0) { temp /= 7; req7++; }
-        if (temp > 1) return "-1";
-
-        int dp[60][40];
-        for (int i = 0; i < 60; ++i) {
-            for (int j = 0; j < 40; ++j) {
-                dp[i][j] = 1e9;
-            }
+    array<int, 4> exp={0};
+    bool primeFactor(u64 x) {
+        if (x==0) return 0;
+        exp[0]=countr_zero(x);
+        x>>=exp[0];
+        for (int i=1; i< 4; i++) {
+            int p=prime[i];
+            for (; x%p==0; x/=p) 
+                exp[i]++;
         }
-        dp[0][0] = 0;
-        
-        int trans[6][2] = {{1, 0}, {0, 1}, {2, 0}, {1, 1}, {3, 0}, {0, 2}};
-        for (int i = 0; i < 60; ++i) {
-            for (int j = 0; j < 40; ++j) {
-                if (dp[i][j] == 1e9) continue;
-                for (auto& tr : trans) {
-                    int ni = min(59, i + tr[0]);
-                    int nj = min(39, j + tr[1]);
-                    dp[ni][nj] = min(dp[ni][nj], dp[i][j] + 1);
-                }
-            }
+        return x==1;
+    }
+    void modifyExp(char c, int dir) {
+        int x=c-'0';
+        switch (x) {
+            case 2: exp[0]+=dir; break;
+            case 4: exp[0]+=dir<<1; break;
+            case 8: exp[0]+=dir*3; break;
+            case 3: exp[1]+=dir; break;
+            case 5: exp[2]+=dir; break;
+            case 6: exp[0]+=dir; exp[1]+=dir; break;
+            case 7: exp[3]+=dir; break;
+            case 9: exp[1]+=dir<<1; break;
         }
-        for (int i = 59; i >= 0; --i) {
-            for (int j = 39; j >= 0; --j) {
-                if (i < 59) dp[i][j] = min(dp[i][j], dp[i + 1][j]);
-                if (j < 39) dp[i][j] = min(dp[i][j], dp[i][j + 1]);
-            }
+    }
+    string buildSuffix(int len, bool &valid) {
+        int digit[10]={0};
+        int e0=max(0, exp[0]);
+        int e1=max(0, exp[1]);
+        int e2=max(0, exp[2]);
+        int e3=max(0, exp[3]);
+        digit[8]=e0/3;
+        int r0=e0%3;
+        digit[9]=e1>>1;
+        int r1=e1&1;
+        digit[5]=e2;
+        digit[7]=e3;
+        if (r0==1 && r1==1) 
+            digit[6]=1;
+        else if (r0==2 && r1==1) {
+            digit[2]=1;
+            digit[6]=1;
+        }else {
+            if (r0==1) digit[2]=1;
+            else if (r0==2) digit[4]=1;
+            if (r1==1) digit[3]=1;
         }
-
-        int F2[] = {0, 0, 1, 0, 2, 0, 1, 0, 3, 0};
-        int F3[] = {0, 0, 0, 1, 0, 0, 1, 0, 0, 2};
-        int F5[] = {0, 0, 0, 0, 0, 1, 0, 0, 0, 0};
-        int F7[] = {0, 0, 0, 0, 0, 0, 0, 1, 0, 0};
-
-        int n = num.length();
-        bool has_zero = false;
-        int first_zero = n;
-        for (int i = 0; i < n; ++i) {
-            if (num[i] == '0') {
-                has_zero = true;
-                first_zero = i;
-                break;
-            }
+        int total_digits = 0;
+        for (int i=2; i<=9; i++) total_digits+=digit[i];
+        if (total_digits>len) {
+            valid=0;
+            return "";
         }
-
-        if (!has_zero) {
-            int r2 = req2, r3 = req3, r5 = req5, r7 = req7;
-            for (char c : num) {
-                int d = c - '0';
-                r2 = max(0, r2 - F2[d]);
-                r3 = max(0, r3 - F3[d]);
-                r5 = max(0, r5 - F5[d]);
-                r7 = max(0, r7 - F7[d]);
-            }
-            if (r2 == 0 && r3 == 0 && r5 == 0 && r7 == 0) return num;
-        }
-
-        int limit = min(n - 1, first_zero);
-        int p2 = 0, p3 = 0, p5 = 0, p7 = 0;
-        for (int i = 0; i < limit; ++i) {
-            int d = num[i] - '0';
-            p2 += F2[d];
-            p3 += F3[d];
-            p5 += F5[d];
-            p7 += F7[d];
-        }
-
-        for (int i = limit; i >= 0; --i) {
-            int start_d = (num[i] - '0') + 1;
-            for (int d = start_d; d <= 9; ++d) {
-                int n2 = max(0, req2 - p2 - F2[d]);
-                int n3 = max(0, req3 - p3 - F3[d]);
-                int n5 = max(0, req5 - p5 - F5[d]);
-                int n7 = max(0, req7 - p7 - F7[d]);
-                int L = n - 1 - i;
-                
-                if (n7 + n5 + dp[n2][n3] <= L) {
-                    string ans = num.substr(0, i) + to_string(d);
-                    int rem2 = n2, rem3 = n3, rem5 = n5, rem7 = n7;
-                    for (int pos = 0; pos < L; ++pos) {
-                        for (int x = 1; x <= 9; ++x) {
-                            int nn2 = max(0, rem2 - F2[x]);
-                            int nn3 = max(0, rem3 - F3[x]);
-                            int nn5 = max(0, rem5 - F5[x]);
-                            int nn7 = max(0, rem7 - F7[x]);
-                            if (nn7 + nn5 + dp[nn2][nn3] <= L - 1 - pos) {
-                                ans += to_string(x);
-                                rem2 = nn2; rem3 = nn3; rem5 = nn5; rem7 = nn7;
-                                break;
-                            }
-                        }
-                    }
-                    return ans;
-                }
-            }
-            if (i > 0) {
-                int d = num[i - 1] - '0';
-                p2 -= F2[d];
-                p3 -= F3[d];
-                p5 -= F5[d];
-                p7 -= F7[d];
-            }
-        }
-
-        int min_len_needed = req7 + req5 + dp[req2][req3];
-        int M = max(n + 1, min_len_needed);
-        string ans = "";
-        int rem2 = req2, rem3 = req3, rem5 = req5, rem7 = req7;
-        
-        for (int pos = 0; pos < M; ++pos) {
-            for (int x = 1; x <= 9; ++x) {
-                int nn2 = max(0, rem2 - F2[x]);
-                int nn3 = max(0, rem3 - F3[x]);
-                int nn5 = max(0, rem5 - F5[x]);
-                int nn7 = max(0, rem7 - F7[x]);
-                if (nn7 + nn5 + dp[nn2][nn3] <= M - 1 - pos) {
-                    ans += to_string(x);
-                    rem2 = nn2; rem3 = nn3; rem5 = nn5; rem7 = nn7;
-                    break;
-                }
-            }
+        digit[1]=len-total_digits;
+        valid=1;
+        string ans;
+        for (int i=1; i<=9; i++) {
+            ans.append(digit[i], '0'+i);
         }
         return ans;
+    }
+
+    string smallestNumber(string& num, long long t) {
+        if (!primeFactor(t)) return "-1";
+        int n=num.size();
+        auto origExp=exp;
+        bool zeroFound=0;
+        int firstZero=-1;
+        for (int i=0; i<n; i++) {
+            if (num[i]=='0') {
+                zeroFound=1;
+                firstZero=i;
+                break;
+            }
+            modifyExp(num[i], -1);
+        }
+        bool valid=0;
+        if (!zeroFound) {
+            buildSuffix(0, valid);
+            if (valid) return num;
+        }
+        int limit=zeroFound ? firstZero : n-1;
+        exp=origExp;
+        for (int i=0; i <limit; i++) 
+            modifyExp(num[i], -1);
+        for (int i=limit; i>= 0; i--) {
+            int startDigit=(i<n && num[i]!='0')?(num[i]-'0'+1):1;
+            for (int d=startDigit; d<=9; d++) {
+                modifyExp('0'+d, -1);
+                string suffix=buildSuffix(n-1-i, valid);
+                if (valid) {
+                    return num.substr(0, i)+(char)('0'+ d)+suffix;
+                }
+                modifyExp('0'+d, +1);
+            }
+            if (i>0) 
+                modifyExp(num[i-1], +1);
+        }
+        exp=origExp;
+        int targetLen=n+1;
+        while (1) {
+            string suffix=buildSuffix(targetLen, valid);
+            if (valid) return suffix;
+            targetLen++;
+        }
     }
 };
