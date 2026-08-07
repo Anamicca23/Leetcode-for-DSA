@@ -1,134 +1,102 @@
 class Solution {
+    int primes[] = new int[] { 2, 3, 5, 7 };
+    int maxPrime = primes[primes.length - 1];
     public String smallestNumber(String num, long t) {
-        int req2 = 0, req3 = 0, req5 = 0, req7 = 0;
-        long temp = t;
-        while (temp % 2 == 0) { temp /= 2; req2++; }
-        while (temp % 3 == 0) { temp /= 3; req3++; }
-        while (temp % 5 == 0) { temp /= 5; req5++; }
-        while (temp % 7 == 0) { temp /= 7; req7++; }
-        if (temp > 1) return "-1";
-
-        int[][] dp = new int[60][40];
-        for (int i = 0; i < 60; ++i) {
-            for (int j = 0; j < 40; ++j) {
-                dp[i][j] = 1000000000;
+        int primeCount[] = new int[maxPrime + 1];
+        int numLength = num.length();
+        int minLength;
+        int firstZeroIndexFromLeft = 0;
+        for (int prime : primes) {
+            while (t % prime == 0) {
+                t /= prime;
+                primeCount[prime]++;
             }
         }
-        dp[0][0] = 0;
-        
-        int[][] trans = {{1, 0}, {0, 1}, {2, 0}, {1, 1}, {3, 0}, {0, 2}};
-        for (int i = 0; i < 60; ++i) {
-            for (int j = 0; j < 40; ++j) {
-                if (dp[i][j] == 1000000000) continue;
-                for (int[] tr : trans) {
-                    int ni = Math.min(59, i + tr[0]);
-                    int nj = Math.min(39, j + tr[1]);
-                    dp[ni][nj] = Math.min(dp[ni][nj], dp[i][j] + 1);
+
+        if (t != 1)return "-1";
+        minLength = getMinLength(primeCount);
+        if (numLength < minLength) {
+            return buildSuffix(primeCount, minLength, new char[minLength]);
+        }
+        char[] result = new char[numLength + 1];
+        for (int i = 0; firstZeroIndexFromLeft < numLength
+                && (result[++i] = num.charAt(firstZeroIndexFromLeft)) != '0'; firstZeroIndexFromLeft++) {
+            logNum(primeCount, result[i], -1);
+        }
+        if (getMinLength(primeCount) == 0) {
+            if (firstZeroIndexFromLeft == numLength) return num;
+            Arrays.fill(result, ++firstZeroIndexFromLeft, result.length, '1');
+            return new String(result, 1, numLength);
+        }
+        for (int last = numLength - 1, end = Math.min(firstZeroIndexFromLeft, last); end >= 0; end--) {
+            for (logNum(primeCount, result[end + 1], 1); ++result[end + 1] <= '9'; logNum(primeCount, result[end + 1], 1)) {
+                logNum(primeCount, result[end + 1], -1);
+                if (getMinLength(primeCount) <= last - end) {
+                    return buildSuffix(primeCount, last - end, result);
                 }
             }
         }
-        
-        for (int i = 59; i >= 0; --i) {
-            for (int j = 39; j >= 0; --j) {
-                if (i < 59) dp[i][j] = Math.min(dp[i][j], dp[i + 1][j]);
-                if (j < 39) dp[i][j] = Math.min(dp[i][j], dp[i][j + 1]);
-            }
-        }
+        return buildSuffix(primeCount, result.length, result);
+    }
 
-        int[] F2 = {0, 0, 1, 0, 2, 0, 1, 0, 3, 0};
-        int[] F3 = {0, 0, 0, 1, 0, 0, 1, 0, 0, 2};
-        int[] F5 = {0, 0, 0, 0, 0, 1, 0, 0, 0, 0};
-        int[] F7 = {0, 0, 0, 0, 0, 0, 0, 1, 0, 0};
-
-        int n = num.length();
-        boolean hasZero = false;
-        int firstZero = n;
-        for (int i = 0; i < n; ++i) {
-            if (num.charAt(i) == '0') {
-                hasZero = true;
-                firstZero = i;
-                break;
-            }
+    void logNum(int[] primeCount, int num, int value) {
+        if (num < '2'){return;}
+        if (num == '9') {
+            primeCount[3] += value << 1;
+        } else if (num == '4') {
+            primeCount[2] += value << 1;
+        } else if (num == '8') {
+            primeCount[2] += value * 3;
+        } else if (num == '6') {
+            primeCount[2] += value;
+            primeCount[3] += value;
+        } else {
+            primeCount[num - '0'] += value;
         }
-
-        if (!hasZero) {
-            int r2 = req2, r3 = req3, r5 = req5, r7 = req7;
-            for (int i = 0; i < n; i++) {
-                int d = num.charAt(i) - '0';
-                r2 = Math.max(0, r2 - F2[d]);
-                r3 = Math.max(0, r3 - F3[d]);
-                r5 = Math.max(0, r5 - F5[d]);
-                r7 = Math.max(0, r7 - F7[d]);
-            }
-            if (r2 == 0 && r3 == 0 && r5 == 0 && r7 == 0) return num;
+    }
+    String buildSuffix(int[] primeCount, int targetLength, char[] result) {
+        int index = result.length;
+        while (primeCount[3] > 1) {
+            primeCount[3] -= 2;
+            result[--index] = '9';
         }
-
-        int limit = Math.min(n - 1, firstZero);
-        int p2 = 0, p3 = 0, p5 = 0, p7 = 0;
-        for (int i = 0; i < limit; ++i) {
-            int d = num.charAt(i) - '0';
-            p2 += F2[d];
-            p3 += F3[d];
-            p5 += F5[d];
-            p7 += F7[d];
+        while (primeCount[2] > 2) {
+            primeCount[2] -= 3;
+            result[--index] = '8';
         }
-
-        for (int i = limit; i >= 0; --i) {
-            int startD = (num.charAt(i) - '0') + 1;
-            for (int d = startD; d <= 9; ++d) {
-                int n2 = Math.max(0, req2 - p2 - F2[d]);
-                int n3 = Math.max(0, req3 - p3 - F3[d]);
-                int n5 = Math.max(0, req5 - p5 - F5[d]);
-                int n7 = Math.max(0, req7 - p7 - F7[d]);
-                int L = n - 1 - i;
-                
-                if (n7 + n5 + dp[n2][n3] <= L) {
-                    StringBuilder ans = new StringBuilder(num.substring(0, i));
-                    ans.append(d);
-                    int rem2 = n2, rem3 = n3, rem5 = n5, rem7 = n7;
-                    for (int pos = 0; pos < L; ++pos) {
-                        for (int x = 1; x <= 9; ++x) {
-                            int nn2 = Math.max(0, rem2 - F2[x]);
-                            int nn3 = Math.max(0, rem3 - F3[x]);
-                            int nn5 = Math.max(0, rem5 - F5[x]);
-                            int nn7 = Math.max(0, rem7 - F7[x]);
-                            if (nn7 + nn5 + dp[nn2][nn3] <= L - 1 - pos) {
-                                ans.append(x);
-                                rem2 = nn2; rem3 = nn3; rem5 = nn5; rem7 = nn7;
-                                break;
-                            }
-                        }
-                    }
-                    return ans.toString();
-                }
-            }
-            if (i > 0) {
-                int d = num.charAt(i - 1) - '0';
-                p2 -= F2[d];
-                p3 -= F3[d];
-                p5 -= F5[d];
-                p7 -= F7[d];
-            }
+        while (primeCount[7]-- > 0) {
+            result[--index] = '7';
         }
-
-        int minLenNeeded = req7 + req5 + dp[req2][req3];
-        int M = Math.max(n + 1, minLenNeeded);
-        StringBuilder ans = new StringBuilder();
-        int rem2 = req2, rem3 = req3, rem5 = req5, rem7 = req7;
-        
-        for (int pos = 0; pos < M; ++pos) {
-            for (int x = 1; x <= 9; ++x) {
-                int nn2 = Math.max(0, rem2 - F2[x]);
-                int nn3 = Math.max(0, rem3 - F3[x]);
-                int nn5 = Math.max(0, rem5 - F5[x]);
-                int nn7 = Math.max(0, rem7 - F7[x]);
-                if (nn7 + nn5 + dp[nn2][nn3] <= M - 1 - pos) {
-                    ans.append(x);
-                    rem2 = nn2; rem3 = nn3; rem5 = nn5; rem7 = nn7;
-                    break;
-                }
-            }
+        if (primeCount[2] > 0 && primeCount[3] > 0) {
+            result[--index] = '6';
+            primeCount[2]--;
+            primeCount[3]--;
         }
-        return ans.toString();
+        while (primeCount[5]-- > 0) {
+            result[--index] = '5';
+        }
+        while (primeCount[2] > 1) {
+            primeCount[2] -= 2;
+            result[--index] = '4';
+        }
+        while (primeCount[3] > 0) {
+            primeCount[3]--;
+            result[--index] = '3';
+        }
+        while (primeCount[2] > 0) {
+            primeCount[2]--;
+            result[--index] = '2';
+        }
+        while (index + targetLength != result.length) {
+            result[--index] = '1';
+        }
+        return targetLength == result.length ? new String(result) : new String(result, 1, result.length - 1);
+    }
+    int getMinLength(int[] primeCount) {
+        int count2 = Math.max(0, primeCount[2]);
+        int count3 = Math.max(0, primeCount[3]);
+        int count23 = (count3 & 1) + (count2 % 3);
+        return (count3 >> 1) + (count2 / 3) + Math.max(0, primeCount[7]) + Math.max(0, primeCount[5])
+                + (count23 == 3 ? 2 : count23 > 0 ? 1 : 0);
     }
 }
