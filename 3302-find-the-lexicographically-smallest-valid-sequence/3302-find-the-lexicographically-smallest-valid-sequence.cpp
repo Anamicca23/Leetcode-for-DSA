@@ -1,31 +1,23 @@
 class Solution {
 public:
-    vector<int> validSequence(string s, string t) {
-        int n = s.length();
-        int m = t.length();
-        int i = n - 1, j= m - 1; 
-        vector<int> dp(n + 1, 0); 
-        for(; i >= 0; i--) {
-            if(j >= 0 && s[i] == t[j]) {
-                dp[i] = dp[i + 1] + 1; 
-                j--; 
-            } else dp[i] = dp[i + 1]; 
+    vector<int> validSequence(string word1, string word2) {
+        int m = word1.size(), n = word2.size();
+        vector<int> suf(n + 1, -1);
+        suf[n] = m;
+        for (int i = m - 1, j = n - 1; i >= 0; i--) {
+            if (word1[i] == word2[j]) suf[j--] = i;
+            if (j < 0) break;
         }
-        vector<int> ans; 
-        j = 0; 
-        bool flag = true; 
-        for(int i = 0; i < n && j < m; i++) {
-            int rem = m - j - 1;
-            if( s[i] == t[j]) {
-                ans.push_back(i);  
-                j++; 
-            } else if(flag && dp[i + 1] >= rem) {
-                ans.push_back(i); 
-                j++; 
-                flag = false; 
+        vector<int> res(n);
+        bool changed = false;
+        for (int i = 0, j = 0; i < m; i++) {
+            if (word1[i] == word2[j]) res[j++] = i;
+            else if (!changed && i < suf[j + 1]) {
+                changed = true;
+                res[j++] = i;
             }
+            if (j == n) return res;
         }
-        if (j == m) return ans; 
-        return {}; 
+        return {};
     }
 };
