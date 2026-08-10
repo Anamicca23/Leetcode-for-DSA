@@ -954,6 +954,7 @@ Let's crack those coding interviews one problem at a time!
 | [1140-stone-game-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1140-stone-game-ii/) | Medium |
 | [1301-number-of-paths-with-max-score](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1301-number-of-paths-with-max-score/) | Hard |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1320-minimum-distance-to-type-a-word-using-two-fingers/) | Hard |
+| [1510-stone-game-iv](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1510-stone-game-iv/) | Hard |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1594-maximum-non-negative-product-in-a-matrix/) | Medium |
 | [1871-jump-game-vii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1871-jump-game-vii/) | Medium |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1888-minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium |
@@ -1097,6 +1098,7 @@ Let's crack those coding interviews one problem at a time!
 | [0877-stone-game](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0877-stone-game/) | Medium |
 | [1140-stone-game-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1140-stone-game-ii/) | Medium |
 | [1344-angle-between-hands-of-a-clock](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1344-angle-between-hands-of-a-clock/) | Medium |
+| [1510-stone-game-iv](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1510-stone-game-iv/) | Hard |
 | [1622-fancy-sequence](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1622-fancy-sequence/) | Hard |
 | [1840-maximum-building-height](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1840-maximum-building-height/) | Hard |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
@@ -1310,12 +1312,23 @@ Let's crack those coding interviews one problem at a time!
 | [0486-predict-the-winner](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0486-predict-the-winner/) | Medium |
 | [0877-stone-game](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0877-stone-game/) | Medium |
 | [1140-stone-game-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1140-stone-game-ii/) | Medium |
+| [1510-stone-game-iv](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1510-stone-game-iv/) | Hard |
 ## Minimax
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1140-stone-game-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1140-stone-game-ii/) | Medium |
+| [1510-stone-game-iv](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1510-stone-game-iv/) | Hard |
 ## Zero-Sum Game
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1140-stone-game-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1140-stone-game-ii/) | Medium |
+| [1510-stone-game-iv](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1510-stone-game-iv/) | Hard |
+## Nim Game
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1510-stone-game-iv](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1510-stone-game-iv/) | Hard |
+## Sprague–Grundy Theorem
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1510-stone-game-iv](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1510-stone-game-iv/) | Hard |
 <!---LeetCode Topics End-->
