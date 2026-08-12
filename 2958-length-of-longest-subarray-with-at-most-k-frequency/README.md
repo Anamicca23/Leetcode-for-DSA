@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/solutions/?envType=daily-question&envId=2026-08-12">2958. Length of Longest Subarray With at Most K Frequency</a></h2><h3>Medium</h3><hr><p>You are given an integer array <code>nums</code> and an integer <code>k</code>.</p>
+<h2><a href="https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency">2958. Length of Longest Subarray With at Most K Frequency</a></h2><h3>Medium</h3><hr><p>You are given an integer array <code>nums</code> and an integer <code>k</code>.</p>
 
 <p>The <strong>frequency</strong> of an element <code>x</code> is the number of times it occurs in an array.</p>
 
