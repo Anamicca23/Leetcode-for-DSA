@@ -1,97 +1,79 @@
 class Solution {
-private:
-    struct Node {char leftChar; char rightChar; int length; int prefix; int suffix; int best;
-};
-
-    vector<Node> tree;
-
-    Node mergeNodes(const Node& left, const Node& right) {
-        Node res;
-
-        res.leftChar = left.leftChar;
-        res.rightChar = right.rightChar;
-        res.length = left.length + right.length;
-
-        res.prefix = left.prefix;
-
-        if (
-            left.rightChar == right.leftChar &&
-            left.prefix == left.length
-        ) {
-            res.prefix = left.length + right.prefix;
-        }
-
-        res.suffix = right.suffix;
-
-        if (
-            left.rightChar == right.leftChar &&
-            right.suffix == right.length
-        ) {
-            res.suffix = right.length + left.suffix;
-        }
-
-        res.best = max(left.best, right.best);
-
-        if (left.rightChar == right.leftChar) {
-            res.best = max(
-                res.best,
-                left.suffix + right.prefix
-            );
-        }
-
-        return res;
-    }
-
-    void build( int node, int start, int end, const string& s
-    ) {
-        if (start == end) {
-            tree[node] = {s[start], s[start], 1, 1, 1, 1};
-            return;
-        }
-
-        int mid = (start + end) / 2;
-
-        build(node * 2, start, mid, s);
-        build(node * 2 + 1, mid + 1, end, s);
-
-        tree[node] = mergeNodes(
-            tree[node * 2],
-            tree[node * 2 + 1]
-        );
-    }
-
-    void update( int node, int start, int end, int index, char ch ) {
-        if (start == end) {
-            tree[node] = {ch, ch, 1, 1, 1, 1};
-            return;
-        }
-
-        int mid = (start + end) / 2;
-
-        if (index <= mid) {
-            update(node * 2, start, mid, index, ch);
-        } else {
-            update(node * 2 + 1, mid + 1, end, index, ch);
-        }
-
-        tree[node] = mergeNodes(
-            tree[node * 2],
-            tree[node * 2 + 1]
-        );
-    }
-
 public:
-    vector<int> longestRepeating( string s, string queryCharacters, vector<int>& queryIndices) {
-        int n = s.size();
-        tree.resize(4 * n);
-        build(1, 0, n - 1, s);
-        vector<int> answer;
-
-        for (int i = 0; i < queryIndices.size(); i++) {
-            update(1, 0, n - 1, queryIndices[i], queryCharacters[i]);
-            answer.push_back(tree[1].best);
+    void buildSegTree(int index , int l , int r , vector<pair<int,int>>& segTree , string& s , vector<int>& maxis){
+        if(l == r){
+            segTree[index].first = 1;
+            segTree[index].second = 1;
+            maxis[index] = 1;
+            return ;
         }
-
-        return answer;
+        int mid = (l+r)/2;
+        buildSegTree(index*2+1 , l , mid , segTree , s , maxis); 
+        buildSegTree(index*2+2 , mid+1 , r , segTree , s , maxis);
+        if(s[mid] == s[mid+1]){
+            maxis[index] = max(segTree[index*2+1].second + segTree[index*2+2].first , max(maxis[index*2+1] ,maxis[index*2+2]));
+            if((mid-l)+1 == segTree[index*2+1].second && (r-(mid+1))+1 == segTree[index*2+2].first){
+                int x = segTree[index*2+1].second + segTree[index*2+2].first;
+                segTree[index].first = x;
+                segTree[index].second = x;   
+            }else if((mid-l)+1 == segTree[index*2+1].second){
+                segTree[index].first = ((mid-l)+1) + segTree[index*2+2].first;
+                segTree[index].second = segTree[index*2+2].second;
+            }else if((r-(mid+1))+1 == segTree[index*2+2].first){
+                segTree[index].first = segTree[index*2+1].first;
+                segTree[index].second = segTree[index*2+1].second + ((r-(mid+1))+1);
+            }else {
+                segTree[index].first = segTree[index*2+1].first;
+                segTree[index].second = segTree[index*2+2].second;
+            }
+            return ;
+        }
+        segTree[index].first = segTree[index*2+1].first;
+        segTree[index].second = segTree[index*2+2].second;
+        maxis[index] = max(maxis[index*2+1] ,maxis[index*2+2]);    
+    }
+    void update(int changeIndex , char newChar , vector<pair<int,int>>& segTree , string& s , vector<int>& maxis , int index , int l , int r){
+        if(l == r && l == changeIndex){
+            s[l] = newChar;
+            return ;
+        }
+        int mid = (l+r)/2;
+        if(mid >= changeIndex){
+            update(changeIndex , newChar , segTree , s , maxis , index*2+1 , l , mid);
+        }else update(changeIndex , newChar , segTree , s , maxis , index*2+2 , mid+1 , r);
+        if(s[mid] == s[mid+1]){
+            maxis[index] = max(segTree[index*2+1].second + segTree[index*2+2].first,max(maxis[index*2+1] ,maxis[index*2+2]));
+            if((mid-l)+1 == segTree[index*2+1].second && (r-(mid+1))+1 == segTree[index*2+2].first){
+                int x = segTree[index*2+1].second + segTree[index*2+2].first;
+                segTree[index].first = x;
+                segTree[index].second = x;   
+            }else if((mid-l)+1 == segTree[index*2+1].second){
+                segTree[index].first = ((mid-l)+1) + segTree[index*2+2].first;
+                segTree[index].second = segTree[index*2+2].second;
+            }else if((r-(mid+1))+1 == segTree[index*2+2].first){
+                segTree[index].first = segTree[index*2+1].first;
+                segTree[index].second = segTree[index*2+1].second + ((r-(mid+1))+1);
+            }else {
+                segTree[index].first = segTree[index*2+1].first;
+                segTree[index].second = segTree[index*2+2].second;
+            }
+            return ;
+        }
+        segTree[index].first = segTree[index*2+1].first;
+        segTree[index].second = segTree[index*2+2].second;
+        maxis[index] = max(maxis[index*2+1] ,maxis[index*2+2]); 
+    }
+    vector<int> longestRepeating(string s, string queryCharacters, vector<int>& queryIndices) {
+        int n = s.size();
+        vector<pair<int,int>> segTree(4*n);
+        vector<int> maxis(4*n); 
+        buildSegTree(0,0,n-1 , segTree , s , maxis); 
+        int index = 0;   
+        vector<int> res;
+        for(int i = 0; i<queryCharacters.size() ;i++){
+            update(queryIndices[i] , queryCharacters[i] , segTree , s , maxis , 0 , 0 , n-1); 
+            res.push_back(maxis[0]);
+        }
+        return res;
     }
 };
