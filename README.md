@@ -775,6 +775,7 @@ Let's crack those coding interviews one problem at a time!
 | [1914-cyclically-rotating-a-grid](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1914-cyclically-rotating-a-grid/) | Medium |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
 | [1980-find-unique-binary-string](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1980-find-unique-binary-string/) | Medium |
+| [2029-stone-game-ix](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2029-stone-game-ix/) | Medium |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2078-two-furthest-houses-with-different-colors/) | Easy |
 | [2126-destroying-asteroids](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2126-destroying-asteroids/) | Medium |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2144-minimum-cost-of-buying-candies-with-discount/) | Easy |
@@ -844,6 +845,7 @@ Let's crack those coding interviews one problem at a time!
 | [1727-largest-submatrix-with-rearrangements](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1727-largest-submatrix-with-rearrangements/) | Medium |
 | [1833-maximum-ice-cream-bars](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1833-maximum-ice-cream-bars/) | Medium |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
+| [2029-stone-game-ix](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2029-stone-game-ix/) | Medium |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2078-two-furthest-houses-with-different-colors/) | Easy |
 | [2126-destroying-asteroids](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2126-destroying-asteroids/) | Medium |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2144-minimum-cost-of-buying-candies-with-discount/) | Easy |
@@ -1115,6 +1117,7 @@ Let's crack those coding interviews one problem at a time!
 | [1840-maximum-building-height](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1840-maximum-building-height/) | Hard |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
+| [2029-stone-game-ix](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2029-stone-game-ix/) | Medium |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2946-matrix-similarity-after-cyclic-shifts/) | Easy |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
@@ -1244,6 +1247,7 @@ Let's crack those coding interviews one problem at a time!
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1189-maximum-number-of-balloons](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1189-maximum-number-of-balloons/) | Easy |
+| [2029-stone-game-ix](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2029-stone-game-ix/) | Medium |
 | [2833-furthest-point-from-origin](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2833-furthest-point-from-origin/) | Easy |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
 | [3312-sorted-gcd-pair-queries](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
@@ -1327,20 +1331,24 @@ Let's crack those coding interviews one problem at a time!
 | [0877-stone-game](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0877-stone-game/) | Medium |
 | [1140-stone-game-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1140-stone-game-ii/) | Medium |
 | [1510-stone-game-iv](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1510-stone-game-iv/) | Hard |
+| [2029-stone-game-ix](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2029-stone-game-ix/) | Medium |
 ## Minimax
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1140-stone-game-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1140-stone-game-ii/) | Medium |
 | [1510-stone-game-iv](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1510-stone-game-iv/) | Hard |
+| [2029-stone-game-ix](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2029-stone-game-ix/) | Medium |
 ## Zero-Sum Game
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1140-stone-game-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1140-stone-game-ii/) | Medium |
 | [1510-stone-game-iv](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1510-stone-game-iv/) | Hard |
+| [2029-stone-game-ix](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2029-stone-game-ix/) | Medium |
 ## Nim Game
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1510-stone-game-iv](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1510-stone-game-iv/) | Hard |
+| [2029-stone-game-ix](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2029-stone-game-ix/) | Medium |
 ## Sprague–Grundy Theorem
 | Problem Name | Difficulty |
 | ------- | ------- |
