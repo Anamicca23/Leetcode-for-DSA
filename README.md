@@ -801,6 +801,7 @@ Let's crack those coding interviews one problem at a time!
 | [3069-distribute-elements-into-two-arrays-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3069-distribute-elements-into-two-arrays-i/) | Easy |
 | [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3070-count-submatrices-with-top-left-element-and-sum-less-than-k/) | Medium |
 | [3093-longest-common-suffix-queries](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3093-longest-common-suffix-queries/) | Hard |
+| [3116-kth-smallest-amount-with-single-denomination-combination](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3116-kth-smallest-amount-with-single-denomination-combination/) | Hard |
 | [3161-block-placement-queries](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3161-block-placement-queries/) | Hard |
 | [3212-count-submatrices-with-equal-frequency-of-x-and-y](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3212-count-submatrices-with-equal-frequency-of-x-and-y/) | Medium |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3286-find-a-safe-walk-through-a-grid/) | Medium |
@@ -1059,6 +1060,7 @@ Let's crack those coding interviews one problem at a time!
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1009-complement-of-base-10-integer](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1009-complement-of-base-10-integer/) | Easy |
+| [3116-kth-smallest-amount-with-single-denomination-combination](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3116-kth-smallest-amount-with-single-denomination-combination/) | Hard |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3559-number-of-ways-to-assign-edge-weights-ii/) | Hard |
 | [3702-longest-subsequence-with-non-zero-bitwise-xor](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3702-longest-subsequence-with-non-zero-bitwise-xor/) | Medium |
@@ -1070,6 +1072,7 @@ Let's crack those coding interviews one problem at a time!
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [2540-minimum-common-value](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2540-minimum-common-value/) | Easy |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
+| [3116-kth-smallest-amount-with-single-denomination-combination](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3116-kth-smallest-amount-with-single-denomination-combination/) | Hard |
 | [3161-block-placement-queries](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3161-block-placement-queries/) | Hard |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
 | [3312-sorted-gcd-pair-queries](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
@@ -1127,6 +1130,7 @@ Let's crack those coding interviews one problem at a time!
 | [2029-stone-game-ix](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2029-stone-game-ix/) | Medium |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2946-matrix-similarity-after-cyclic-shifts/) | Easy |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
+| [3116-kth-smallest-amount-with-single-denomination-combination](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3116-kth-smallest-amount-with-single-denomination-combination/) | Hard |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3300-minimum-element-after-replacement-with-digit-sum/) | Easy |
 | [3312-sorted-gcd-pair-queries](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
@@ -1284,6 +1288,7 @@ Let's crack those coding interviews one problem at a time!
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
+| [3116-kth-smallest-amount-with-single-denomination-combination](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3116-kth-smallest-amount-with-single-denomination-combination/) | Hard |
 | [3312-sorted-gcd-pair-queries](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3336-find-the-number-of-subsequences-with-equal-gcd/) | Hard |
 | [3348-smallest-divisible-digit-product-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3348-smallest-divisible-digit-product-ii/) | Hard |
@@ -1326,6 +1331,7 @@ Let's crack those coding interviews one problem at a time!
 ## Combinatorics
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [3116-kth-smallest-amount-with-single-denomination-combination](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3116-kth-smallest-amount-with-single-denomination-combination/) | Hard |
 | [3312-sorted-gcd-pair-queries](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3312-sorted-gcd-pair-queries/) | Hard |
 ## Monotonic Stack
 | Problem Name | Difficulty |
