@@ -771,6 +771,7 @@ Let's crack those coding interviews one problem at a time!
 | [1848-minimum-distance-to-the-target-element](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1848-minimum-distance-to-the-target-element/) | Easy |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [1861-rotating-the-box](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1861-rotating-the-box/) | Medium |
+| [1872-stone-game-viii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1872-stone-game-viii/) | Hard |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1886-determine-whether-matrix-can-be-obtained-by-rotation/) | Easy |
 | [1914-cyclically-rotating-a-grid](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1914-cyclically-rotating-a-grid/) | Medium |
@@ -973,6 +974,7 @@ Let's crack those coding interviews one problem at a time!
 | [1563-stone-game-v](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1563-stone-game-v/) | Hard |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1594-maximum-non-negative-product-in-a-matrix/) | Medium |
 | [1871-jump-game-vii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1871-jump-game-vii/) | Medium |
+| [1872-stone-game-viii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1872-stone-game-viii/) | Hard |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1888-minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium |
 | [2463-minimum-total-distance-traveled](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2463-minimum-total-distance-traveled/) | Hard |
 | [2573-find-the-string-with-lcp](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2573-find-the-string-with-lcp/) | Hard |
@@ -1044,6 +1046,7 @@ Let's crack those coding interviews one problem at a time!
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [1732-find-the-highest-altitude](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1732-find-the-highest-altitude/) | Easy |
 | [1871-jump-game-vii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1871-jump-game-vii/) | Medium |
+| [1872-stone-game-viii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1872-stone-game-viii/) | Hard |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
 | [2615-sum-of-distances](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2615-sum-of-distances/) | Medium |
 | [2906-construct-product-matrix](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2906-construct-product-matrix/) | Medium |
@@ -1127,6 +1130,7 @@ Let's crack those coding interviews one problem at a time!
 | [1563-stone-game-v](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1563-stone-game-v/) | Hard |
 | [1622-fancy-sequence](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1622-fancy-sequence/) | Hard |
 | [1840-maximum-building-height](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1840-maximum-building-height/) | Hard |
+| [1872-stone-game-viii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1872-stone-game-viii/) | Hard |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
 | [1927-sum-game](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1927-sum-game/) | Medium |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1979-find-greatest-common-divisor-of-array/) | Easy |
@@ -1349,6 +1353,7 @@ Let's crack those coding interviews one problem at a time!
 | [1140-stone-game-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1140-stone-game-ii/) | Medium |
 | [1510-stone-game-iv](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1510-stone-game-iv/) | Hard |
 | [1563-stone-game-v](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1563-stone-game-v/) | Hard |
+| [1872-stone-game-viii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1872-stone-game-viii/) | Hard |
 | [1927-sum-game](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1927-sum-game/) | Medium |
 | [2029-stone-game-ix](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2029-stone-game-ix/) | Medium |
 ## Minimax
@@ -1356,12 +1361,14 @@ Let's crack those coding interviews one problem at a time!
 | ------- | ------- |
 | [1140-stone-game-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1140-stone-game-ii/) | Medium |
 | [1510-stone-game-iv](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1510-stone-game-iv/) | Hard |
+| [1872-stone-game-viii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1872-stone-game-viii/) | Hard |
 | [2029-stone-game-ix](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2029-stone-game-ix/) | Medium |
 ## Zero-Sum Game
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1140-stone-game-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1140-stone-game-ii/) | Medium |
 | [1510-stone-game-iv](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1510-stone-game-iv/) | Hard |
+| [1872-stone-game-viii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1872-stone-game-viii/) | Hard |
 | [2029-stone-game-ix](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2029-stone-game-ix/) | Medium |
 ## Nim Game
 | Problem Name | Difficulty |
