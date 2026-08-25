@@ -832,6 +832,7 @@ Let's crack those coding interviews one problem at a time!
 | [3689-maximum-total-subarray-value-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3689-maximum-total-subarray-value-i/) | Medium |
 | [3691-maximum-total-subarray-value-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3691-maximum-total-subarray-value-ii/) | Hard |
 | [3702-longest-subsequence-with-non-zero-bitwise-xor](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3702-longest-subsequence-with-non-zero-bitwise-xor/) | Medium |
+| [3718-smallest-missing-multiple-of-k](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3718-smallest-missing-multiple-of-k/) | Easy |
 | [3731-find-missing-elements](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3731-find-missing-elements/) | Easy |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3737-count-subarrays-with-majority-element-i/) | Medium |
 | [3739-count-subarrays-with-majority-element-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3739-count-subarrays-with-majority-element-ii/) | Hard |
@@ -1027,6 +1028,7 @@ Let's crack those coding interviews one problem at a time!
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3532-path-existence-queries-in-a-graph-i/) | Medium |
 | [3548-equal-sum-grid-partition-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3548-equal-sum-grid-partition-ii/) | Hard |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3629-minimum-jumps-to-reach-end-via-prime-teleportation/) | Medium |
+| [3718-smallest-missing-multiple-of-k](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3718-smallest-missing-multiple-of-k/) | Easy |
 | [3731-find-missing-elements](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3731-find-missing-elements/) | Easy |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3737-count-subarrays-with-majority-element-i/) | Medium |
 | [3739-count-subarrays-with-majority-element-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3739-count-subarrays-with-majority-element-ii/) | Hard |
