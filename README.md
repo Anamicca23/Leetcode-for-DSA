@@ -922,6 +922,7 @@ Let's crack those coding interviews one problem at a time!
 | [2833-furthest-point-from-origin](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2833-furthest-point-from-origin/) | Easy |
 | [2839-check-if-strings-can-be-made-equal-with-operations-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2839-check-if-strings-can-be-made-equal-with-operations-i/) | Easy |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2840-check-if-strings-can-be-made-equal-with-operations-ii/) | Medium |
+| [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2904-shortest-and-lexicographically-smallest-beautiful-string/) | Medium |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
 | [3090-maximum-length-substring-with-two-occurrences](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3090-maximum-length-substring-with-two-occurrences/) | Easy |
@@ -999,6 +1000,7 @@ Let's crack those coding interviews one problem at a time!
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1358-number-of-substrings-containing-all-three-characters/) | Medium |
 | [1871-jump-game-vii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1871-jump-game-vii/) | Medium |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1888-minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium |
+| [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2904-shortest-and-lexicographically-smallest-beautiful-string/) | Medium |
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2958-length-of-longest-subarray-with-at-most-k-frequency/) | Medium |
 | [3090-maximum-length-substring-with-two-occurrences](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3090-maximum-length-substring-with-two-occurrences/) | Easy |
 ## Hash Table
