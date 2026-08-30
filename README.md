@@ -779,6 +779,7 @@ Let's crack those coding interviews one problem at a time!
 | [1980-find-unique-binary-string](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1980-find-unique-binary-string/) | Medium |
 | [2029-stone-game-ix](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2029-stone-game-ix/) | Medium |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2078-two-furthest-houses-with-different-colors/) | Easy |
+| [2091-removing-minimum-and-maximum-from-array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2091-removing-minimum-and-maximum-from-array/) | Medium |
 | [2126-destroying-asteroids](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2126-destroying-asteroids/) | Medium |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2144-minimum-cost-of-buying-candies-with-discount/) | Easy |
 | [2161-partition-array-according-to-given-pivot](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
@@ -855,6 +856,7 @@ Let's crack those coding interviews one problem at a time!
 | [1927-sum-game](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1927-sum-game/) | Medium |
 | [2029-stone-game-ix](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2029-stone-game-ix/) | Medium |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2078-two-furthest-houses-with-different-colors/) | Easy |
+| [2091-removing-minimum-and-maximum-from-array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2091-removing-minimum-and-maximum-from-array/) | Medium |
 | [2126-destroying-asteroids](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2126-destroying-asteroids/) | Medium |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2144-minimum-cost-of-buying-candies-with-discount/) | Easy |
 | [2573-find-the-string-with-lcp](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2573-find-the-string-with-lcp/) | Hard |
