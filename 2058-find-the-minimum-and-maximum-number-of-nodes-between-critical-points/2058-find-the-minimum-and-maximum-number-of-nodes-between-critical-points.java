@@ -10,29 +10,55 @@
  */
 class Solution {
     public int[] nodesBetweenCriticalPoints(ListNode head) {
-        int min = 100000, i = 1;
-        int first = 0, last = 0;
 
-        ListNode prev = head, curr = head.next, nxt = head.next.next;
-
-        while (nxt != null) {
-            if (isCrit(prev, curr, nxt)) {
-                if (first == 0) first = i;
-                else min = Math.min(min, i - last);
-                last = i;
+        int prev = head.val;
+        int curr, next;
+        ListNode temp = head.next;
+        int mindis;
+        int maxdis;
+        int firstidx = 0, curridx = 0, previdx = 0;
+        while (temp.next != null) {
+            curr = temp.val;
+            next = temp.next.val;
+            temp = temp.next;
+            if (curr < prev && curr < next || curr > prev && curr > next) {
+                curridx = 1;
+                firstidx = 1;
+                prev = curr;
+                break;
             }
-
-            prev = curr; curr = nxt;
-            nxt = nxt.next; i++;
+            prev = curr;
         }
-
-        if (first == last) return new int[]{-1, -1};
-
-        return new int[]{min, last - first};
-    }
-    
-    boolean isCrit(ListNode a, ListNode b, ListNode c) {
-        return (a.val < b.val && b.val > c.val) ||
-               (a.val > b.val && b.val < c.val);
+        if (firstidx == 0)
+            return new int[] { -1, -1 };
+        while (temp.next != null) {
+            curr = temp.val;
+            next = temp.next.val;
+            temp = temp.next;
+            curridx++;
+            if (curr < prev && curr < next || curr > prev && curr > next) {
+                previdx = curridx;
+                prev = curr;
+                break;
+            }
+            prev = curr;
+        }
+        if (previdx == 0)
+            return new int[] { -1, -1 };
+        mindis = maxdis = curridx - firstidx;
+        while (temp.next != null) {
+            curr = temp.val;
+            next = temp.next.val;
+            temp = temp.next;
+            curridx++;
+            if (curr < prev && curr < next || curr > prev && curr > next) {
+                maxdis = curridx - firstidx;
+                if ((curridx - previdx) < mindis)
+                    mindis = curridx - previdx;
+                previdx = curridx;
+            }
+            prev = curr;
+        }
+        return new int[] { mindis, maxdis };
     }
 }
