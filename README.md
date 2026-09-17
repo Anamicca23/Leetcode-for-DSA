@@ -755,6 +755,7 @@ Let's crack those coding interviews one problem at a time!
 | [1306-jump-game-iii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1306-jump-game-iii/) | Medium |
 | [1331-rank-transform-of-an-array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1331-rank-transform-of-an-array/) | Easy |
 | [1345-jump-game-iv](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1345-jump-game-iv/) | Hard |
+| [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1559-detect-cycles-in-2d-grid](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1559-detect-cycles-in-2d-grid/) | Medium |
 | [1563-stone-game-v](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1563-stone-game-v/) | Hard |
@@ -980,6 +981,7 @@ Let's crack those coding interviews one problem at a time!
 | [1140-stone-game-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1140-stone-game-ii/) | Medium |
 | [1301-number-of-paths-with-max-score](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1301-number-of-paths-with-max-score/) | Hard |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1320-minimum-distance-to-type-a-word-using-two-fingers/) | Hard |
+| [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1510-stone-game-iv](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1510-stone-game-iv/) | Hard |
 | [1563-stone-game-v](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1563-stone-game-v/) | Hard |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1594-maximum-non-negative-product-in-a-matrix/) | Medium |
@@ -1006,6 +1008,7 @@ Let's crack those coding interviews one problem at a time!
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1358-number-of-substrings-containing-all-three-characters/) | Medium |
+| [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1871-jump-game-vii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1871-jump-game-vii/) | Medium |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1888-minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium |
 | [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2904-shortest-and-lexicographically-smallest-beautiful-string/) | Medium |
@@ -1019,6 +1022,7 @@ Let's crack those coding interviews one problem at a time!
 | [1331-rank-transform-of-an-array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1331-rank-transform-of-an-array/) | Easy |
 | [1345-jump-game-iv](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1345-jump-game-iv/) | Hard |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1358-number-of-substrings-containing-all-three-characters/) | Medium |
+| [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1980-find-unique-binary-string/) | Medium |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
@@ -1089,6 +1093,7 @@ Let's crack those coding interviews one problem at a time!
 | ------- | ------- |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
+| [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [2540-minimum-common-value](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2540-minimum-common-value/) | Easy |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2812-find-the-safest-path-in-a-grid/) | Medium |
