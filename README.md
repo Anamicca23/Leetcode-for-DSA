@@ -850,6 +850,7 @@ Let's crack those coding interviews one problem at a time!
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
+| [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1520-maximum-number-of-non-overlapping-substrings/) | Hard |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [1727-largest-submatrix-with-rearrangements](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1727-largest-submatrix-with-rearrangements/) | Medium |
@@ -914,6 +915,7 @@ Let's crack those coding interviews one problem at a time!
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1320-minimum-distance-to-type-a-word-using-two-fingers/) | Hard |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1358-number-of-substrings-containing-all-three-characters/) | Medium |
 | [1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | Medium |
+| [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1520-maximum-number-of-non-overlapping-substrings/) | Hard |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1545-find-kth-bit-in-nth-binary-string/) | Medium |
 | [1758-minimum-changes-to-make-alternating-binary-string](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1758-minimum-changes-to-make-alternating-binary-string/) | Easy |
 | [1784-check-if-binary-string-has-at-most-one-segment-of-ones](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1784-check-if-binary-string-has-at-most-one-segment-of-ones/) | Easy |
@@ -1023,6 +1025,7 @@ Let's crack those coding interviews one problem at a time!
 | [1345-jump-game-iv](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1345-jump-game-iv/) | Hard |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1358-number-of-substrings-containing-all-three-characters/) | Medium |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
+| [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1520-maximum-number-of-non-overlapping-substrings/) | Hard |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1980-find-unique-binary-string/) | Medium |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
@@ -1205,6 +1208,7 @@ Let's crack those coding interviews one problem at a time!
 | ------- | ------- |
 | [1288-remove-covered-intervals](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1288-remove-covered-intervals/) | Medium |
 | [1331-rank-transform-of-an-array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1331-rank-transform-of-an-array/) | Easy |
+| [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1520-maximum-number-of-non-overlapping-substrings/) | Hard |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [1727-largest-submatrix-with-rearrangements](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1727-largest-submatrix-with-rearrangements/) | Medium |
 | [1833-maximum-ice-cream-bars](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1833-maximum-ice-cream-bars/) | Medium |
