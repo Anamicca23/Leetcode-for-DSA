@@ -1150,6 +1150,7 @@ Let's crack those coding interviews one problem at a time!
 | [0877-stone-game](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0877-stone-game/) | Medium |
 | [1140-stone-game-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1140-stone-game-ii/) | Medium |
 | [1344-angle-between-hands-of-a-clock](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1344-angle-between-hands-of-a-clock/) | Medium |
+| [1401-circle-and-rectangle-overlapping](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1401-circle-and-rectangle-overlapping/) | Medium |
 | [1510-stone-game-iv](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1510-stone-game-iv/) | Hard |
 | [1563-stone-game-v](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1563-stone-game-v/) | Hard |
 | [1622-fancy-sequence](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1622-fancy-sequence/) | Hard |
@@ -1304,6 +1305,7 @@ Let's crack those coding interviews one problem at a time!
 ## Geometry
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1401-circle-and-rectangle-overlapping](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1401-circle-and-rectangle-overlapping/) | Medium |
 | [3464-maximize-the-distance-between-points-on-a-square](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3464-maximize-the-distance-between-points-on-a-square/) | Hard |
 ## Breadth-First Search
 | Problem Name | Difficulty |
