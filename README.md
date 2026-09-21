@@ -817,6 +817,7 @@ Let's crack those coding interviews one problem at a time!
 | [3464-maximize-the-distance-between-points-on-a-square](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3464-maximize-the-distance-between-points-on-a-square/) | Hard |
 | [3471-find-the-largest-almost-missing-integer](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3471-find-the-largest-almost-missing-integer/) | Easy |
 | [3488-closest-equal-element-queries](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3488-closest-equal-element-queries/) | Medium |
+| [3524-find-x-value-of-array-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3524-find-x-value-of-array-i/) | Medium |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3532-path-existence-queries-in-a-graph-i/) | Medium |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
 | [3546-equal-sum-grid-partition-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3546-equal-sum-grid-partition-i/) | Medium |
@@ -1000,6 +1001,7 @@ Let's crack those coding interviews one problem at a time!
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3302-find-the-lexicographically-smallest-valid-sequence/) | Medium |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3336-find-the-number-of-subsequences-with-equal-gcd/) | Hard |
 | [3418-maximum-amount-of-money-robot-can-earn](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3418-maximum-amount-of-money-robot-can-earn/) | Medium |
+| [3524-find-x-value-of-array-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3524-find-x-value-of-array-i/) | Medium |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3534-path-existence-queries-in-a-graph-ii/) | Hard |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3559-number-of-ways-to-assign-edge-weights-ii/) | Hard |
 | [3620-network-recovery-pathways](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3620-network-recovery-pathways/) | Hard |
@@ -1172,6 +1174,7 @@ Let's crack those coding interviews one problem at a time!
 | [3345-smallest-divisible-digit-product-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3345-smallest-divisible-digit-product-i/) | Easy |
 | [3348-smallest-divisible-digit-product-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3348-smallest-divisible-digit-product-ii/) | Hard |
 | [3464-maximize-the-distance-between-points-on-a-square](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3464-maximize-the-distance-between-points-on-a-square/) | Hard |
+| [3524-find-x-value-of-array-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3524-find-x-value-of-array-i/) | Medium |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3558-number-of-ways-to-assign-edge-weights-i/) | Medium |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3559-number-of-ways-to-assign-edge-weights-ii/) | Hard |
 | [3622-check-divisibility-by-digit-sum-and-product](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3622-check-divisibility-by-digit-sum-and-product/) | Easy |
