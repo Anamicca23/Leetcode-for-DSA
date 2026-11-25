@@ -849,6 +849,7 @@ Let's crack those coding interviews one problem at a time!
 | [3761-minimum-absolute-distance-between-mirror-pairs](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3761-minimum-absolute-distance-between-mirror-pairs/) | Medium |
 | [3838-weighted-word-mapping](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3838-weighted-word-mapping/) | Easy |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
+| [3934-smallest-unique-subarray](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3934-smallest-unique-subarray/) | Hard |
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -1065,6 +1066,7 @@ Let's crack those coding interviews one problem at a time!
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3740-minimum-distance-between-three-equal-elements-i/) | Easy |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3741-minimum-distance-between-three-equal-elements-ii/) | Medium |
 | [3761-minimum-absolute-distance-between-mirror-pairs](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3761-minimum-absolute-distance-between-mirror-pairs/) | Medium |
+| [3934-smallest-unique-subarray](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3934-smallest-unique-subarray/) | Hard |
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -1124,6 +1126,7 @@ Let's crack those coding interviews one problem at a time!
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3635-earliest-finish-time-for-land-and-water-rides-ii/) | Medium |
 | [3661-maximum-walls-destroyed-by-robots](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3661-maximum-walls-destroyed-by-robots/) | Hard |
+| [3934-smallest-unique-subarray](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3934-smallest-unique-subarray/) | Hard |
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -1439,4 +1442,16 @@ Let's crack those coding interviews one problem at a time!
 | ------- | ------- |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/1614-maximum-nesting-depth-of-the-parentheses/) | Easy |
+## Rolling Hash
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3934-smallest-unique-subarray](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3934-smallest-unique-subarray/) | Hard |
+## Suffix Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3934-smallest-unique-subarray](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3934-smallest-unique-subarray/) | Hard |
+## Hash Function
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3934-smallest-unique-subarray](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3934-smallest-unique-subarray/) | Hard |
 <!---LeetCode Topics End-->
