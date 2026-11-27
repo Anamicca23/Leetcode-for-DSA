@@ -1352,7 +1352,7 @@ Let's crack those coding interviews one problem at a time!
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
-| [0061-rotate-list](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0061-rotate-list/) | Medium |
+| [0061-rotate-list](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0061-rotate-list/) | Medium |
 | [2058-find-the-minimum-and-maximum-number-of-nodes-between-critical-points](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2058-find-the-minimum-and-maximum-number-of-nodes-between-critical-points/) | Medium |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/2130-maximum-twin-sum-of-a-linked-list/) | Medium |
 ## Number Theory
