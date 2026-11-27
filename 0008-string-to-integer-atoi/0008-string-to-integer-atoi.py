@@ -1,27 +1,39 @@
 class Solution:
     def myAtoi(self, s: str) -> int:
-        s = s.strip()  # Remove leading/trailing spaces
-        if not s:
-            return 0
+        phase = 0
+        result = 0
+        sign = 1
+        numbers = '0123456789'
+        limit = 2**31 - 1
 
-        sign, i, res = 1, 0, 0
+        for element in s:
+            if element == ' ':
+                if phase != 0:
+                    return result * sign
+            
+            elif element in "+-" and phase == 0:
+                sign = -1 if element == '-' else 1
+                limit = 2**31 if sign == -1 else 2**31 - 1
+                phase = 1
+            
+            elif element in numbers:
+                phase = 2
+                element_value = numbers.index(element)
+                if result > (limit - element_value) // 10:
+                    return limit * sign
 
-        # Check for sign
-        if s[0] == '-':
-            sign = -1
-            i += 1
-        elif s[0] == '+':
-            i += 1
+                result = result * 10 + element_value
 
-        while i < len(s) and s[i].isdigit():
-            res = res * 10 + int(s[i])
+            else:
+                return result * sign
+        
+        return result * sign
 
-            # Handle overflow
-            if sign * res > 2**31 - 1:
-                return 2**31 - 1
-            if sign * res < -2**31:
-                return -2**31
+        
 
-            i += 1
+            
 
-        return sign * res
+
+            
+
+                
