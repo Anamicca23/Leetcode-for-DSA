@@ -917,6 +917,7 @@ Let's crack those coding interviews one problem at a time!
 | [0005-longest-palindromic-substring](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0005-longest-palindromic-substring/) | Medium |
 | [0006-zigzag-conversion](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0006-zigzag-conversion/) | Medium |
 | [0008-string-to-integer-atoi](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0008-string-to-integer-atoi/) | Medium |
+| [0010-regular-expression-matching](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0010-regular-expression-matching/) | Hard |
 | [0657-robot-return-to-origin](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0657-robot-return-to-origin/) | Easy |
 | [0796-rotate-string](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0796-rotate-string/) | Easy |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1081-smallest-subsequence-of-distinct-characters/) | Medium |
@@ -965,6 +966,7 @@ Let's crack those coding interviews one problem at a time!
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0010-regular-expression-matching](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0010-regular-expression-matching/) | Hard |
 | [0486-predict-the-winner](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0486-predict-the-winner/) | Medium |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1545-find-kth-bit-in-nth-binary-string/) | Medium |
 ## Simulation
@@ -993,6 +995,7 @@ Let's crack those coding interviews one problem at a time!
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0005-longest-palindromic-substring](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0005-longest-palindromic-substring/) | Medium |
+| [0010-regular-expression-matching](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0010-regular-expression-matching/) | Hard |
 | [0396-rotate-function](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0396-rotate-function/) | Medium |
 | [0486-predict-the-winner](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0486-predict-the-winner/) | Medium |
 | [0788-rotated-digits](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0788-rotated-digits/) | Medium |
