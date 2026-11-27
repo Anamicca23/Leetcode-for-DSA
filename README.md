@@ -918,6 +918,7 @@ Let's crack those coding interviews one problem at a time!
 | [0006-zigzag-conversion](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0006-zigzag-conversion/) | Medium |
 | [0008-string-to-integer-atoi](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0008-string-to-integer-atoi/) | Medium |
 | [0010-regular-expression-matching](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0010-regular-expression-matching/) | Hard |
+| [0012-integer-to-roman](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0012-integer-to-roman/) | Medium |
 | [0657-robot-return-to-origin](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0657-robot-return-to-origin/) | Easy |
 | [0796-rotate-string](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0796-rotate-string/) | Easy |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1081-smallest-subsequence-of-distinct-characters/) | Medium |
@@ -1041,6 +1042,7 @@ Let's crack those coding interviews one problem at a time!
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0012-integer-to-roman](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0012-integer-to-roman/) | Medium |
 | [0874-walking-robot-simulation](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0874-walking-robot-simulation/) | Medium |
 | [1189-maximum-number-of-balloons](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1189-maximum-number-of-balloons/) | Easy |
 | [1331-rank-transform-of-an-array](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/1331-rank-transform-of-an-array/) | Easy |
@@ -1168,6 +1170,7 @@ Let's crack those coding interviews one problem at a time!
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0012-integer-to-roman](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/0012-integer-to-roman/) | Medium |
 | [0048-rotate-image](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0048-rotate-image/) | Medium |
 | [0396-rotate-function](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0396-rotate-function/) | Medium |
 | [0486-predict-the-winner](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/0486-predict-the-winner/) | Medium |
