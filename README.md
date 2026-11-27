@@ -850,6 +850,7 @@ Let's crack those coding interviews one problem at a time!
 | [3838-weighted-word-mapping](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3838-weighted-word-mapping/) | Easy |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3867-sum-of-gcd-of-formed-pairs/) | Medium |
 | [3934-smallest-unique-subarray](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3934-smallest-unique-subarray/) | Hard |
+| [3946-maximum-number-of-items-from-sale-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3946-maximum-number-of-items-from-sale-i/) | Medium |
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -880,6 +881,7 @@ Let's crack those coding interviews one problem at a time!
 | [3689-maximum-total-subarray-value-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3689-maximum-total-subarray-value-i/) | Medium |
 | [3691-maximum-total-subarray-value-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3691-maximum-total-subarray-value-ii/) | Hard |
 | [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3720-lexicographically-smallest-permutation-greater-than-target/) | Medium |
+| [3946-maximum-number-of-items-from-sale-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3946-maximum-number-of-items-from-sale-i/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -1018,6 +1020,7 @@ Let's crack those coding interviews one problem at a time!
 | [3699-number-of-zigzag-arrays-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3699-number-of-zigzag-arrays-i/) | Hard |
 | [3700-number-of-zigzag-arrays-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3700-number-of-zigzag-arrays-ii/) | Hard |
 | [3742-maximum-path-score-in-a-grid](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3742-maximum-path-score-in-a-grid/) | Medium |
+| [3946-maximum-number-of-items-from-sale-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3946-maximum-number-of-items-from-sale-i/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
