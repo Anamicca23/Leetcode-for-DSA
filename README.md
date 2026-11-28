@@ -851,6 +851,7 @@ Let's crack those coding interviews one problem at a time!
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/3867-sum-of-gcd-of-formed-pairs/) | Medium |
 | [3934-smallest-unique-subarray](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/3934-smallest-unique-subarray/) | Hard |
 | [3946-maximum-number-of-items-from-sale-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/3946-maximum-number-of-items-from-sale-i/) | Medium |
+| [3947-maximum-number-of-items-from-sale-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3947-maximum-number-of-items-from-sale-ii/) | Medium |
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -882,6 +883,7 @@ Let's crack those coding interviews one problem at a time!
 | [3691-maximum-total-subarray-value-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/3691-maximum-total-subarray-value-ii/) | Hard |
 | [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/3720-lexicographically-smallest-permutation-greater-than-target/) | Medium |
 | [3946-maximum-number-of-items-from-sale-i](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/3946-maximum-number-of-items-from-sale-i/) | Medium |
+| [3947-maximum-number-of-items-from-sale-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3947-maximum-number-of-items-from-sale-ii/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -1222,6 +1224,7 @@ Let's crack those coding interviews one problem at a time!
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
 | [3620-network-recovery-pathways](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/3620-network-recovery-pathways/) | Hard |
 | [3691-maximum-total-subarray-value-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/3691-maximum-total-subarray-value-ii/) | Hard |
+| [3947-maximum-number-of-items-from-sale-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3947-maximum-number-of-items-from-sale-ii/) | Medium |
 ## Design
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -1267,6 +1270,7 @@ Let's crack those coding interviews one problem at a time!
 | [3661-maximum-walls-destroyed-by-robots](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/3661-maximum-walls-destroyed-by-robots/) | Hard |
 | [3731-find-missing-elements](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/3731-find-missing-elements/) | Easy |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/Anamicca23/Leetcode-for-DSA/tree/master/3867-sum-of-gcd-of-formed-pairs/) | Medium |
+| [3947-maximum-number-of-items-from-sale-ii](https://github.com/Anamicca23/Leetcode-for-DSA/tree/main/3947-maximum-number-of-items-from-sale-ii/) | Medium |
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
